@@ -13,7 +13,7 @@ class AssemblerDirective
         std::string* generateListingCode();
         std::string* generateObjectCode();
     private:
-        std::string* statements[3];
+        std::string statements[][3];
         //FileHandler* fileHandler;
         //StatementNormalizer normalizer;
         //StatementParser stParser;
