@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1492279374 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\assemblerdirective.cpp
+	<iostream>
+	"AssemblerDirective.h"
+
+1492281695 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\assemblerdirective.h
+	<string>
+
+1492279039 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
+	<iostream>
+	"AssemblerDirective.h"
+
