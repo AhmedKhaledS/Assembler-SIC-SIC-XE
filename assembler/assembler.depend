@@ -1,12 +1,45 @@
 # depslib dependency file v1.0
-1492279374 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\assemblerdirective.cpp
+1492287955 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\assemblerdirective.cpp
 	<iostream>
 	"AssemblerDirective.h"
 
-1492281695 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\assemblerdirective.h
+1492287810 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\assemblerdirective.h
 	<string>
 
 1492279039 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	"AssemblerDirective.h"
+
+1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\baseregister.cpp
+	<iostream>
+	"BaseRegister.h"
+
+1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\baseregister.h
+	<iostream>
+
+1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\locationcounter.cpp
+	<iostream>
+	"LocationCounter.h"
+
+1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\locationcounter.h
+	<iostream>
+	<vector>
+
+1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operationcodetable.cpp
+	<map>
+	<stdio.h>
+	"OperationCodeTable.h"
+
+1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operationcodetable.h
+	<map>
+	<iostream>
+	<stdio.h>
+
+1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\symboltable.cpp
+	<map>
+	<string>
+	"SymbolTable.h"
+
+1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\symboltable.h
+	<map>
 

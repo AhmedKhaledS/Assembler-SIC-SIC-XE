@@ -7,6 +7,7 @@ class AssemblerDirective
 {
     public:
         AssemblerDirective();
+        AssemblerDirective(std::string path);
         std::string* read(std::string path);
         std::string** normalize(std::string* assemblyCode);
         void parseStatement(std::string* statement);
