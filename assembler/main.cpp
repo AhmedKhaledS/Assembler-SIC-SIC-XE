@@ -1,10 +1,14 @@
 #include <iostream>
 #include "driver/AssemblerDirective.h"
+#include "string"
 
 using namespace std;
 
 int main(void)
 {
-    cout << 2;
+    HandlerContext *handler = new HandlerContext();
+    handler->handle("ahmed");
+    handler->handle("khaled");
+    handler->handle("ahmed");
     return 0;
 }

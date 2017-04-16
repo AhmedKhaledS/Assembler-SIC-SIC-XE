@@ -4,6 +4,10 @@
 #include "InstructionHandlerState.h"
 #include "OperandHandlerState.h"
 
+/** Forward declarations are to be detected by the compiler. */
+class LabelHandlerState;
+class InstructionHandlerState;
+class OperandHandlerState;
 
 class HandlerContext
 {
@@ -11,6 +15,11 @@ class HandlerContext
         /** Default constructor */
         HandlerContext();
         void setState(StateHandler *newState);
+        void handle(std::string statement);
+        void throwError();
+        StateHandler *getLabelHandler();
+        StateHandler *getInstructionHandler();
+        StateHandler *getOperandHandler();
     private:
         StateHandler *currentState;
         LabelHandlerState *labelHandler;

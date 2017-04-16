@@ -1,6 +1,7 @@
 #ifndef INSTRUCTIONHANDLERSTATE_H
 #define INSTRUCTIONHANDLERSTATE_H
 #include "StateHandler.h"
+#include "HandlerContext.h"
 
 class HandlerContext;
 

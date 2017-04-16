@@ -7,9 +7,10 @@
 	<string>
 	"StatementParser.h"
 
-1492359754 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
+1492365864 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	"driver/AssemblerDirective.h"
+	"string"
 
 1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\baseregister.cpp
 	<iostream>
@@ -139,34 +140,41 @@
 	<vector>
 	<string>
 
-1492303396 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.h
+1492365684 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.h
 	"LabelHandlerState.h"
 	"InstructionHandlerState.h"
 	"OperandHandlerState.h"
 
-1492306549 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.h
+1492363825 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.h
 	"StateHandler.h"
+	"HandlerContext.h"
 
 1492305386 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.h
 	"string"
 
-1492305450 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.h
+1492364587 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.h
 	"StateHandler.h"
-
-1492305435 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.h
-	"StateHandler.h"
-
-1492303397 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.cpp
 	"HandlerContext.h"
 
-1492305386 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
+1492364909 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.h
+	"StateHandler.h"
+	"HandlerContext.h"
+
+1492365999 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.cpp
+	"HandlerContext.h"
+	"iostream"
+
+1492365990 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
 	"InstructionHandlerState.h"
+	"iostream"
 
-1492306554 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
+1492365990 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
 	"LabelHandlerState.h"
+	"iostream"
 
-1492305386 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
+1492365844 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
 	"OperandHandlerState.h"
+	"iostream"
 
 1492303618 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
 	"StateHandler.h"
