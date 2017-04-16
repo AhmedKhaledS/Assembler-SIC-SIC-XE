@@ -6,28 +6,23 @@ const int COLUMNS_SIZE = 3;
 
 AssemblerDirective::AssemblerDirective(){}
 
-AssemblerDirective::AssemblerDirective(string path)
+vector<string> AssemblerDirective::read(string path)
+{
+    /// return fileHandler->read(path);
+}
+vector<vector<string>> AssemblerDirective::normalize(vector<string> assemblyCode)
 {
 
 }
-
-string* AssemblerDirective::read(string path)
+void AssemblerDirective::parseStatement(vector<string> statement)
 {
 
 }
-string** AssemblerDirective::normalize(string* assemblyCode)
+vector<string> AssemblerDirective::generateListingCode()
 {
 
 }
-void AssemblerDirective::parseStatement(string* statement)
-{
-
-}
-string* AssemblerDirective::generateListingCode()
-{
-
-}
-string* AssemblerDirective::generateObjectCode()
+vector<string> AssemblerDirective::generateObjectCode()
 {
 
 }

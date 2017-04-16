@@ -110,13 +110,14 @@
 	<vector>
 	<string>
 
-1492288078 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdirective.cpp
+1492373058 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdirective.cpp
 	<iostream>
 	"AssemblerDirective.h"
 
-1492290198 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdirective.h
-	<string>
+1492373101 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdirective.h
 	"StatementParser.h"
+	<string>
+	<vector>
 
 1492360175 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.h
 	"../handlers/HandlerContext.h"
@@ -235,4 +236,15 @@
 1492307322 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
 	<vector>
 	<string>
+
+1492366076 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\instructiontypetable.cpp
+	<map>
+	<stdio.h>
+	"InstructionTypeTable.h"
+	<bits/stdc++.h>
+
+1492366076 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\instructiontypetable.h
+	<map>
+	<iostream>
+	<stdio.h>
 

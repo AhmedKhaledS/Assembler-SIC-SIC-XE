@@ -1,21 +1,20 @@
-#include <string>
 #include "StatementParser.h"
 #ifndef ASSEMBLERDIRECTIVE_H
 #define ASSEMBLERDIRECTIVE_H
-
+#include <string>
+#include <vector>
 
 class AssemblerDirective
 {
     public:
         AssemblerDirective();
-        AssemblerDirective(std::string path);
-        std::string* read(std::string path);
-        std::string** normalize(std::string* assemblyCode);
-        void parseStatement(std::string* statement);
-        std::string* generateListingCode();
-        std::string* generateObjectCode();
+        std::vector<std::string> read(std::string path);
+        std::vector<std::vector<std::string>> normalize(std::vector<std::string> assemblyCode);
+        void parseStatement(std::vector<std::string> statement);
+        std::vector<std::string> generateListingCode();
+        std::vector<std::string> generateObjectCode();
     private:
-        std::string statements[][3];
+        std::vector<std::vector<std::string>> statements;
         //FileHandler* fileHandler;
         //StatementNormalizer normalizer;
         StatementParser stParser;
