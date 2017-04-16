@@ -4,11 +4,13 @@
 #include <iostream>
 #include "ObjectCodeGenerator.h"
 
+using namespace std;
+
 class DirectiveObjectCodeGenerator : public ObjectCodeGenerator {
 
 public :
-    DirectiveObjectCodeGenerator(std::string operand);
-    std::string parse();
+    DirectiveObjectCodeGenerator(string operand);
+    string parse();
 };
 
 #endif // DOCG_INCLUDED
