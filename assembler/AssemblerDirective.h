@@ -1,4 +1,5 @@
 #include <string>
+#include "StatementParser.h"
 #ifndef ASSEMBLERDIRECTIVE_H
 #define ASSEMBLERDIRECTIVE_H
 
@@ -17,7 +18,7 @@ class AssemblerDirective
         std::string statements[][3];
         //FileHandler* fileHandler;
         //StatementNormalizer normalizer;
-        //StatementParser stParser;
+        StatementParser stParser;
         //CodeGenerator cGenerator;
 };
 

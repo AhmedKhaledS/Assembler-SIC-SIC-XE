@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1492287955 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\assemblerdirective.cpp
+1492288078 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\assemblerdirective.cpp
 	<iostream>
 	"AssemblerDirective.h"
 
-1492287810 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\assemblerdirective.h
+1492290198 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\assemblerdirective.h
 	<string>
+	"StatementParser.h"
 
 1492279039 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
@@ -42,4 +43,59 @@
 
 1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\symboltable.h
 	<map>
+
+1492304394 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statementparser.h
+	"LabelHandlerState.h"
+	"InstructionHandlerState.h"
+	"OperandHandlerState.h"
+	"vector"
+	"string"
+
+1492303397 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlercontext.cpp
+	"HandlerContext.h"
+
+1492303396 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlercontext.h
+	"LabelHandlerState.h"
+	"InstructionHandlerState.h"
+	"OperandHandlerState.h"
+
+1492303544 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandlerstate.cpp
+	"InstructionHandlerState.h"
+	"string"
+	"vector"
+
+1492303544 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandlerstate.h
+	"vector"
+	"string"
+	"StateHandler.h"
+
+1492302872 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statehandler.h
+	"string"
+	"vector"
+
+1492303714 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\labelhandlerstate.cpp
+	"LabelHandlerState.h"
+	"vector"
+	"string"
+
+1492303544 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\labelhandlerstate.h
+	"vector"
+	"string"
+	"StateHandler.h"
+
+1492303618 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statehandler.cpp
+	"StateHandler.h"
+
+1492303498 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operandhandlerstate.h
+	"vector"
+	"string"
+	"StateHandler.h"
+
+1492302736 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statementparser.cpp
+	"StatementParser.h"
+
+1492303543 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operandhandlerstate.cpp
+	"OperandHandlerState.h"
+	"string"
+	"vector"
 
