@@ -7,10 +7,13 @@
 using namespace std;
 
 class DirectiveObjectCodeGenerator : public ObjectCodeGenerator {
+    private :
+        string handleWord();
+        string handleByte();
 
-public :
-    DirectiveObjectCodeGenerator(string operand);
-    string parse();
+    public :
+        DirectiveObjectCodeGenerator(string oper, string inst);
+        string parse();
 };
 
 #endif // DOCG_INCLUDED
