@@ -1,8 +1,8 @@
 #ifndef STATEMENTPARSER_H
 #define STATEMENTPARSER_H
-#include "LabelHandlerState.h"
-#include "InstructionHandlerState.h"
-#include "OperandHandlerState.h"
+#include "../LabelHandlerState.h"
+#include "../InstructionHandlerState.h"
+#include "../OperandHandlerState.h"
 #include "vector"
 #include "string"
 

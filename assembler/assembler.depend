@@ -109,3 +109,33 @@
 	<vector>
 	<string>
 
+1492288078 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdirective.cpp
+	<iostream>
+	"AssemblerDirective.h"
+
+1492290198 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdirective.h
+	<string>
+	"StatementParser.h"
+
+1492359724 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.h
+	"../LabelHandlerState.h"
+	"../InstructionHandlerState.h"
+	"../OperandHandlerState.h"
+	"vector"
+	"string"
+
+1492359742 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.cpp
+	"StatementParser.h"
+	"../HandlerContext.h"
+
+1492307322 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.cpp
+	"FileReader.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<sstream>
+
+1492307322 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.h
+	<vector>
+	<string>
+

@@ -34,6 +34,36 @@
 		</Compiler>
 		<Unit filename="AssemblerDirective.cpp" />
 		<Unit filename="AssemblerDirective.h" />
+		<Unit filename="BaseRegister.cpp" />
+		<Unit filename="BaseRegister.h" />
+		<Unit filename="FileReader.cpp" />
+		<Unit filename="FileReader.h" />
+		<Unit filename="HandlerContext.cpp" />
+		<Unit filename="HandlerContext.h" />
+		<Unit filename="InstructionHandlerState.cpp" />
+		<Unit filename="InstructionHandlerState.h" />
+		<Unit filename="LabelHandlerState.cpp" />
+		<Unit filename="LabelHandlerState.h" />
+		<Unit filename="LocationCounter.cpp" />
+		<Unit filename="LocationCounter.h" />
+		<Unit filename="Normalizer.cpp" />
+		<Unit filename="Normalizer.h" />
+		<Unit filename="OperandHandlerState.cpp" />
+		<Unit filename="OperandHandlerState.h" />
+		<Unit filename="OperationCodeTable.cpp" />
+		<Unit filename="OperationCodeTable.h" />
+		<Unit filename="StateHandler.cpp" />
+		<Unit filename="StateHandler.h" />
+		<Unit filename="StatementParser.cpp" />
+		<Unit filename="StatementParser.h" />
+		<Unit filename="SymbolTable.cpp" />
+		<Unit filename="SymbolTable.h" />
+		<Unit filename="driver/AssemblerDirective.cpp" />
+		<Unit filename="driver/AssemblerDirective.h" />
+		<Unit filename="driver/StatementParser.cpp" />
+		<Unit filename="driver/StatementParser.h" />
+		<Unit filename="fileServices/FileReader.cpp" />
+		<Unit filename="fileServices/FileReader.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
