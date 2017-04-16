@@ -6,9 +6,10 @@ const int COLUMNS_SIZE = 3;
 
 AssemblerDirective::AssemblerDirective(){}
 
-vector<string> AssemblerDirective::read(string path)
+void AssemblerDirective::assemble(string path)
 {
-    /// return fileHandler->read(path);
+    /// unparsedStatements = fileHandler->readInst(path);
+    /// return;
 }
 vector<vector<string>> AssemblerDirective::normalize(vector<string> assemblyCode)
 {

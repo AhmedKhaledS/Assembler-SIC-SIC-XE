@@ -110,11 +110,11 @@
 	<vector>
 	<string>
 
-1492373058 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdirective.cpp
+1492373870 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdirective.cpp
 	<iostream>
 	"AssemblerDirective.h"
 
-1492373101 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdirective.h
+1492373878 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdirective.h
 	"StatementParser.h"
 	<string>
 	<vector>
@@ -130,7 +130,7 @@
 	"StatementParser.h"
 	"../handlers/HandlerContext.h"
 
-1492307322 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.cpp
+1492373378 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.cpp
 	"FileReader.h"
 	<iostream>
 	<fstream>
@@ -180,10 +180,14 @@
 1492303618 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
 	"StateHandler.h"
 
-1492357414 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
+1492373465 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
 	"DirectiveObjectCodeGenerator.h"
+	<stdio.h>
+	<stdlib.h>
+	"../NumberConverters/HexadecimalConverter.h"
+	"Constants.h"
 
-1492366076 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
+1492373465 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
 	<iostream>
 	"ObjectCodeGenerator.h"
 
@@ -193,7 +197,7 @@
 1492357414 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.cpp
 	"ObjectCodeGenerator.h"
 
-1492357414 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
+1492373465 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
 	"ObjectCodeGeneratorFactory.h"
 	"DirectiveObjectCodeGenerator.h"
 
@@ -247,4 +251,12 @@
 	<map>
 	<iostream>
 	<stdio.h>
+
+1492373465 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.h
+	<stdio.h>
+	<stdlib.h>
+	<string>
+
+1492373465 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
+	<string>
 

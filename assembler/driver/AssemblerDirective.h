@@ -8,12 +8,13 @@ class AssemblerDirective
 {
     public:
         AssemblerDirective();
-        std::vector<std::string> read(std::string path);
-        std::vector<std::vector<std::string>> normalize(std::vector<std::string> assemblyCode);
-        void parseStatement(std::vector<std::string> statement);
+        void assemble(std::string path);
         std::vector<std::string> generateListingCode();
         std::vector<std::string> generateObjectCode();
     private:
+        void parseStatement(std::vector<std::string> statement);
+        std::vector<std::vector<std::string>> normalize(std::vector<std::string> assemblyCode);
+        std::vector<std::string> unparsedStatements;
         std::vector<std::vector<std::string>> statements;
         //FileHandler* fileHandler;
         //StatementNormalizer normalizer;
