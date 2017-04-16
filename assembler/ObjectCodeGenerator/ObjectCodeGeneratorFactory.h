@@ -3,7 +3,6 @@
 
 #include <map>
 #include "ObjectCodeGenerator.h"
-using namespace std;
 
 class ObjectCodeGeneratorFactory {
     private :
@@ -14,7 +13,7 @@ class ObjectCodeGeneratorFactory {
 
     ObjectCodeGeneratorFactory* getInstance();
 
-    ObjectCodeGenerator* getObjectCodeGenerator(string type);
+    ObjectCodeGenerator* getObjectCodeGenerator(std::string type);
 };
 
 #endif // OCGF_INCLUDED

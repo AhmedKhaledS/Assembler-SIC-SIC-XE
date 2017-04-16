@@ -3,15 +3,13 @@
 
 #include <iostream>
 
-using namespace std;
-
 class ObjectCodeGenerator {
     protected :
-    string operand;
-    string instruction;
+    std::string operand;
+    std::string instruction;
     public :
     ObjectCodeGenerator();
-    virtual string parse() = 0;
+    virtual std::string parse() = 0;
 };
 
 #endif

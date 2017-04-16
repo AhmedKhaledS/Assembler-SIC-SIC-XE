@@ -7,9 +7,9 @@
 	<string>
 	"StatementParser.h"
 
-1492279039 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
+1492359754 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
-	"AssemblerDirective.h"
+	"driver/AssemblerDirective.h"
 
 1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\baseregister.cpp
 	<iostream>
@@ -117,16 +117,16 @@
 	<string>
 	"StatementParser.h"
 
-1492359724 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.h
-	"../LabelHandlerState.h"
-	"../InstructionHandlerState.h"
-	"../OperandHandlerState.h"
+1492360175 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.h
+	"../handlers/HandlerContext.h"
+	"../handlers/InstructionHandlerState.h"
+	"../handlers/OperandHandlerState.h"
 	"vector"
 	"string"
 
-1492359742 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.cpp
+1492360184 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.cpp
 	"StatementParser.h"
-	"../HandlerContext.h"
+	"../handlers/HandlerContext.h"
 
 1492307322 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.cpp
 	"FileReader.h"
@@ -136,6 +136,95 @@
 	<sstream>
 
 1492307322 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.h
+	<vector>
+	<string>
+
+1492303396 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.h
+	"LabelHandlerState.h"
+	"InstructionHandlerState.h"
+	"OperandHandlerState.h"
+
+1492306549 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.h
+	"StateHandler.h"
+
+1492305386 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.h
+	"string"
+
+1492305450 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.h
+	"StateHandler.h"
+
+1492305435 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.h
+	"StateHandler.h"
+
+1492303397 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.cpp
+	"HandlerContext.h"
+
+1492305386 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
+	"InstructionHandlerState.h"
+
+1492306554 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
+	"LabelHandlerState.h"
+
+1492305386 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
+	"OperandHandlerState.h"
+
+1492303618 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
+	"StateHandler.h"
+
+1492357414 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
+	"DirectiveObjectCodeGenerator.h"
+
+1492360356 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
+	<iostream>
+	"ObjectCodeGenerator.h"
+
+1492360347 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.h
+	<iostream>
+
+1492357414 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.cpp
+	"ObjectCodeGenerator.h"
+
+1492357414 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
+	"ObjectCodeGeneratorFactory.h"
+	"DirectiveObjectCodeGenerator.h"
+
+1492360338 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.h
+	<map>
+	"ObjectCodeGenerator.h"
+
+1492358236 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\operationcodetable.cpp
+	<map>
+	<stdio.h>
+	"OperationCodeTable.h"
+
+1492360381 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\operationcodetable.h
+	<map>
+	<iostream>
+	<stdio.h>
+
+1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\symboltable.cpp
+	<map>
+	<string>
+	"SymbolTable.h"
+
+1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\symboltable.h
+	<map>
+
+1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\baseregister.cpp
+	<iostream>
+	"BaseRegister.h"
+
+1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\baseregister.h
+	<iostream>
+
+1492307322 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
+	"Normalizer.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<sstream>
+
+1492307322 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
 	<vector>
 	<string>
 

@@ -1,25 +1,21 @@
 #ifndef OPERATIONCODETABLE_H
 #define OPERATIONCODETABLE_H
-
-
 #include <map>
 #include <iostream>
 #include <stdio.h>
 
-using namespace std;
-
 class OperationCodeTable {
     private :
 
-    static map<string, string> opCodeTable;
+    static std::map<std::string, std::string> opCodeTable;
 
     public :
 
     static void load();
 
-    static bool searchOperation(string operation);
+    static bool searchOperation(std::string operation);
 
-    static string getCode(string operation);
+    static std::string getCode(std::string operation);
 };
 
 
