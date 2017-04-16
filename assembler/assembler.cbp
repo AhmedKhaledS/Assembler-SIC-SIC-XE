@@ -13,7 +13,6 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="ObjectCodeGenerator" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -23,7 +22,6 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add directory="ObjectCodeGenerator" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -34,50 +32,46 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="AssemblerDirective.cpp" />
-		<Unit filename="AssemblerDirective.h" />
-		<Unit filename="BaseRegister.cpp" />
-		<Unit filename="BaseRegister.h" />
-		<Unit filename="Class-Diagram.png" />
-		<Unit filename="FileReader.cpp" />
-		<Unit filename="FileReader.h" />
-		<Unit filename="HandlerContext.cpp" />
-		<Unit filename="HandlerContext.h" />
-		<Unit filename="InstructionHandlerState.cpp" />
-		<Unit filename="InstructionHandlerState.h" />
-		<Unit filename="LabelHandlerState.cpp" />
-		<Unit filename="LabelHandlerState.h" />
 		<Unit filename="LocationCounter.cpp" />
 		<Unit filename="LocationCounter.h" />
-		<Unit filename="Normalizer.cpp" />
-		<Unit filename="Normalizer.h" />
+		<Unit filename="NumberConverters/HexadecimalConverter.cpp" />
+		<Unit filename="NumberConverters/HexadecimalConverter.h" />
+		<Unit filename="ObjectCodeGenerator/Constants.cpp" />
+		<Unit filename="ObjectCodeGenerator/Constants.h" />
 		<Unit filename="ObjectCodeGenerator/DirectiveObjectCodeGenerator.cpp" />
 		<Unit filename="ObjectCodeGenerator/DirectiveObjectCodeGenerator.h" />
-		<Unit filename="ObjectCodeGenerator/MemoryObjectCodeGenerator.cpp" />
-		<Unit filename="ObjectCodeGenerator/MemoryObjectCodeGenerator.h" />
+		<Unit filename="ObjectCodeGenerator/InstructionTypeTable.cpp" />
+		<Unit filename="ObjectCodeGenerator/InstructionTypeTable.h" />
 		<Unit filename="ObjectCodeGenerator/ObjectCodeGenerator.cpp" />
 		<Unit filename="ObjectCodeGenerator/ObjectCodeGenerator.h" />
 		<Unit filename="ObjectCodeGenerator/ObjectCodeGeneratorFactory.cpp" />
 		<Unit filename="ObjectCodeGenerator/ObjectCodeGeneratorFactory.h" />
-		<Unit filename="ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.cpp" />
-		<Unit filename="ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h" />
-		<Unit filename="OperandHandlerState.cpp" />
-		<Unit filename="OperandHandlerState.h" />
-		<Unit filename="OperationCodeTable.cpp" />
-		<Unit filename="OperationCodeTable.h" />
-		<Unit filename="README.md" />
-		<Unit filename="State-Diagram.png" />
-		<Unit filename="StateHandler.cpp" />
-		<Unit filename="StateHandler.h" />
-		<Unit filename="StatementParser.cpp" />
-		<Unit filename="StatementParser.h" />
-		<Unit filename="SymbolTable.cpp" />
-		<Unit filename="SymbolTable.h" />
-		<Unit filename="assembler.cbp" />
-		<Unit filename="assembler.depend" />
-		<Unit filename="assembler.layout" />
+		<Unit filename="driver/AssemblerDirective.cpp" />
+		<Unit filename="driver/AssemblerDirective.h" />
+		<Unit filename="driver/StatementParser.cpp" />
+		<Unit filename="driver/StatementParser.h" />
+		<Unit filename="fileServices/FileReader.cpp" />
+		<Unit filename="fileServices/FileReader.h" />
+		<Unit filename="handlers/HandlerContext.cpp" />
+		<Unit filename="handlers/HandlerContext.h" />
+		<Unit filename="handlers/InstructionHandlerState.cpp" />
+		<Unit filename="handlers/InstructionHandlerState.h" />
+		<Unit filename="handlers/LabelHandlerState.cpp" />
+		<Unit filename="handlers/LabelHandlerState.h" />
+		<Unit filename="handlers/OperandHandlerState.cpp" />
+		<Unit filename="handlers/OperandHandlerState.h" />
+		<Unit filename="handlers/StateHandler.cpp" />
+		<Unit filename="handlers/StateHandler.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="opCodeTable.txt" />
+		<Unit filename="tables/OperationCodeTable.cpp" />
+		<Unit filename="tables/OperationCodeTable.exe" />
+		<Unit filename="tables/OperationCodeTable.h" />
+		<Unit filename="tables/SymbolTable.cpp" />
+		<Unit filename="tables/SymbolTable.h" />
+		<Unit filename="utils/BaseRegister.cpp" />
+		<Unit filename="utils/BaseRegister.h" />
+		<Unit filename="utils/Normalizer.cpp" />
+		<Unit filename="utils/Normalizer.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
