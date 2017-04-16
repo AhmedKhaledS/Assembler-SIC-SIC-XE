@@ -1,20 +1,33 @@
 #include <map>
 #include <stdio.h>
 #include "OperationCodeTable.h"
+#include <fstream>
+#include <sstream>
 
 using namespace std;
 
 map<string, string> OperationCodeTable::opCodeTable;
 
 void OperationCodeTable::load() {
-    freopen("../tables/opCodeTable.txt", "r", stdin);
-    int numberOfRegisteredOperations;
-    scanf("%d", &numberOfRegisteredOperations);
-    for (int i = 0; i < numberOfRegisteredOperations; i++) {
-        string operation, code;
-        cin >> operation >> code;
-        OperationCodeTable::opCodeTable[operation] = code;
+
+    fstream opCodeFile;
+    opCodeFile.open("opCodeTable.txt");
+    if (opCodeFile.is_open()) {
+        string line;
+        while(getline(opCodeFile, line)) {
+            istringstream iss(line);
+            do
+            {
+                string operation;
+                iss >> operation;
+                string code;
+                iss >> code;
+                opCodeTable[operation] = code;
+            } while (iss);
+        }
+
     }
+    opCodeFile.close();
 }
 
 bool OperationCodeTable::searchOperation(string operation) {
@@ -27,3 +40,4 @@ bool OperationCodeTable::searchOperation(string operation) {
 string OperationCodeTable::getCode(string operation) {
     return opCodeTable[operation];
 }
+

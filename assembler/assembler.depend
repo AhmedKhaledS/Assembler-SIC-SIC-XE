@@ -77,9 +77,9 @@
 	<iostream>
 	<vector>
 
-1492376071 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\main.cpp
+1492377051 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
-	"driver/AssemblerDirective.h"
+	"driver/AssemblerDriver.h"
 	"SimpleDirectiveObjectCodeGenerator.h"
 	"MemoryObjectCodeGenerator.h"
 
@@ -109,7 +109,7 @@
 1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
 	<string>
 
-1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
+1492376722 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
 	"DirectiveObjectCodeGenerator.h"
 	<stdio.h>
 	<stdlib.h>
@@ -139,15 +139,17 @@
 	<string>
 	<bitset>
 
-1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\operationcodetable.h
+1492376722 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\operationcodetable.h
 	<map>
 	<iostream>
 	<stdio.h>
 
-1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\operationcodetable.cpp
+1492376763 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\operationcodetable.cpp
 	<map>
 	<stdio.h>
 	"OperationCodeTable.h"
+	<fstream>
+	<sstream>
 
 1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\symboltable.cpp
 	<map>
@@ -184,4 +186,24 @@
 	<string>
 	<bitset>
 	<map>
+
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\instructiontypetable.cpp
+	<map>
+	<stdio.h>
+	"InstructionTypeTable.h"
+	<bits/stdc++.h>
+
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\instructiontypetable.h
+	<map>
+	<iostream>
+	<stdio.h>
+
+1492377045 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
+	<iostream>
+	"AssemblerDriver.h"
+
+1492377260 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.h
+	"StatementParser.h"
+	<string>
+	<vector>
 

@@ -11,7 +11,6 @@ DirectiveObjectCodeGenerator::DirectiveObjectCodeGenerator(string oper, string i
     instruction = inst;
 }
 
-
 string DirectiveObjectCodeGenerator::handleWord() {
     string objectCode;
     if (operand[0] == Constants::HEX_PREFIX) {
@@ -35,9 +34,9 @@ string DirectiveObjectCodeGenerator::handleByte() {
 }
 
 string DirectiveObjectCodeGenerator::parse() {
-    if (instruction == "word") {
+    if (instruction == Constants::WORD) {
         return handleWord();
-    } else if (instruction == "byte") {
+    } else if (instruction == Constants::BYTE) {
         return handleByte();
     }
     return "";

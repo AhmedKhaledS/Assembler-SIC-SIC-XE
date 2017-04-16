@@ -1,13 +1,13 @@
 #include "StatementParser.h"
-#ifndef ASSEMBLERDIRECTIVE_H
-#define ASSEMBLERDIRECTIVE_H
+#ifndef ASSEMBLERDRIVER_H
+#define ASSEMBLERDRIVER_H
 #include <string>
 #include <vector>
 
-class AssemblerDirective
+class AssemblerDriver
 {
     public:
-        AssemblerDirective();
+        AssemblerDriver();
         void assemble(std::string path);
         std::vector<std::string> generateListingCode();
         std::vector<std::string> generateObjectCode();
@@ -22,4 +22,4 @@ class AssemblerDirective
         //CodeGenerator cGenerator;
 };
 
-#endif // ASSEMBLERDIRECTIVE_H
+#endif // AssemblerDriver_H
