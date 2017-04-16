@@ -1,6 +1,6 @@
 #include "MemoryObjectCodeGenerator.h"
-#include "D:\Collage\Assembler Project\Assembler-SIC-SIC-XE-\assembler\OperationCodeTable.h"
-#include "D:\Collage\Assembler Project\Assembler-SIC-SIC-XE-\assembler\SymbolTable.h"
+#include "../tables/OperationCodeTable.h"
+#include "../tables/SymbolTable.h"
 
 #include <iostream>
 #include <sstream>
@@ -18,11 +18,12 @@ MemoryObjectCodeGenerator::MemoryObjectCodeGenerator(string inst,string oper)
 
 string MemoryObjectCodeGenerator::parse(){
 
+    cout << "Hello1" << endl;
+
     // Grabbing object code in Binary...
     string binaryObjectCode;
-    OperationCodeTable t;                           // Operation Code Table part TO BE MODIFIED
-    t.load();
-    binaryObjectCode = t.getCode(instruction);
+    OperationCodeTable::load();
+    binaryObjectCode = OperationCodeTable::getCode(instruction);
 
     // Converting object code to Hexadecimal
     bitset<8> set(binaryObjectCode);
@@ -46,9 +47,8 @@ string MemoryObjectCodeGenerator::parse(){
         cout << operand << endl;
     }
 
-    SymbolTable s;
-    s.add("XXXX","7FFF");
-    string labelCode = s.getAddress(operand);
+    SymbolTable::add("XXXX","7FFF");
+    string labelCode = SymbolTable::getAddress(operand);
     while(labelCode.size()!=4){
         labelCode = "0" + labelCode;
     }

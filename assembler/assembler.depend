@@ -1,172 +1,73 @@
 # depslib dependency file v1.0
-1492288078 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\assemblerdirective.cpp
+1492375384 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\driver\assemblerdirective.cpp
 	<iostream>
 	"AssemblerDirective.h"
 
-1492290198 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\assemblerdirective.h
-	<string>
+1492375371 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\driver\assemblerdirective.h
 	"StatementParser.h"
-
-1492279039 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
-	<iostream>
-	"AssemblerDirective.h"
-
-1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\baseregister.cpp
-	<iostream>
-	"BaseRegister.h"
-
-1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\baseregister.h
-	<iostream>
-
-1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\locationcounter.cpp
-	<iostream>
-	"LocationCounter.h"
-
-1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\locationcounter.h
-	<iostream>
+	<string>
 	<vector>
 
-1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operationcodetable.cpp
-	<map>
-	<stdio.h>
-	"OperationCodeTable.h"
-
-1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operationcodetable.h
-	<map>
-	<iostream>
-	<stdio.h>
-
-1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\symboltable.cpp
-	<map>
-	<string>
-	"SymbolTable.h"
-
-1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\symboltable.h
-	<map>
-
-1492306448 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statementparser.h
-	"LabelHandlerState.h"
-	"InstructionHandlerState.h"
-	"OperandHandlerState.h"
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\driver\statementparser.h
+	"../handlers/HandlerContext.h"
+	"../handlers/InstructionHandlerState.h"
+	"../handlers/OperandHandlerState.h"
 	"vector"
 	"string"
 
-1492303397 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlercontext.cpp
-	"HandlerContext.h"
-
-1492303396 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlercontext.h
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\handlers\handlercontext.h
 	"LabelHandlerState.h"
 	"InstructionHandlerState.h"
 	"OperandHandlerState.h"
 
-1492305386 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandlerstate.cpp
-	"InstructionHandlerState.h"
-
-1492305450 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandlerstate.h
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.h
 	"StateHandler.h"
+	"HandlerContext.h"
 
-1492305386 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statehandler.h
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\handlers\statehandler.h
 	"string"
 
-1492306554 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\labelhandlerstate.cpp
-	"LabelHandlerState.h"
-
-1492306549 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\labelhandlerstate.h
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.h
 	"StateHandler.h"
-
-1492303618 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statehandler.cpp
-	"StateHandler.h"
-
-1492305435 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operandhandlerstate.h
-	"StateHandler.h"
-
-1492307252 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statementparser.cpp
-	"StatementParser.h"
 	"HandlerContext.h"
 
-1492305386 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operandhandlerstate.cpp
-	"OperandHandlerState.h"
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.h
+	"StateHandler.h"
+	"HandlerContext.h"
 
-1492307322 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\filereader.cpp
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\driver\statementparser.cpp
+	"StatementParser.h"
+	"../handlers/HandlerContext.h"
+
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\fileservices\filereader.cpp
 	"FileReader.h"
 	<iostream>
 	<fstream>
 	<vector>
 	<sstream>
 
-1492307322 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\filereader.h
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\fileservices\filereader.h
 	<vector>
 	<string>
 
-1492307322 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\normalizer.cpp
-	"Normalizer.h"
-	<iostream>
-	<fstream>
-	<vector>
-	<sstream>
-
-1492307322 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\normalizer.h
-	<vector>
-	<string>
-
-1492353903 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\assemblerdirective.cpp
-	<iostream>
-	"AssemblerDirective.h"
-
-1492353903 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\assemblerdirective.h
-	<string>
-	"StatementParser.h"
-
-1492353903 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\statementparser.h
-	"LabelHandlerState.h"
-	"InstructionHandlerState.h"
-	"OperandHandlerState.h"
-	"vector"
-	"string"
-
-1492353903 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\labelhandlerstate.h
-	"StateHandler.h"
-
-1492353903 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\statehandler.h
-	"string"
-
-1492353903 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\instructionhandlerstate.h
-	"StateHandler.h"
-
-1492353903 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\operandhandlerstate.h
-	"StateHandler.h"
-
-1492295272 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\baseregister.cpp
-	<iostream>
-	"BaseRegister.h"
-
-1492295272 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\baseregister.h
-	<iostream>
-
-1492294295 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\filereader.cpp
-	"FileReader.h"
-	<iostream>
-	<fstream>
-	<vector>
-	<sstream>
-
-1492294186 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\filereader.h
-	<vector>
-	<string>
-
-1492353903 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\handlercontext.cpp
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\handlers\handlercontext.cpp
 	"HandlerContext.h"
+	"iostream"
 
-1492353903 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\handlercontext.h
-	"LabelHandlerState.h"
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
 	"InstructionHandlerState.h"
+	"iostream"
+
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
+	"LabelHandlerState.h"
+	"iostream"
+
+1492375436 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
 	"OperandHandlerState.h"
+	"iostream"
 
-1492353903 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\instructionhandlerstate.cpp
-	"InstructionHandlerState.h"
-
-1492353903 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\labelhandlerstate.cpp
-	"LabelHandlerState.h"
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
+	"StateHandler.h"
 
 1492295273 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\locationcounter.cpp
 	<iostream>
@@ -176,37 +77,53 @@
 	<iostream>
 	<vector>
 
-1492368802 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\main.cpp
+1492376071 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
-	"AssemblerDirective.h"
+	"driver/AssemblerDirective.h"
 	"SimpleDirectiveObjectCodeGenerator.h"
 	"MemoryObjectCodeGenerator.h"
 
-1492293867 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\normalizer.cpp
-	"Normalizer.h"
-	<iostream>
-	<fstream>
-	<vector>
-	<sstream>
-
-1492294054 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\normalizer.h
-	<vector>
-	<string>
-
-1492353903 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
-	"DirectiveObjectCodeGenerator.h"
-
-1492357657 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
-	<iostream>
+1492359107 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
 1492353903 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.h
 	<iostream>
 
+1492358952 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
+	"ObjectCodeGenerator.h"
+
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.cpp
+	"HexadecimalConverter.h"
+	<cstdlib>
+	<stdio.h>
+	<cmath>
+
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.h
+	<stdio.h>
+	<stdlib.h>
+	<string>
+
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
+	"Constants.h"
+
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
+	<string>
+
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
+	"DirectiveObjectCodeGenerator.h"
+	<stdio.h>
+	<stdlib.h>
+	"../NumberConverters/HexadecimalConverter.h"
+	"Constants.h"
+
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
+	<iostream>
+	"ObjectCodeGenerator.h"
+
 1492353903 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.cpp
 	"ObjectCodeGenerator.h"
 
-1492353903 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
 	"ObjectCodeGeneratorFactory.h"
 	"DirectiveObjectCodeGenerator.h"
 
@@ -214,55 +131,57 @@
 	<map>
 	"ObjectCodeGenerator.h"
 
-1492353903 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\operandhandlerstate.cpp
-	"OperandHandlerState.h"
+1492376033 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.cpp
+	"SimpleDirectiveObjectCodeGenerator.h"
+	"../tables/OperationCodeTable.h"
+	<iostream>
+	<sstream>
+	<string>
+	<bitset>
 
-1492353903 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\operationcodetable.cpp
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\operationcodetable.h
+	<map>
+	<iostream>
+	<stdio.h>
+
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\operationcodetable.cpp
 	<map>
 	<stdio.h>
 	"OperationCodeTable.h"
 
-1492353903 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\operationcodetable.h
-	<map>
-	<iostream>
-	<stdio.h>
-
-1492353903 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\statehandler.cpp
-	"StateHandler.h"
-
-1492353903 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\statementparser.cpp
-	"StatementParser.h"
-	"HandlerContext.h"
-
-1492368648 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\symboltable.cpp
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\symboltable.cpp
 	<map>
 	<string>
 	"SymbolTable.h"
 
-1492295273 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\symboltable.h
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\symboltable.h
 	<map>
 
-1492370994 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\utils\baseregister.cpp
+	<iostream>
+	"BaseRegister.h"
+
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\utils\baseregister.h
+	<iostream>
+
+1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
+	"Normalizer.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<sstream>
+
+1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\utils\normalizer.h
+	<vector>
+	<string>
+
+1492376185 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
 	"MemoryObjectCodeGenerator.h"
-	"D:\Collage\Assembler Project\Assembler-SIC-SIC-XE-\assembler\OperationCodeTable.h"
-	"D:\Collage\Assembler Project\Assembler-SIC-SIC-XE-\assembler\SymbolTable.h"
+	"../tables/OperationCodeTable.h"
+	"../tables/SymbolTable.h"
 	<iostream>
 	<sstream>
 	<string>
 	<bitset>
 	<map>
-
-1492358952 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
-	"ObjectCodeGenerator.h"
-
-1492365762 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.cpp
-	"SimpleDirectiveObjectCodeGenerator.h"
-	"D:\Collage\Assembler Project\Assembler-SIC-SIC-XE-\assembler\OperationCodeTable.h"
-	<iostream>
-	<sstream>
-	<string>
-	<bitset>
-
-1492359107 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
-	"ObjectCodeGenerator.h"
 

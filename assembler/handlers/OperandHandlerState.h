@@ -1,6 +1,7 @@
 #ifndef OPERANDHANDLERSTATE_H
 #define OPERANDHANDLERSTATE_H
 #include "StateHandler.h"
+#include "HandlerContext.h"
 
 class HandlerContext;
 

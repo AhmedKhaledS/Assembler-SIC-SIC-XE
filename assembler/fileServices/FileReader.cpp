@@ -11,7 +11,8 @@ FileReader::FileReader(string fileName)
 {
 }
 
-std::vector<std::string> FileReader::readInst(){
+std::vector<std::string> FileReader::readInst()
+{
 
     vector<string> code;
     string line;

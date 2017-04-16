@@ -1,5 +1,5 @@
 #include "LabelHandlerState.h"
-
+#include "iostream"
 
 using namespace std;
 
@@ -10,8 +10,9 @@ void LabelHandlerState::handle(string statement)
 
 
 
-
-//    context->setState(this);
+    /// If there are no errors .. upgrade the state.
+    this->context->setState(context->getInstructionHandler());
+    cout << "Currently: instruction-handler-state" << endl;
 }
 
 void LabelHandlerState::throwError()

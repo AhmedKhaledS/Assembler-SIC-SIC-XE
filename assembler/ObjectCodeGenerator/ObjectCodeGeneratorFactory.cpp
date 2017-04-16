@@ -18,7 +18,7 @@ ObjectCodeGenerator* ObjectCodeGeneratorFactory::getObjectCodeGenerator(string t
     ObjectCodeGenerator* ptr;
     if (type == "dir") {
         ///TODO : provide proper argument to constructor
-        DirectiveObjectCodeGenerator* generator = new DirectiveObjectCodeGenerator("");
+        DirectiveObjectCodeGenerator* generator = new DirectiveObjectCodeGenerator("", "");
         ptr = generator;
         return ptr;
     }

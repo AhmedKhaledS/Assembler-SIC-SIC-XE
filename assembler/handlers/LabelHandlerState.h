@@ -1,18 +1,19 @@
-#ifndef INSTRUCTIONHANDLERSTATE_H
-#define INSTRUCTIONHANDLERSTATE_H
+#ifndef LABELHANDLERSTATE_H
+#define LABELHANDLERSTATE_H
 #include "StateHandler.h"
+#include "HandlerContext.h"
 
 class HandlerContext;
 
-class InstructionHandlerState: public StateHandler
+class LabelHandlerState: public StateHandler
 {
     public:
         /** Default constructor */
-        InstructionHandlerState(HandlerContext *context);
+        LabelHandlerState(HandlerContext *context);
         void handle(std::string statement);
         void throwError();
     private:
         HandlerContext *context;
 };
 
-#endif // INSTRUCTIONHANDLERSTATE_H
+#endif // LABELHANDLERSTATE_H

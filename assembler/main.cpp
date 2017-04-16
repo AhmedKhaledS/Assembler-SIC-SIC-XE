@@ -1,8 +1,7 @@
 #include <iostream>
-#include "AssemblerDirective.h"
+#include "driver/AssemblerDirective.h"
 #include "SimpleDirectiveObjectCodeGenerator.h"
 #include "MemoryObjectCodeGenerator.h"
-
 
 using namespace std;
 
@@ -15,6 +14,7 @@ int main(void)
 
     MemoryObjectCodeGenerator s("or","XXXX,X");
     cout << "Object Code is " << s.parse() << endl;
+
     return 0;
 
 }
