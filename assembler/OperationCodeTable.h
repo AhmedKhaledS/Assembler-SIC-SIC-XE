@@ -1,3 +1,7 @@
+#ifndef OPERATIONCODETABLE_H
+#define OPERATIONCODETABLE_H
+
+
 #include <map>
 #include <iostream>
 #include <stdio.h>
@@ -18,3 +22,6 @@ class OperationCodeTable {
     static string getCode(string operation);
 };
 
+
+
+#endif // OPERATIONCODETABLE_H

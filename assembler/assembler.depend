@@ -80,9 +80,32 @@
 1492305435 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operandhandlerstate.h
 	"StateHandler.h"
 
-1492305096 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statementparser.cpp
+1492307252 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statementparser.cpp
 	"StatementParser.h"
+	"HandlerContext.h"
 
 1492305386 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operandhandlerstate.cpp
 	"OperandHandlerState.h"
+
+1492307322 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\filereader.cpp
+	"FileReader.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<sstream>
+
+1492307322 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\filereader.h
+	<vector>
+	<string>
+
+1492307322 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\normalizer.cpp
+	"Normalizer.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<sstream>
+
+1492307322 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\normalizer.h
+	<vector>
+	<string>
 
