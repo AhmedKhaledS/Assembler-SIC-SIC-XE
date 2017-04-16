@@ -14,7 +14,6 @@ ldx mem_reg
 mul mem_reg
 or mem_reg
 rd mem_reg
-rsub oper
 sta mem_reg
 stch mem_reg
 stl mem_reg
@@ -23,3 +22,8 @@ sub mem_reg
 td mem_reg
 tix mem_reg
 wd mem_reg
+rsub oper
+base oper
+nobase oper
+word dir
+byte dir
