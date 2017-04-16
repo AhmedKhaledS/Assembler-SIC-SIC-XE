@@ -44,7 +44,7 @@
 1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\symboltable.h
 	<map>
 
-1492304394 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statementparser.h
+1492306448 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statementparser.h
 	"LabelHandlerState.h"
 	"InstructionHandlerState.h"
 	"OperandHandlerState.h"
@@ -59,43 +59,30 @@
 	"InstructionHandlerState.h"
 	"OperandHandlerState.h"
 
-1492303544 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandlerstate.cpp
+1492305386 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandlerstate.cpp
 	"InstructionHandlerState.h"
-	"string"
-	"vector"
 
-1492303544 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandlerstate.h
-	"vector"
-	"string"
+1492305450 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandlerstate.h
 	"StateHandler.h"
 
-1492302872 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statehandler.h
+1492305386 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statehandler.h
 	"string"
-	"vector"
 
-1492303714 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\labelhandlerstate.cpp
+1492306554 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\labelhandlerstate.cpp
 	"LabelHandlerState.h"
-	"vector"
-	"string"
 
-1492303544 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\labelhandlerstate.h
-	"vector"
-	"string"
+1492306549 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\labelhandlerstate.h
 	"StateHandler.h"
 
 1492303618 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statehandler.cpp
 	"StateHandler.h"
 
-1492303498 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operandhandlerstate.h
-	"vector"
-	"string"
+1492305435 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operandhandlerstate.h
 	"StateHandler.h"
 
-1492302736 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statementparser.cpp
+1492305096 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\statementparser.cpp
 	"StatementParser.h"
 
-1492303543 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operandhandlerstate.cpp
+1492305386 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\operandhandlerstate.cpp
 	"OperandHandlerState.h"
-	"string"
-	"vector"
 
