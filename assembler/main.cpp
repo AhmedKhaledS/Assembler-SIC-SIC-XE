@@ -17,8 +17,8 @@ int main(void)
 //      MemoryObjectCodeGenerator s("or","XXXX,X");
 //      cout << "Object Code is " << s.parse() << endl;
 
-//    HandlerContext *handler = new HandlerContext();
-//    handler->handle("ahmed");
+    HandlerContext *handler = new HandlerContext();
+    handler->handle("ahmed");
 //    handler->handle("khaled");
 //    handler->handle("ahmed");
 
