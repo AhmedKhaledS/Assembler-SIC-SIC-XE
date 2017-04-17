@@ -52,10 +52,13 @@
 		<Unit filename="ObjectCodeGenerator/ObjectCodeGeneratorFactory.h" />
 		<Unit filename="ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.cpp" />
 		<Unit filename="ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h" />
+<<<<<<< HEAD
+=======
 		<Unit filename="README.md" />
 		<Unit filename="assembler.cbp" />
 		<Unit filename="assembler.depend" />
 		<Unit filename="assembler.layout" />
+>>>>>>> 8dd6c053f3cef92534fb7ae02a06f46c90429fbc
 		<Unit filename="driver/AssemblerDriver.cpp" />
 		<Unit filename="driver/AssemblerDriver.h" />
 		<Unit filename="driver/StatementParser.cpp" />
@@ -73,6 +76,8 @@
 		<Unit filename="handlers/StateHandler.cpp" />
 		<Unit filename="handlers/StateHandler.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="tables/InstructionTypeTable.cpp" />
+		<Unit filename="tables/InstructionTypeTable.h" />
 		<Unit filename="tables/OperationCodeTable.cpp" />
 		<Unit filename="tables/OperationCodeTable.h" />
 		<Unit filename="tables/SymbolTable.cpp" />
