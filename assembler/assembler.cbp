@@ -14,6 +14,7 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="NumberConverters" />
+					<Add directory="instructionHandler" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -24,6 +25,7 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="NumberConverters" />
+					<Add directory="instructionHandler" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -52,13 +54,10 @@
 		<Unit filename="ObjectCodeGenerator/ObjectCodeGeneratorFactory.h" />
 		<Unit filename="ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.cpp" />
 		<Unit filename="ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h" />
-<<<<<<< HEAD
-=======
 		<Unit filename="README.md" />
 		<Unit filename="assembler.cbp" />
 		<Unit filename="assembler.depend" />
 		<Unit filename="assembler.layout" />
->>>>>>> 8dd6c053f3cef92534fb7ae02a06f46c90429fbc
 		<Unit filename="driver/AssemblerDriver.cpp" />
 		<Unit filename="driver/AssemblerDriver.h" />
 		<Unit filename="driver/StatementParser.cpp" />
@@ -75,13 +74,20 @@
 		<Unit filename="handlers/OperandHandlerState.h" />
 		<Unit filename="handlers/StateHandler.cpp" />
 		<Unit filename="handlers/StateHandler.h" />
+		<Unit filename="instructionHandler/InstructionHandler.cpp" />
+		<Unit filename="instructionHandler/InstructionHandler.h" />
+		<Unit filename="instructionHandler/InstructionHandlerFactory.cpp" />
+		<Unit filename="instructionHandler/InstructionHandlerFactory.h" />
+		<Unit filename="instructionHandler/MemoryInstructionHandler.cpp" />
+		<Unit filename="instructionHandler/MemoryInstructionHandler.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="tables/InstructionTypeTable.cpp" />
+		<Unit filename="tables/InstrcutionTypeTable.cpp" />
 		<Unit filename="tables/InstructionTypeTable.h" />
 		<Unit filename="tables/OperationCodeTable.cpp" />
 		<Unit filename="tables/OperationCodeTable.h" />
 		<Unit filename="tables/SymbolTable.cpp" />
 		<Unit filename="tables/SymbolTable.h" />
+		<Unit filename="tables/instructionTypes.txt" />
 		<Unit filename="utils/BaseRegister.cpp" />
 		<Unit filename="utils/BaseRegister.h" />
 		<Unit filename="utils/Normalizer.cpp" />
