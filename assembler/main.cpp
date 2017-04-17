@@ -13,15 +13,18 @@ int main(void)
 //    cout << "Object Code is " << s.parse() << endl;
 //    return 0;
 
-      MemoryObjectCodeGenerator s("or","XXXX,X");
-      cout << "Object Code is " << s.parse() << endl;
+
+//      MemoryObjectCodeGenerator s("or","XXXX,X");
+//      cout << "Object Code is " << s.parse() << endl;
 
 //    HandlerContext *handler = new HandlerContext();
 //    handler->handle("ahmed");
 //    handler->handle("khaled");
 //    handler->handle("ahmed");
+
       InstructionTypeTable::load();
       cout << InstructionTypeTable::getType("ldx");
+
     return 0;
 
 }

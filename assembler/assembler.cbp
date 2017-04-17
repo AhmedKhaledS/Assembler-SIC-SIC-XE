@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="NumberConverters" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="NumberConverters" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -36,6 +38,8 @@
 		<Unit filename="LocationCounter.h" />
 		<Unit filename="NumberConverters/HexadecimalConverter.cpp" />
 		<Unit filename="NumberConverters/HexadecimalConverter.h" />
+		<Unit filename="NumberConverters/NumberConverter.cpp" />
+		<Unit filename="NumberConverters/NumberConverter.h" />
 		<Unit filename="ObjectCodeGenerator/Constants.cpp" />
 		<Unit filename="ObjectCodeGenerator/Constants.h" />
 		<Unit filename="ObjectCodeGenerator/DirectiveObjectCodeGenerator.cpp" />
@@ -48,6 +52,13 @@
 		<Unit filename="ObjectCodeGenerator/ObjectCodeGeneratorFactory.h" />
 		<Unit filename="ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.cpp" />
 		<Unit filename="ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h" />
+<<<<<<< HEAD
+=======
+		<Unit filename="README.md" />
+		<Unit filename="assembler.cbp" />
+		<Unit filename="assembler.depend" />
+		<Unit filename="assembler.layout" />
+>>>>>>> 8dd6c053f3cef92534fb7ae02a06f46c90429fbc
 		<Unit filename="driver/AssemblerDriver.cpp" />
 		<Unit filename="driver/AssemblerDriver.h" />
 		<Unit filename="driver/StatementParser.cpp" />
@@ -68,7 +79,6 @@
 		<Unit filename="tables/InstructionTypeTable.cpp" />
 		<Unit filename="tables/InstructionTypeTable.h" />
 		<Unit filename="tables/OperationCodeTable.cpp" />
-		<Unit filename="tables/OperationCodeTable.exe" />
 		<Unit filename="tables/OperationCodeTable.h" />
 		<Unit filename="tables/SymbolTable.cpp" />
 		<Unit filename="tables/SymbolTable.h" />

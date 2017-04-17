@@ -77,11 +77,12 @@
 	<iostream>
 	<vector>
 
-1492377051 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\main.cpp
+1492439283 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	"driver/AssemblerDriver.h"
-	"SimpleDirectiveObjectCodeGenerator.h"
-	"MemoryObjectCodeGenerator.h"
+	"ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h"
+	"ObjectCodeGenerator/MemoryObjectCodeGenerator.h"
+	"tables/InstructionTypeTable.h"
 
 1492359107 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
@@ -89,7 +90,7 @@
 1492353903 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.h
 	<iostream>
 
-1492358952 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
+1492386304 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
 1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.cpp
@@ -98,15 +99,15 @@
 	<stdio.h>
 	<cmath>
 
-1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.h
+1492382255 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.h
 	<stdio.h>
 	<stdlib.h>
 	<string>
 
-1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
+1492386597 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
 	"Constants.h"
 
-1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
+1492386618 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
 	<string>
 
 1492376722 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
@@ -131,9 +132,11 @@
 	<map>
 	"ObjectCodeGenerator.h"
 
-1492376033 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.cpp
+1492385168 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.cpp
 	"SimpleDirectiveObjectCodeGenerator.h"
 	"../tables/OperationCodeTable.h"
+	"Constants.h"
+	"../NumberConverters/NumberConverter.h"
 	<iostream>
 	<sstream>
 	<string>
@@ -144,7 +147,7 @@
 	<iostream>
 	<stdio.h>
 
-1492376763 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\operationcodetable.cpp
+1492382836 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\operationcodetable.cpp
 	<map>
 	<stdio.h>
 	"OperationCodeTable.h"
@@ -177,15 +180,16 @@
 	<vector>
 	<string>
 
-1492376185 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
+1492387092 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
 	"MemoryObjectCodeGenerator.h"
 	"../tables/OperationCodeTable.h"
 	"../tables/SymbolTable.h"
+	"Constants.h"
+	"../NumberConverters/NumberConverter.h"
 	<iostream>
 	<sstream>
 	<string>
 	<bitset>
-	<map>
 
 1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\instructiontypetable.cpp
 	<map>
@@ -198,14 +202,26 @@
 	<iostream>
 	<stdio.h>
 
-1492377045 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
+1492387549 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
 	<iostream>
 	"AssemblerDriver.h"
 
-1492377260 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.h
+1492387549 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.h
 	"StatementParser.h"
+	"../fileServices/FileReader.h"
 	<string>
 	<vector>
+
+1492377171 D
+
+1492385712 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
+	"NumberConverter.h"
+	<string>
+	<sstream>
+	<bitset>
+
+1492385618 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
+	<string>
 
 1492360184 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.cpp
 	"StatementParser.h"
@@ -276,13 +292,13 @@
 	<iostream>
 	<vector>
 
-1492373465 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.cpp
+1492380600 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.cpp
 	"HexadecimalConverter.h"
 	<cstdlib>
 	<stdio.h>
 	<cmath>
 
-1492373465 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.h
+1492439331 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.h
 	<stdio.h>
 	<stdlib.h>
 	<string>
@@ -290,7 +306,7 @@
 1492373465 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
 	"Constants.h"
 
-1492373465 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
+1492439331 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
 	<string>
 
 1492366076 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\instructiontypetable.cpp
@@ -404,7 +420,7 @@
 	"InstructionTypeTable.h"
 	<bits/stdc++.h>
 
-1492366076 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.h
+1492439406 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.h
 	<map>
 	<iostream>
 	<stdio.h>
@@ -422,4 +438,21 @@
 1492378395 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
 	<iostream>
 	"AssemblerDriver.h"
+
+1492378395 Driver.h"
+
+1492377171 11e8beef3634f22c82ea8f5d50b4a044b235c
+
+1492439132 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.h
+	<map>
+	<iostream>
+	<stdio.h>
+
+1492439316 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\instrcutiontypetable.cpp
+	<map>
+	<stdio.h>
+	"InstructionTypeTable.h"
+	<bits/stdc++.h>
+
+1492439316 6c053f3cef92534fb7ae02a06f46c90429fbc
 
