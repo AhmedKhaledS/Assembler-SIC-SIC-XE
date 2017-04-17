@@ -26,7 +26,7 @@ char HexadecimalConverter::getChar(int n) {
 }
 
 int intLog(int base, int number) {
-    return (int)round(log(number) / log(base));
+    return round(log(number) / log(base));
 }
 
 int getNumericValue(string number) {
