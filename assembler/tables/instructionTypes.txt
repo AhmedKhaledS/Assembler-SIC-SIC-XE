@@ -1,29 +1,31 @@
-add mem_reg
-and mem_reg
-comp mem_reg
-div mem_reg
-j mem_reg
-jeq mem_reg
-jgt mem_reg
-jlt mem_reg
-jsub mem_reg
-lda mem_reg
-ldch mem_reg
-ldl mem_reg
-ldx mem_reg
-mul mem_reg
-or mem_reg
-rd mem_reg
-sta mem_reg
-stch mem_reg
-stl mem_reg
-stx mem_reg
-sub mem_reg
-td mem_reg
-tix mem_reg
-wd mem_reg
-rsub oper
-base oper
-nobase oper
-word dir
-byte dir
+add mem_reg label
+and mem_reg label
+comp mem_reg label
+div mem_reg label
+j mem_reg label
+jeq mem_reg label
+jgt mem_reg label
+jlt mem_reg label
+jsub mem_reg label
+lda mem_reg label
+ldch mem_reg label
+ldl mem_reg label
+ldx mem_reg label
+mul mem_reg label
+or mem_reg label
+rd mem_reg label
+sta mem_reg label
+stch mem_reg label
+stl mem_reg label
+stx mem_reg label
+sub mem_reg label
+td mem_reg label
+tix mem_reg label
+wd mem_reg label
+rsub oper label
+base oper nolabel
+nobase oper nolabel
+word dir label
+byte dir label
+end dir nolabel
+start dir label

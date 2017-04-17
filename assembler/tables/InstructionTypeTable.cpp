@@ -4,7 +4,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-map<string, string> InstructionTypeTable::instructionTypeTable;
+map<string, pair<string, bool> > InstructionTypeTable::instructionTypeTable;
 
 void InstructionTypeTable::load() {
     fstream instructionsFile;
@@ -19,7 +19,9 @@ void InstructionTypeTable::load() {
                 iss >> instruction;
                 string type;
                 iss >> type;
-                instructionTypeTable[instruction] = type;
+                string label;
+                iss >> label;
+                instructionTypeTable[instruction] = {type, label == "label" ? true : false};
             } while (iss);
         }
     }
@@ -27,6 +29,9 @@ void InstructionTypeTable::load() {
 }
 
 string InstructionTypeTable::getType(string operation) {
-    return instructionTypeTable[operation];
+    return instructionTypeTable[operation].first;
 }
 
+bool InstructionTypeTable::getLabelState(string operation) {
+    return instructionTypeTable[operation].second;
+}

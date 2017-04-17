@@ -24,9 +24,10 @@ int main(void)
 //    handler->handle("ahmed");
 
       InstructionTypeTable::load();
-      cout << InstructionTypeTable::getType("ldx") << endl;
+      cout << InstructionTypeTable::getType("ldx")<< " " <<InstructionTypeTable::getLabelState("ldx") << endl;
       DirectiveObjectCodeGenerator d = DirectiveObjectCodeGenerator("C'EOF'", "byte");
       cout << d.parse();
+
     return 0;
 
 }
