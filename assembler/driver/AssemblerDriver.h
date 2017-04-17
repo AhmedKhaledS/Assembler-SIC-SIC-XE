@@ -1,8 +1,10 @@
-#include "StatementParser.h"
 #ifndef ASSEMBLERDRIVER_H
 #define ASSEMBLERDRIVER_H
+#include "StatementParser.h"
+#include "../fileServices/FileReader.h"
 #include <string>
 #include <vector>
+
 
 class AssemblerDriver
 {
@@ -16,7 +18,7 @@ class AssemblerDriver
         std::vector<std::vector<std::string> > normalize(std::vector<std::string> assemblyCode);
         std::vector<std::string> unparsedStatements;
         std::vector<std::vector<std::string> > statements;
-        //FileHandler* fileHandler;
+        ///FileReader* fileReader;
         //StatementNormalizer normalizer;
         StatementParser stParser;
         //CodeGenerator cGenerator;

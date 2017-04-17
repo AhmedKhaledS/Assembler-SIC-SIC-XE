@@ -8,7 +8,7 @@ map<string, string> InstructionTypeTable::instructionTypeTable;
 
 void InstructionTypeTable::load() {
     fstream instructionsFile;
-    instructionsFile.open("instructionTypes.txt");
+    instructionsFile.open("tables/instructionTypes.txt");
     if (instructionsFile.is_open()) {
         string line;
         while(getline(instructionsFile, line)) {
@@ -29,4 +29,3 @@ void InstructionTypeTable::load() {
 string InstructionTypeTable::getType(string operation) {
     return instructionTypeTable[operation];
 }
-

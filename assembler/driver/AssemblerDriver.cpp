@@ -8,8 +8,8 @@ AssemblerDriver::AssemblerDriver(){}
 
 void AssemblerDriver::assemble(string path)
 {
-    /// unparsedStatements = fileHandler->readInst(path);
-    /// return;
+     ///unparsedStatements = fileReader->readInst(path);
+     return;
 }
 vector<vector<string> > AssemblerDriver::normalize(vector<string> assemblyCode)
 {

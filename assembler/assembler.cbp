@@ -13,7 +13,6 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="ObjectCodeGenerator" />
 					<Add directory="NumberConverters" />
 				</Compiler>
 			</Target>
@@ -24,7 +23,6 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add directory="ObjectCodeGenerator" />
 					<Add directory="NumberConverters" />
 				</Compiler>
 				<Linker>
@@ -46,8 +44,6 @@
 		<Unit filename="ObjectCodeGenerator/Constants.h" />
 		<Unit filename="ObjectCodeGenerator/DirectiveObjectCodeGenerator.cpp" />
 		<Unit filename="ObjectCodeGenerator/DirectiveObjectCodeGenerator.h" />
-		<Unit filename="ObjectCodeGenerator/InstructionTypeTable.cpp" />
-		<Unit filename="ObjectCodeGenerator/InstructionTypeTable.h" />
 		<Unit filename="ObjectCodeGenerator/MemoryObjectCodeGenerator.cpp" />
 		<Unit filename="ObjectCodeGenerator/MemoryObjectCodeGenerator.h" />
 		<Unit filename="ObjectCodeGenerator/ObjectCodeGenerator.cpp" />
