@@ -12,7 +12,7 @@ int main(void)
 //    cout << "Object Code is " << s.parse() << endl;
 //    return 0;
 
-//    MemoryObjectCodeGenerator s("or","XXXX,X");
+//    MemoryObjectCodeGenerator s("ldch","BUFFER,X");
 //    cout << "Object Code is " << s.parse() << endl;
 
     HandlerContext *handler = new HandlerContext();

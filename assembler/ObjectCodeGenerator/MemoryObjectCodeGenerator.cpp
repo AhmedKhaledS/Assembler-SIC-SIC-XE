@@ -1,12 +1,13 @@
 #include "MemoryObjectCodeGenerator.h"
 #include "../tables/OperationCodeTable.h"
 #include "../tables/SymbolTable.h"
+#include "Constants.h"
+#include "../NumberConverters/NumberConverter.h"
 
 #include <iostream>
 #include <sstream>
 #include <string>
 #include <bitset>
-#include <map>
 
 using namespace std;
 
@@ -18,55 +19,46 @@ MemoryObjectCodeGenerator::MemoryObjectCodeGenerator(string inst,string oper)
 
 string MemoryObjectCodeGenerator::parse(){
 
-    cout << "Hello1" << endl;
+    // Grabbing instruction object code in binary
+    string binObjectCode;
+    OperationCodeTable::load();                                 // TO BE REMOVED
+    binObjectCode = OperationCodeTable::getCode(instruction);   // TO BE REMOVED
 
-    // Grabbing object code in Binary...
-    string binaryObjectCode;
-    OperationCodeTable::load();
-    binaryObjectCode = OperationCodeTable::getCode(instruction);
+    // Converting object code to hexadecimal
+    string objectCode = NumberConverter::convertBinToHex(binObjectCode);
 
-    // Converting object code to Hexadecimal
-    bitset<8> set(binaryObjectCode);
-    stringstream hexaObjectCode;
-    hexaObjectCode << hex << uppercase << set.to_ulong();
-
-    string objectCode = hexaObjectCode.str();
-
-    if(objectCode.size() != 2){
-        objectCode = "0" + objectCode;
+    // Normalizing the first part object code form
+    if(objectCode.size() != Constants::OP_CODE_SIZE){
+        objectCode = Constants::ZERO + objectCode;
     }
+
+    SymbolTable::add("BUFFER","1039");                         // TO BE REMOVED
 
     // Check Mode of addressing
-    static int nPos = -1;
-    if(operand.find(",X") != nPos){
-        operand.replace(operand.find(",X"), 2, "");
-        cout << "INDEXING" << endl;
-        cout << operand << endl;
+    bool indexing;
+    if(operand.find(Constants::INDEXING_PREFIX) != Constants::NOT_A_POSITION){
+        operand.replace(operand.find(Constants::INDEXING_PREFIX), 2, "");
+        indexing = true;
     }else{
-        cout << "NO INDEXING" << endl;
-        cout << operand << endl;
+        indexing = false;
     }
 
-    SymbolTable::add("XXXX","7FFF");
-    string labelCode = SymbolTable::getAddress(operand);
-    while(labelCode.size()!=4){
-        labelCode = "0" + labelCode;
+    string addressCode = SymbolTable::getAddress(operand);
+    while(addressCode.size() != Constants::ADDRESS_CODE_SIZE){
+        addressCode = Constants::ZERO + addressCode;
     }
-    cout << labelCode << endl;
 
-    unsigned int x;
-    stringstream ss;
-    ss << std::hex << "7fff";
-    ss >> x;
-    cout << "HELLO " << x << endl;
-    x += 32768;
+    if(indexing){
+        addressCode = indexingAddressing(addressCode);
+    }
 
-    stringstream stream;
-    stream << hex  << uppercase << x;
-    string output( stream.str() );
-    cout << "output " << output << endl;
-
-
-
+    objectCode += addressCode;
     return objectCode;
+
  }
+
+string MemoryObjectCodeGenerator::indexingAddressing(string address){
+    unsigned int addressCode = NumberConverter::convertHexToDec(address);
+    addressCode += Constants::MAX_ADDRESS;
+    return NumberConverter::convertDexToHex(addressCode);
+}

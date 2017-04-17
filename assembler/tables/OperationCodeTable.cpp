@@ -11,7 +11,7 @@ map<string, string> OperationCodeTable::opCodeTable;
 void OperationCodeTable::load() {
 
     fstream opCodeFile;
-    opCodeFile.open("opCodeTable.txt");
+    opCodeFile.open("tables/opCodeTable.txt");
     if (opCodeFile.is_open()) {
         string line;
         while(getline(opCodeFile, line)) {

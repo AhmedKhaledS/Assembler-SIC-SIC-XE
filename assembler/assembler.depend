@@ -77,7 +77,7 @@
 	<iostream>
 	<vector>
 
-1492377051 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\main.cpp
+1492386976 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	"driver/AssemblerDriver.h"
 	"SimpleDirectiveObjectCodeGenerator.h"
@@ -89,7 +89,7 @@
 1492353903 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.h
 	<iostream>
 
-1492358952 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
+1492386304 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
 1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.cpp
@@ -98,15 +98,15 @@
 	<stdio.h>
 	<cmath>
 
-1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.h
+1492382255 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.h
 	<stdio.h>
 	<stdlib.h>
 	<string>
 
-1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
+1492386597 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
 	"Constants.h"
 
-1492374742 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
+1492386618 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
 	<string>
 
 1492376722 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
@@ -131,9 +131,11 @@
 	<map>
 	"ObjectCodeGenerator.h"
 
-1492376033 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.cpp
+1492385168 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.cpp
 	"SimpleDirectiveObjectCodeGenerator.h"
 	"../tables/OperationCodeTable.h"
+	"Constants.h"
+	"../NumberConverters/NumberConverter.h"
 	<iostream>
 	<sstream>
 	<string>
@@ -144,7 +146,7 @@
 	<iostream>
 	<stdio.h>
 
-1492376763 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\operationcodetable.cpp
+1492382836 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\tables\operationcodetable.cpp
 	<map>
 	<stdio.h>
 	"OperationCodeTable.h"
@@ -177,15 +179,16 @@
 	<vector>
 	<string>
 
-1492376185 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
+1492386795 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
 	"MemoryObjectCodeGenerator.h"
 	"../tables/OperationCodeTable.h"
 	"../tables/SymbolTable.h"
+	"Constants.h"
+	"../NumberConverters/NumberConverter.h"
 	<iostream>
 	<sstream>
 	<string>
 	<bitset>
-	<map>
 
 1492374742 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\objectcodegenerator\instructiontypetable.cpp
 	<map>
@@ -206,4 +209,13 @@
 	"StatementParser.h"
 	<string>
 	<vector>
+
+1492385712 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
+	"NumberConverter.h"
+	<string>
+	<sstream>
+	<bitset>
+
+1492385618 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
+	<string>
 
