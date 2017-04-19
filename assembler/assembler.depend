@@ -223,7 +223,7 @@
 1492385618 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
 	<string>
 
-1492360184 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.cpp
+1492617042 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.cpp
 	"StatementParser.h"
 	"../handlers/HandlerContext.h"
 
@@ -254,7 +254,7 @@
 	"StateHandler.h"
 	"HandlerContext.h"
 
-1492373378 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.cpp
+1492542178 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.cpp
 	"FileReader.h"
 	<iostream>
 	<fstream>
@@ -277,7 +277,7 @@
 	"LabelHandlerState.h"
 	"iostream"
 
-1492366024 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
+1492441116 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
 	"OperandHandlerState.h"
 	"iostream"
 
@@ -303,10 +303,10 @@
 	<stdlib.h>
 	<string>
 
-1492373465 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
+1492617114 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
 	"Constants.h"
 
-1492439331 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
+1492617114 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
 	<string>
 
 1492366076 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\instructiontypetable.cpp
@@ -368,35 +368,38 @@
 	<iostream>
 	"AssemblerDriver.h"
 
-1492378395 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.h
+1492617042 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.h
 	"StatementParser.h"
 	"../fileServices/FileReader.h"
 	<string>
 	<vector>
 
-1492377852 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
+1492453805 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	"driver/AssemblerDriver.h"
 	"ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h"
 	"ObjectCodeGenerator/MemoryObjectCodeGenerator.h"
 	"tables/InstructionTypeTable.h"
+	"ObjectCodeGenerator/DirectiveObjectCodeGenerator.h"
 
 1492377171 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
-1492377171 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
+1492439331 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
-1492377171 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
+1492617114 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
 	"DirectiveObjectCodeGenerator.h"
 	<stdio.h>
 	<stdlib.h>
 	"../NumberConverters/HexadecimalConverter.h"
 	"Constants.h"
 
-1492377171 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.cpp
+1492439331 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.cpp
 	"SimpleDirectiveObjectCodeGenerator.h"
 	"../tables/OperationCodeTable.h"
+	"Constants.h"
+	"../NumberConverters/NumberConverter.h"
 	<iostream>
 	<sstream>
 	<string>
@@ -420,22 +423,23 @@
 	"InstructionTypeTable.h"
 	<bits/stdc++.h>
 
-1492439406 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.h
+1492453691 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.h
 	<map>
 	<iostream>
 	<stdio.h>
 
-1492377171 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
+1492439331 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
 	"MemoryObjectCodeGenerator.h"
 	"../tables/OperationCodeTable.h"
 	"../tables/SymbolTable.h"
+	"Constants.h"
+	"../NumberConverters/NumberConverter.h"
 	<iostream>
 	<sstream>
 	<string>
 	<bitset>
-	<map>
 
-1492378395 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
+1492617041 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
 	<iostream>
 	"AssemblerDriver.h"
 
@@ -697,4 +701,33 @@
 	<stdio.h>
 	"InstructionTypeTable.h"
 	<bits/stdc++.h>
+
+1492453691 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
+	"InstructionHandler.h"
+
+1492453691 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.h
+	<string>
+
+1492453691 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
+	"InstructionHandlerFactory.h"
+
+1492453691 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.h
+	<InstructionHandler.h>
+	<string>
+
+1492453691 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
+	"MemoryInstructionHandler.h"
+
+1492453691 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
+	"InstructionHandler.h"
+	<string>
+
+1492439331 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
+	"NumberConverter.h"
+	<string>
+	<sstream>
+	<bitset>
+
+1492439331 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
+	<string>
 
