@@ -60,5 +60,5 @@ string MemoryObjectCodeGenerator::parse(){
 string MemoryObjectCodeGenerator::indexingAddressing(string address){
     unsigned int addressCode = NumberConverter::convertHexToDec(address);
     addressCode += Constants::MAX_ADDRESS;
-    return NumberConverter::convertDexToHex(addressCode);
+    return NumberConverter::convertDecToHex(addressCode);
 }

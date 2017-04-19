@@ -1,6 +1,6 @@
 #include "DirectiveInstructionHandler.h"
 #include "../ObjectCodeGenerator/Constants.h"
-#include "HexadecimalConverter.h"
+#include "NumberConverter.h"
 using namespace std;
 
 const int INT_LOW_ASCII = 48;
@@ -34,7 +34,7 @@ bool checkHexadecimal() {
         return false;
     }
     ///check for length of word
-    if (op.length() - 3 > 3) {
+    if (op.length() - 3 > 2 || (op.length() - 3) % 2 != 0) {
         return false;
     }
     for (int i = 2; i < op.length() - 1; i++) {
@@ -52,7 +52,7 @@ bool checkDecimal() {
             return false;
         }
     }
-    if (HexadecimalConverter::getNumericValue(op) >= Constants::MAX_NUMBER) {
+    if (NumberConverter::getNumericValue(op) >= Constants::MAX_NUMBER) {
         return false;
     }
     return true;
@@ -67,7 +67,7 @@ bool checkString() {
         return false;
     }
     ///check for length of word
-    if (op.length() - 3 > 3) {
+    if (op.length() - 3 > 3 || op.length() - 3 == 0) {
         return false;
     }
     return true;

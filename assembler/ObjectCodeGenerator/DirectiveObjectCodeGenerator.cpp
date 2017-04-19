@@ -1,7 +1,7 @@
 #include "DirectiveObjectCodeGenerator.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "../NumberConverters/HexadecimalConverter.h"
+#include "../NumberConverters/NumberConverter.h"
 #include "Constants.h"
 
 using namespace std;
@@ -26,7 +26,7 @@ string DirectiveObjectCodeGenerator::handleWord() {
     if (operand[0] == Constants::HEX_PREFIX) {
         return operand.substr(2, operand.length() - 3);
     } else {
-        return HexadecimalConverter::convertDecToHex(operand);
+        return NumberConverter::convertDecToHex(operand);
     }
     if (objectCode.length() < Constants::OBJECT_CODE_SIZE) {
         return fillZeros(objectCode);
@@ -40,7 +40,7 @@ string DirectiveObjectCodeGenerator::handleByte() {
         return objectCode = operand.substr(2, operand.length() - 3);
      } else if (operand[0] == Constants::CHAR_PREFIX) {
         for (int i = 2; i < operand.length() - 1; i++) {
-            objectCode += HexadecimalConverter::convertDecToHex(operand[i]);
+            objectCode += NumberConverter::convertDecToHex(operand[i]);
         }
      }
      if (objectCode.length() < Constants::OBJECT_CODE_SIZE) {

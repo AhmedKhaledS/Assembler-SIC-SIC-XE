@@ -1,5 +1,7 @@
 #include "ObjectCodeGeneratorFactory.h"
 #include "DirectiveObjectCodeGenerator.h"
+#include "MemoryObjectCodeGenerator.h"
+#include "SimpleDirectiveObjectCodeGenerator.h"
 using namespace std;
 
 
@@ -14,14 +16,18 @@ ObjectCodeGeneratorFactory* ObjectCodeGeneratorFactory::getInstance() {
     return ObjectCodeGeneratorFactory::objectCodeGeneratorFactoryInstance;
 }
 
-ObjectCodeGenerator* ObjectCodeGeneratorFactory::getObjectCodeGenerator(string type) {
+ObjectCodeGenerator* ObjectCodeGeneratorFactory::getObjectCodeGenerator
+        (string type, string instruction, string operand) {
     ObjectCodeGenerator* ptr;
     if (type == "dir") {
-        ///TODO : provide proper argument to constructor
-        DirectiveObjectCodeGenerator* generator = new DirectiveObjectCodeGenerator("", "");
-        ptr = generator;
+        ptr = new DirectiveObjectCodeGenerator(operand, instruction);
+        return ptr;
+    } else if (type  == "mem_reg") {
+        ptr = new MemoryObjectCodeGenerator(instruction, operand);
+        return ptr;
+    } else if(type == "oper") {
+        ptr = new SimpleDirectiveObjectCodeGenerator(instruction);
         return ptr;
     }
-    // Here to insert the remaining if statements
     return ptr;
 }

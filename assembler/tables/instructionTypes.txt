@@ -29,3 +29,5 @@ word dir label
 byte dir label
 end dir nolabel
 start dir label
+resw dir label
+resb  dir label

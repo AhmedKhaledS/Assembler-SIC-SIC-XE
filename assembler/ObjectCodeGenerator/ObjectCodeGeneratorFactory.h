@@ -14,7 +14,7 @@ class ObjectCodeGeneratorFactory {
 
     ObjectCodeGeneratorFactory* getInstance();
 
-    ObjectCodeGenerator* getObjectCodeGenerator(string type);
+    ObjectCodeGenerator* getObjectCodeGenerator(string type, string instruction, string operand);
 };
 
 #endif // OCGF_INCLUDED

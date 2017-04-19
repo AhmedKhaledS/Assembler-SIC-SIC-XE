@@ -760,7 +760,7 @@
 	"StateHandler.h"
 	"HandlerContext.h"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\statehandler.h
+1492636560 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\statehandler.h
 	"string"
 
 1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.h
@@ -794,19 +794,19 @@
 	"HandlerContext.h"
 	"iostream"
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
+1492637140 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
 	"InstructionHandlerState.h"
 	"iostream"
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
+1492635620 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
 	"LabelHandlerState.h"
 	"iostream"
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
+1492636673 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
 	"OperandHandlerState.h"
 	"iostream"
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
+1492626788 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
 	"StateHandler.h"
 
 1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
@@ -815,16 +815,19 @@
 1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.h
 	<string>
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
+1492641526 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
 	"InstructionHandlerFactory.h"
+	"DirectiveInstructionHandler.h"
+	"MemoryInstructionHandler.h"
+	"SimpleDirectiveInstructionHandler.h"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.h
+1492641611 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.h
 	<InstructionHandler.h>
 	<string>
 
-1492618142 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
+1492639560 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
 	"MemoryInstructionHandler.h"
-	"../tables/OperationCodeTable.h"
+	"../tables/InstructionTypeTable.h"
 	<iostream>
 
 1492445138 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
@@ -839,13 +842,16 @@
 	<iostream>
 	<vector>
 
-1492624230 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\main.cpp
+1492642184 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	"driver/AssemblerDriver.h"
 	"ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h"
 	"ObjectCodeGenerator/MemoryObjectCodeGenerator.h"
 	"tables/InstructionTypeTable.h"
 	"ObjectCodeGenerator/DirectiveObjectCodeGenerator.h"
+	"MemoryInstructionHandler.h"
+	"driver/StatementParser.h"
+	<sstream>
 
 1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
@@ -853,16 +859,15 @@
 1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.h
 	<iostream>
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
+1492641150 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.h
+1492638858 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.h
 	<map>
 	<iostream>
 	<stdio.h>
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
-	<iostream>
+1492641160 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
 1492624991 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.cpp
@@ -876,13 +881,13 @@
 	<stdlib.h>
 	<string>
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
+1492642480 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
 	"NumberConverter.h"
 	<string>
 	<sstream>
 	<bitset>
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
+1492642434 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
 	<string>
 
 1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
@@ -891,14 +896,14 @@
 1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
 	<string>
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
+1492642306 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
 	"DirectiveObjectCodeGenerator.h"
 	<stdio.h>
 	<stdlib.h>
-	"../NumberConverters/HexadecimalConverter.h"
+	"../NumberConverters/NumberConverter.h"
 	"Constants.h"
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
+1492642209 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
 	"MemoryObjectCodeGenerator.h"
 	"../tables/OperationCodeTable.h"
 	"../tables/SymbolTable.h"
@@ -920,11 +925,13 @@
 1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.cpp
 	"ObjectCodeGenerator.h"
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
+1492641206 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
 	"ObjectCodeGeneratorFactory.h"
 	"DirectiveObjectCodeGenerator.h"
+	"MemoryObjectCodeGenerator.h"
+	"SimpleDirectiveObjectCodeGenerator.h"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.h
+1492640920 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.h
 	<map>
 	"ObjectCodeGenerator.h"
 
@@ -965,7 +972,7 @@
 	<vector>
 	<sstream>
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.cpp
+1492639553 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.cpp
 	<map>
 	<stdio.h>
 	"InstructionTypeTable.h"
@@ -979,10 +986,10 @@
 	"InstructionHandler.h"
 	<string>
 
-1492624752 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
+1492642607 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
 	"DirectiveInstructionHandler.h"
 	"../ObjectCodeGenerator/Constants.h"
-	"HexadecimalConverter.h"
+	"NumberConverter.h"
 
 1492624896 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.h
 	"InstructionHandler.h"

@@ -35,3 +35,10 @@ string InstructionTypeTable::getType(string operation) {
 bool InstructionTypeTable::getLabelState(string operation) {
     return instructionTypeTable[operation].second;
 }
+
+bool InstructionTypeTable::searchOperation(string operation){
+    if (instructionTypeTable[operation].first != "") {
+        return true;
+    }
+    return false;
+}

@@ -10,7 +10,8 @@ class StateHandler
         virtual void handle(std::string statement) = 0;
         virtual void throwError() = 0;
     protected:
-
+        static bool labelAvailable;
+        static std::string instruction;
     private:
 };
 

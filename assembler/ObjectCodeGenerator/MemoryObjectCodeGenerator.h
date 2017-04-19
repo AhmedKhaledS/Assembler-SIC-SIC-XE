@@ -3,7 +3,6 @@
 
 #include "ObjectCodeGenerator.h"
 
-
 class MemoryObjectCodeGenerator : public ObjectCodeGenerator
 {
     public:

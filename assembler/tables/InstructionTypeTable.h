@@ -19,6 +19,9 @@ class InstructionTypeTable {
     static string getType(string operation);
 
     static bool getLabelState(string operation);
+
+    static bool searchOperation(string operation);
+
 };
 
 #endif // ITT_INCLUDED

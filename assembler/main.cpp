@@ -4,25 +4,39 @@
 #include "ObjectCodeGenerator/MemoryObjectCodeGenerator.h"
 #include "tables/InstructionTypeTable.h"
 #include "ObjectCodeGenerator/DirectiveObjectCodeGenerator.h"
+#include "MemoryInstructionHandler.h"
+#include "driver/StatementParser.h"
+#include <sstream>
 
 using namespace std;
 
 int main(void)
 {
-
 //    SimpleDirectiveObjectCodeGenerator s("sub");
 //    cout << "Object Code is " << s.parse() << endl;
 
 //      MemoryObjectCodeGenerator s("or","XXXX,X");
 //      cout << "Object Code is " << s.parse() << endl;
 
-        HandlerContext *handler = new HandlerContext();
-        handler->handle("ahmed");
-        handler->handle("khaled");
-        handler->handle("ahmed");
+//        HandlerContext *handler = new HandlerContext();
+//        handler->handle("ahmed");
+//        handler->handle("khaled");
+//        handler->handle("ahmed");
+
+//    vector<string> x;
+//    x.push_back("ahmed");
+//    x.push_back("hee");
+//    x.push_back("naggar");
+//    StatementParser parser;
+//    parser.parse(x);
 
 //    InstructionTypeTable::load();
 //    cout << InstructionTypeTable::getType("ldx");
+
+    // LDX HELLO
+//    MemoryInstructionHandler d(nullptr);
+//    d.handle();
+
 
     return 0;
 }

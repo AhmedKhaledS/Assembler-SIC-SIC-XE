@@ -1,5 +1,5 @@
 #include "MemoryInstructionHandler.h"
-#include "../tables/OperationCodeTable.h"
+#include "../tables/InstructionTypeTable.h"
 #include <iostream>
 
 using namespace std;
@@ -13,7 +13,7 @@ bool MemoryInstructionHandler::handle(){
 
     // TO BE REMOVE : FOR TESTING ONLY
     cout << instruction << endl;
-    OperationCodeTable::load();
+    InstructionTypeTable::load();
 
     // Check if the instruction is empty
     if(instruction == ""){
@@ -41,7 +41,7 @@ bool MemoryInstructionHandler::handle(){
     }
 
     // Check if the instruction is a RESERVED WORD ...
-    bool isResreved = OperationCodeTable::searchOperation(instruction);
+    bool isResreved = InstructionTypeTable::searchOperation(instruction);
     if(isResreved){
         cout << "ERROR: Reserved Word" << endl;
         return false;

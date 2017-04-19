@@ -11,7 +11,7 @@ class InstructionHandlerFactory
 
     public:
         InstructionHandlerFactory* getInstance();
-        InstructionHandler* getInstructionHandler(std::string type);
+        InstructionHandler* getInstructionHandler(std::string type, std::string instruction, std::string operand);
 
 };
 

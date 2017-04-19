@@ -38,8 +38,6 @@
 		</Compiler>
 		<Unit filename="LocationCounter.cpp" />
 		<Unit filename="LocationCounter.h" />
-		<Unit filename="NumberConverters/HexadecimalConverter.cpp" />
-		<Unit filename="NumberConverters/HexadecimalConverter.h" />
 		<Unit filename="NumberConverters/NumberConverter.cpp" />
 		<Unit filename="NumberConverters/NumberConverter.h" />
 		<Unit filename="ObjectCodeGenerator/Constants.cpp" />
