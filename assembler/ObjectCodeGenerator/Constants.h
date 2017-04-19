@@ -12,6 +12,7 @@ public :
     static int ADDRESS_CODE_SIZE;
     static int OBJECT_CODE_SIZE;
     static int MAX_ADDRESS;
+    static int MAX_NUMBER;
     static char HEX_PREFIX;
     static char CHAR_PREFIX;
     static string INDEXING_PREFIX;
