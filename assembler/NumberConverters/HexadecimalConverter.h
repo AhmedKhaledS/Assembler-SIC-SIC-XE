@@ -15,6 +15,7 @@ private :
 public :
     static string convertDecToHex(int number);
     static string convertDecToHex(string number);
+    static int getNumericValue(string number);
 };
 
 #endif // HC_INCLUDED

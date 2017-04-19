@@ -29,7 +29,7 @@ int intLog(int base, int number) {
     return round(log(number) / log(base));
 }
 
-int getNumericValue(string number) {
+int HexadecimalConverter::getNumericValue(string number) {
     int obtainedNumber = 0;
     for (char digit : number) {
         obtainedNumber *= BASE_10;
