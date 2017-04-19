@@ -6,22 +6,25 @@
 
 using namespace std;
 
-FileReader::FileReader(string fileName)
-:fileName(fileName)
+FileReader::FileReader()
 {
 }
 
-std::vector<std::string> FileReader::readInst()
+vector<string> FileReader::readInst(string path)
 {
-
     vector<string> code;
     string line;
 
-    ifstream file(fileName.c_str());
+    ifstream file;
+    file.open(path, ios::in);
 
     while(getline(file,line)){
         code.push_back(line);
     }
+
+//    for(int i=0;i<code.size();i++){
+//        cout << code.at(i) << endl;
+//    }
 
     return code;
 }

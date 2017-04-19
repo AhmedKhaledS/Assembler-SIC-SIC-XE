@@ -1,4 +1,5 @@
 #include "Normalizer.h"
+#include "../ObjectCodeGenerator/Constants.h"
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -6,35 +7,32 @@
 
 using namespace std;
 
-Normalizer::Normalizer(string instruction)
-:instruction(instruction)
+Normalizer::Normalizer()
+:instruction()
 {
 }
 
-std::string Normalizer::normalizedInst(){
+string Normalizer::normalizedInst(string instruction){
 
     string input = instruction;
 
-    // Variable used to check the boundary of the input string
-    static int nPos = -1;
-
     // Replace white spaces with only one space
     // Case 1 : Tabs
-    while(input.find("\t") != nPos){
+    while(input.find("\t") != Constants::NOT_A_POSITION){
         input.replace(input.find("\t"), 1, " ");
     }
+
     // Case 2 : Spaces
-    while(input.find("  ") != nPos){
+    while(input.find("  ") != Constants::NOT_A_POSITION){
         input.replace(input.find("  "), 2, " ");
     }
 
     return input;
 }
 
-std::vector<std::string> Normalizer::splittedInst(){
+    vector<string> Normalizer::splittedInst(string instruction){
 
-   std::string input = normalizedInst();
-
+    string input = normalizedInst(instruction);
     vector<string> result;
 
     // Splitting the input into its components

@@ -9,8 +9,8 @@ class Normalizer
         std::string instruction;
 
     public:
-        Normalizer(std::string);
-        std::string normalizedInst();
-        std::vector<std::string> splittedInst();
+        Normalizer();
+        std::string normalizedInst(std::string);
+        std::vector<std::string> splittedInst(std::string);
 };
 #endif

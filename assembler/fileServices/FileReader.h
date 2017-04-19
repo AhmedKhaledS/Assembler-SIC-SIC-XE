@@ -10,8 +10,8 @@ class FileReader
         std::string fileName;
 
     public:
-        FileReader(std::string);
-        std::vector<std::string> readInst();
+        FileReader();
+        std::vector<std::string> readInst(std::string);
 
 };
 #endif

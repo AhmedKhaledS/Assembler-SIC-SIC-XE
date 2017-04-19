@@ -254,14 +254,14 @@
 	"StateHandler.h"
 	"HandlerContext.h"
 
-1492542178 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.cpp
+1492622127 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.cpp
 	"FileReader.h"
 	<iostream>
 	<fstream>
 	<vector>
 	<sstream>
 
-1492307322 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.h
+1492622142 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.h
 	<vector>
 	<string>
 
@@ -353,14 +353,15 @@
 1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\baseregister.h
 	<iostream>
 
-1492307322 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
+1492623310 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
 	"Normalizer.h"
+	"../ObjectCodeGenerator/Constants.h"
 	<iostream>
 	<fstream>
 	<vector>
 	<sstream>
 
-1492307322 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
+1492621695 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
 	<vector>
 	<string>
 
@@ -368,9 +369,10 @@
 	<iostream>
 	"AssemblerDriver.h"
 
-1492617042 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.h
+1492623214 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.h
 	"StatementParser.h"
 	"../fileServices/FileReader.h"
+	"../utils/Normalizer.h"
 	<string>
 	<vector>
 
@@ -439,7 +441,7 @@
 	<string>
 	<bitset>
 
-1492617041 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
+1492623197 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
 	<iostream>
 	"AssemblerDriver.h"
 
