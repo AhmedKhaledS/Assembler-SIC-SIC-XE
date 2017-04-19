@@ -10,8 +10,7 @@ StatementParser::StatementParser()
 
 void StatementParser::parse(vector<string> statement)
 {
-    HandlerContext handler;
-    handlerContext = &handler;
+    handlerContext = new HandlerContext();
 
     //TODO: Here goes catching statement for exceptions.
     handleLabel(statement.at(0));
@@ -26,24 +25,21 @@ void StatementParser::parse(vector<string> statement)
 
 void StatementParser::handleLabel(string label)
 {
-    LabelHandlerState lHandle(handlerContext);
-    lHandle.handle(label);
+    handlerContext->handle(label);
     // If reached here -> free of errors.
     return;
 }
 
 void StatementParser::handleInstruction(string instruction)
 {
-    InstructionHandlerState iHandle(handlerContext);
-    iHandle.handle(instruction);
+    handlerContext->handle(instruction);
     // If reached here ->free of errors.
     return;
 }
 
 void StatementParser::handleOperand(string operand)
 {
-    OperandHandlerState oHandle(handlerContext);
-    oHandle.handle(operand);
+    handlerContext->handle(operand);
     // If reached here ->free of errors.
     return;
 }
