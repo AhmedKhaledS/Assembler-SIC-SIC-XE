@@ -23,7 +23,7 @@ void InstructionHandlerState::handle(string statement)
     //instruction = statement;
 
     /// this part for testing the operand..
-    //StateHandler::instruction = statement;
+    StateHandler::instruction = statement;
 
     /// If there are no errors .. upgrade the state.
     this->context->setState(context->getOperandHandler());

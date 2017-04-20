@@ -35,6 +35,7 @@ int main(void)
 
 //    InstructionTypeTable::load();
 //    cout << InstructionTypeTable::getType("ldx");
+
 //    InstructionTypeTable::load();
 //    HandlerContext* h = new HandlerContext();
 //    InstructionHandlerState i(h);
@@ -51,11 +52,9 @@ int main(void)
 //    LabelHandlerState l(handler);
 //    l.handle("game222");
 
-    string code("HELLO         FROM THE OTHER C'SI      DE'    ");
-    cout << code << endl << endl;
-
+    string code = "HELLO         FROM THE OTHER X'qwww'   ";
     Normalizer n;
-    cout << n.normalizedInst(code) << endl;
+    n.splittedInst(code);
 
 
     return 0;
