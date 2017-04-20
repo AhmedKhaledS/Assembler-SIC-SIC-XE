@@ -21,8 +21,8 @@ bool checkDecimalDigit(char c) {
 
 bool checkHexadecimalDigit(char c) {
     int ascii_rep = c;
-    return (c >= INT_LOW_ASCII && c <= INT_HIGH_ASCII)
-     || (c >= ALPHA_LOW_ASCII && c <= ALPHA_HIGH_ASCII);
+    return (ascii_rep >= INT_LOW_ASCII && ascii_rep <= INT_HIGH_ASCII)
+     || (ascii_rep >= ALPHA_LOW_ASCII && ascii_rep <= ALPHA_HIGH_ASCII);
 }
 
 bool checkHexadecimal() {
@@ -37,7 +37,7 @@ bool checkHexadecimal() {
     if (op.length() - 3 > 2 || (op.length() - 3) % 2 != 0) {
         return false;
     }
-    for (int i = 2; i < op.length() - 1; i++) {
+    for (unsigned int i = 2; i < op.length() - 1; i++) {
         if (!checkHexadecimalDigit(op[i])) {
             return false;
         }
@@ -47,7 +47,7 @@ bool checkHexadecimal() {
 
 bool checkDecimal() {
     string op = DirectiveInstructionHandler::operand;
-    for (int i = 0; i < op.length(); i++) {
+    for (unsigned int i = 0; i < op.length(); i++) {
         if (!checkDecimalDigit(op[i])) {
             return false;
         }
@@ -90,4 +90,5 @@ bool DirectiveInstructionHandler::handle() {
     } else if (instruction == "byte") {
         return handleByte();
     }
+    return false;
 }

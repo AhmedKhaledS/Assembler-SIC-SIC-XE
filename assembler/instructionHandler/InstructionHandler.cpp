@@ -7,4 +7,4 @@ InstructionHandler::InstructionHandler()
 
 }
 
-string instruction;
+

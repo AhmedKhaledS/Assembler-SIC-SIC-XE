@@ -18,6 +18,8 @@ public :
     static string INDEXING_PREFIX;
     static string WORD;
     static string BYTE;
+    static string RESB;
+    static string RESW;
     static string ZERO;
     static string ZEROS;
 };
