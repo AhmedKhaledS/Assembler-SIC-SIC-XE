@@ -1,27 +1,36 @@
 #include "InstructionHandlerState.h"
 #include "iostream"
-
+#include "../ObjectCodeGenerator/Constants.h"
+#include "../tables/InstructionTypeTable.h"
+#include "../LocationCounter.h"
 using namespace std;
+
+const int FIXED_INCREMENT = 3;
 
 InstructionHandlerState::InstructionHandlerState(HandlerContext *context)
 {
     this->context = context;
 }
 
+bool isDirective(string statement) {
+    return (statement == Constants::WORD || statement == Constants::BYTE
+             || statement == Constants::RESW || statement == Constants::RESB);
+}
+
 void InstructionHandlerState::handle(string statement)
 {
     ///check valid instruction (opCode Table)
-
+    if (!InstructionTypeTable::searchOperation(statement)) {
+        throwError();
+    }
     ///check for label state
-
+    if(!InstructionTypeTable::getLabelState(statement) && labelAvailable) {
+        throwError();
+    }
     ///location counter increment
-        // if ( RESW RESB WORD BYTE )
-            // Do nothing to the location counter increment
-        //  else
-            // Increment the location counter by 3
-
-    //instruction = statement;
-
+    if (!isDirective(statement)) {
+        LocationCounter::increment(FIXED_INCREMENT);
+    }
     /// this part for testing the operand..
     StateHandler::instruction = statement;
 
@@ -32,5 +41,5 @@ void InstructionHandlerState::handle(string statement)
 
 void InstructionHandlerState::throwError()
 {
-
+    throw "Invlaid Instruction Syntax";
 }
