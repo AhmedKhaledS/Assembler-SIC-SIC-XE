@@ -35,12 +35,12 @@ int main(void)
 
 //    InstructionTypeTable::load();
 //    cout << InstructionTypeTable::getType("ldx");
-    InstructionTypeTable::load();
-    HandlerContext* h = new HandlerContext();
-    InstructionHandlerState i(h);
-    i.handle("resb");
-    OperandHandlerState o(h);
-    o.handle("anything");
+//    InstructionTypeTable::load();
+//    HandlerContext* h = new HandlerContext();
+//    InstructionHandlerState i(h);
+//    i.handle("resb");
+//    OperandHandlerState o(h);
+//    o.handle("anything");
 
 //    MemoryInstructionHandler d("HELLO!,X");
 //    d.handle();

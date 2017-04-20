@@ -806,29 +806,31 @@
 	<vector>
 	<sstream>
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.cpp
+1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.cpp
 	"HandlerContext.h"
 	"iostream"
 
-1492637140 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
+1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
 	"InstructionHandlerState.h"
 	"iostream"
 
-1492682063 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
+1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
 	"LabelHandlerState.h"
 	"iostream"
 	"../tables/SymbolTable.h"
 	"../tables/InstructionTypeTable.h"
 	"../LocationCounter.h"
 
-1492636673 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
+1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
 	"OperandHandlerState.h"
+	"../tables/InstructionTypeTable.h"
+	"../instructionHandler/InstructionHandlerFactory.h"
 	"iostream"
 
-1492626788 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
+1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
 	"StateHandler.h"
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
+1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
 	"InstructionHandler.h"
 
 1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.h
@@ -840,11 +842,11 @@
 	"MemoryInstructionHandler.h"
 	"SimpleDirectiveInstructionHandler.h"
 
-1492641611 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.h
+1492693228 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.h
 	<InstructionHandler.h>
 	<string>
 
-1492680879 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
+1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
 	"MemoryInstructionHandler.h"
 	"../tables/InstructionTypeTable.h"
 	<iostream>
@@ -924,7 +926,7 @@
 	"../NumberConverters/NumberConverter.h"
 	"Constants.h"
 
-1492642209 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
+1492692282 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
 	"MemoryObjectCodeGenerator.h"
 	"../tables/OperationCodeTable.h"
 	"../tables/SymbolTable.h"
@@ -985,7 +987,7 @@
 1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\baseregister.h
 	<iostream>
 
-1492683280 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
+1492684543 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
 	"Normalizer.h"
 	"../ObjectCodeGenerator/Constants.h"
 	<iostream>
