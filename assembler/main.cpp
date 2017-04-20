@@ -7,6 +7,7 @@
 #include "MemoryInstructionHandler.h"
 #include "driver/StatementParser.h"
 #include <sstream>
+#include "tables/SymbolTable.h"
 
 using namespace std;
 
@@ -33,9 +34,15 @@ int main(void)
 //    InstructionTypeTable::load();
 //    cout << InstructionTypeTable::getType("ldx");
 
-    // LDX HELLO
-//    MemoryInstructionHandler d(nullptr);
+
+//    MemoryInstructionHandler d("HELLO!,X");
 //    d.handle();
+
+//    SymbolTable::add("game222","0000");
+//
+//    HandlerContext *handler = new HandlerContext();
+//    LabelHandlerState l(handler);
+//    l.handle("game222");
 
 
     return 0;

@@ -9,6 +9,14 @@ class MemoryInstructionHandler : public InstructionHandler
         MemoryInstructionHandler(std::string instruction);
         bool handle();
 
+    private:
+        bool checkEmptyInstruction();
+        bool checkFirstCharacter();
+        bool checkIndexedAddressing();
+        bool checkReservedWord();
+        bool checkNamingConventions();
+        bool handleStatement();
+
 };
 
 #endif // MEMORYINSTRUCTIONHANDLER_H

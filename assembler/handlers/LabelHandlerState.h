@@ -14,6 +14,9 @@ class LabelHandlerState: public StateHandler
         void throwError();
     private:
         HandlerContext *context;
+        bool checkReservedWord(std::string label);
+        bool checkExistence(std::string label);
+        bool checkNamingConvention(std::string label);
 };
 
 #endif // LABELHANDLERSTATE_H

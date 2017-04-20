@@ -1,35 +1,89 @@
 #include "LabelHandlerState.h"
 #include "iostream"
+#include "../tables/SymbolTable.h"
+#include "../tables/InstructionTypeTable.h"
+#include "../LocationCounter.h"
 
 using namespace std;
 
 LabelHandlerState::LabelHandlerState(HandlerContext *context): context(context){}
 
-bool checkLabelFormat(string label) {
+bool LabelHandlerState::checkReservedWord(string label){
+    /// Check if the instruction is a RESERVED WORD ...
+    bool isResreved = InstructionTypeTable::searchOperation(label);
+    if(isResreved){
+        cout << "State will be moved to Instruction Handle State" << endl;
+        return false;
+    }
+    return true;
+}
 
-    return false;
+bool LabelHandlerState::checkExistence(string label){
+    /// Check if the label previously exist in the symbol Table...
+    bool exist = SymbolTable::searchSymbol(label);
+    if(exist){
+        cout << "ERROR: Symbol already exists" << endl;
+        return false;
+    }
+    return true;
+}
+
+bool LabelHandlerState::checkNamingConvention(string label){
+
+    if (!isalpha(label[0])){
+        cout << "Label can't start with this" << endl;
+        return false;
+    }
+
+    for(int i=1;i<label.length();i++){
+        if(!isalpha(label[i]) && !isdigit(label[i])){
+            cout << "Character at " << i << " is invalid" << endl;
+            return false;
+        }
+    }
+    return true;
 }
 
 void LabelHandlerState::handle(string statement)
 {
-    ///check if it is not an instruction
+    // TO BE REMOVED
+    cout << endl;
+    cout << statement << endl;
+    InstructionTypeTable::load();
 
-    /// check for existence in SymTab
-        // if exists throwError()
-        // if not insert into symtab
+    labelAvailable = false;
 
-    /// check label format
-        // if not following the format throwError()
-        // if following the format continue
+    //check if the label is an instruction
+    if(!checkReservedWord(statement)){
+        /// TO DO : Update the state to the Instruction State
+        return;
+    }
 
-    if (statement != "") {
-        labelAvailable = false;
-    } else {
+    // check the label format
+    if(!checkNamingConvention(statement)){
+        return;
+    }
+
+    // check for existence of the statement in Symbol Table
+    if(!checkExistence(statement)){
+        return;
+    }
+    else {
+        SymbolTable::add(statement,"0000");
         labelAvailable = true;
     }
-    /// If there are no errors .. upgrade the state.
-    this->context->setState(context->getInstructionHandler());
-    cout << "Currently: instruction-handler-state" << endl;
+
+    //    if (statement != "") {
+    //        labelAvailable = false;
+    //    } else {
+    //        labelAvailable = true;
+    //    }
+
+    cout << "Label Successfully Added" << endl;
+
+    /// Finally, Update the state to the Instruction State
+    //    this->context->setState(context->getInstructionHandler());
+    //    cout << "Currently: instruction-handler-state" << endl;
 }
 
 void LabelHandlerState::throwError()
