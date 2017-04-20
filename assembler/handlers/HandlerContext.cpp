@@ -31,7 +31,7 @@ void HandlerContext::throwError()
 
 StateHandler* HandlerContext::getLabelHandler()
 {
-    cout << "Currently: label-handler-state." << endl;
+    //cout << "Currently: label-handler-state." << endl;
     return this->labelHandler;
 }
 StateHandler* HandlerContext::getInstructionHandler()

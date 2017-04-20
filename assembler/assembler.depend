@@ -239,11 +239,11 @@
 	"InstructionHandlerState.h"
 	"OperandHandlerState.h"
 
-1492363825 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.h
+1492687492 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.h
 	"StateHandler.h"
 	"HandlerContext.h"
 
-1492305386 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.h
+1492689260 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.h
 	"string"
 
 1492364587 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.h
@@ -265,23 +265,28 @@
 	<vector>
 	<string>
 
-1492365999 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.cpp
+1492689343 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.cpp
 	"HandlerContext.h"
 	"iostream"
 
-1492365990 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
+1492689660 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
 	"InstructionHandlerState.h"
 	"iostream"
 
-1492365990 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
+1492687645 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
 	"LabelHandlerState.h"
 	"iostream"
+	"../tables/SymbolTable.h"
+	"../tables/InstructionTypeTable.h"
+	"../LocationCounter.h"
 
-1492441116 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
+1492691029 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
 	"OperandHandlerState.h"
+	"../tables/InstructionTypeTable.h"
+	"../instructionHandler/InstructionHandlerFactory.h"
 	"iostream"
 
-1492303618 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
+1492689247 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
 	"StateHandler.h"
 
 1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\locationcounter.cpp
@@ -303,7 +308,7 @@
 	<stdlib.h>
 	<string>
 
-1492617114 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
+1492623403 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
 	"Constants.h"
 
 1492617114 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
@@ -326,16 +331,17 @@
 1492366076 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.h
 	<iostream>
 
-1492373465 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
+1492687492 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
 	"ObjectCodeGeneratorFactory.h"
 	"DirectiveObjectCodeGenerator.h"
+	"MemoryObjectCodeGenerator.h"
+	"SimpleDirectiveObjectCodeGenerator.h"
 
-1492366076 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.h
+1492687492 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.h
 	<map>
 	"ObjectCodeGenerator.h"
 
-1492373465 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
-	<iostream>
+1492687492 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
 1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\symboltable.cpp
@@ -376,25 +382,30 @@
 	<string>
 	<vector>
 
-1492453805 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
+1492689913 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	"driver/AssemblerDriver.h"
 	"ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h"
 	"ObjectCodeGenerator/MemoryObjectCodeGenerator.h"
 	"tables/InstructionTypeTable.h"
 	"ObjectCodeGenerator/DirectiveObjectCodeGenerator.h"
+	"MemoryInstructionHandler.h"
+	"driver/StatementParser.h"
+	"handlers/OperandHandlerState.h"
+	<sstream>
+	"tables/SymbolTable.h"
 
 1492377171 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
-1492439331 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
+1492687492 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
-1492617114 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
+1492687492 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
 	"DirectiveObjectCodeGenerator.h"
 	<stdio.h>
 	<stdlib.h>
-	"../NumberConverters/HexadecimalConverter.h"
+	"../NumberConverters/NumberConverter.h"
 	"Constants.h"
 
 1492439331 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.cpp
@@ -419,18 +430,18 @@
 	<fstream>
 	<sstream>
 
-1492453691 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.cpp
+1492687492 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.cpp
 	<map>
 	<stdio.h>
 	"InstructionTypeTable.h"
 	<bits/stdc++.h>
 
-1492453691 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.h
+1492687492 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.h
 	<map>
 	<iostream>
 	<stdio.h>
 
-1492439331 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
+1492687492 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
 	"MemoryObjectCodeGenerator.h"
 	"../tables/OperationCodeTable.h"
 	"../tables/SymbolTable.h"
@@ -704,33 +715,38 @@
 	"InstructionTypeTable.h"
 	<bits/stdc++.h>
 
-1492453691 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
+1492691062 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
 	"InstructionHandler.h"
 
 1492453691 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.h
 	<string>
 
-1492453691 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
+1492687492 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
 	"InstructionHandlerFactory.h"
+	"DirectiveInstructionHandler.h"
+	"MemoryInstructionHandler.h"
+	"SimpleDirectiveInstructionHandler.h"
 
-1492453691 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.h
+1492691008 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.h
 	<InstructionHandler.h>
 	<string>
 
-1492453691 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
+1492691119 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
 	"MemoryInstructionHandler.h"
+	"../tables/InstructionTypeTable.h"
+	<iostream>
 
-1492453691 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
+1492687492 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
 	"InstructionHandler.h"
 	<string>
 
-1492439331 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
+1492687492 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
 	"NumberConverter.h"
 	<string>
 	<sstream>
 	<bitset>
 
-1492439331 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
+1492687492 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
 	<string>
 
 1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
@@ -998,4 +1014,20 @@
 
 1492624896 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.h
 	"InstructionHandler.h"
+
+1492687492 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
+	"DirectiveInstructionHandler.h"
+	"../ObjectCodeGenerator/Constants.h"
+	"NumberConverter.h"
+
+1492687492 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.h
+	"InstructionHandler.h"
+
+1492687492 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\simpledirectiveinstructionhandler.h
+	"InstructionHandler.h"
+	<string>
+
+1492687492 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\simpledirectiveinstructionhandler.cpp
+	"SimpleDirectiveInstructionHandler.h"
+	<iostream>
 
