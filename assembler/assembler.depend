@@ -798,7 +798,7 @@
 	"InstructionHandlerState.h"
 	"iostream"
 
-1492681986 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
+1492682063 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
 	"LabelHandlerState.h"
 	"iostream"
 	"../tables/SymbolTable.h"
@@ -845,7 +845,7 @@
 	<iostream>
 	<vector>
 
-1492681781 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\main.cpp
+1492683232 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	"driver/AssemblerDriver.h"
 	"ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h"
@@ -856,6 +856,7 @@
 	"driver/StatementParser.h"
 	<sstream>
 	"tables/SymbolTable.h"
+	"utils/Normalizer.h"
 
 1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
@@ -968,7 +969,7 @@
 1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\baseregister.h
 	<iostream>
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
+1492683280 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
 	"Normalizer.h"
 	"../ObjectCodeGenerator/Constants.h"
 	<iostream>
