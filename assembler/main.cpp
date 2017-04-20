@@ -6,6 +6,7 @@
 #include "ObjectCodeGenerator/DirectiveObjectCodeGenerator.h"
 #include "MemoryInstructionHandler.h"
 #include "driver/StatementParser.h"
+#include "handlers/OperandHandlerState.h"
 #include <sstream>
 #include "tables/SymbolTable.h"
 
@@ -33,7 +34,12 @@ int main(void)
 
 //    InstructionTypeTable::load();
 //    cout << InstructionTypeTable::getType("ldx");
-
+    InstructionTypeTable::load();
+    HandlerContext* h = new HandlerContext();
+    InstructionHandlerState i(h);
+    i.handle("resb");
+    OperandHandlerState o(h);
+    o.handle("anything");
 
 //    MemoryInstructionHandler d("HELLO!,X");
 //    d.handle();

@@ -8,17 +8,17 @@ using namespace std;
 
 LabelHandlerState::LabelHandlerState(HandlerContext *context): context(context){}
 
-bool LabelHandlerState::checkReservedWord(string label){
+bool LabelHandlerState::checkReservedWord(string label) {
     /// Check if the instruction is a RESERVED WORD ...
     bool isResreved = InstructionTypeTable::searchOperation(label);
-    if(isResreved){
+    if(isResreved) {
         cout << "State will be moved to Instruction Handle State" << endl;
         return false;
     }
     return true;
 }
 
-bool LabelHandlerState::checkExistence(string label){
+bool LabelHandlerState::checkExistence(string label) {
     /// Check if the label previously exist in the symbol Table...
     bool exist = SymbolTable::searchSymbol(label);
     if(exist){
@@ -28,15 +28,15 @@ bool LabelHandlerState::checkExistence(string label){
     return true;
 }
 
-bool LabelHandlerState::checkNamingConvention(string label){
+bool LabelHandlerState::checkNamingConvention(string label) {
 
-    if (!isalpha(label[0])){
+    if (!isalpha(label[0])) {
         cout << "Label can't start with this" << endl;
         return false;
     }
 
-    for(int i=1;i<label.length();i++){
-        if(!isalpha(label[i]) && !isdigit(label[i])){
+    for(int i = 1; i<label.length(); i++){
+        if(!isalpha(label[i]) && !isdigit(label[i])) {
             cout << "Character at " << i << " is invalid" << endl;
             return false;
         }

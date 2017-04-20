@@ -10,7 +10,7 @@ class InstructionHandlerFactory
         static InstructionHandlerFactory* instructionHandlerFactoryInstance;
 
     public:
-        InstructionHandlerFactory* getInstance();
+        static InstructionHandlerFactory* getInstance();
         InstructionHandler* getInstructionHandler(std::string type, std::string instruction, std::string operand);
 
 };
