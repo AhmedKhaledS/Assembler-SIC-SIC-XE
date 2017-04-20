@@ -9,6 +9,7 @@
 #include "handlers/OperandHandlerState.h"
 #include <sstream>
 #include "tables/SymbolTable.h"
+#include "utils/Normalizer.h"
 
 using namespace std;
 
@@ -34,12 +35,12 @@ int main(void)
 
 //    InstructionTypeTable::load();
 //    cout << InstructionTypeTable::getType("ldx");
-    InstructionTypeTable::load();
-    HandlerContext* h = new HandlerContext();
-    InstructionHandlerState i(h);
-    i.handle("resb");
-    OperandHandlerState o(h);
-    o.handle("anything");
+//    InstructionTypeTable::load();
+//    HandlerContext* h = new HandlerContext();
+//    InstructionHandlerState i(h);
+//    i.handle("resb");
+//    OperandHandlerState o(h);
+//    o.handle("anything");
 
 //    MemoryInstructionHandler d("HELLO!,X");
 //    d.handle();
@@ -49,6 +50,12 @@ int main(void)
 //    HandlerContext *handler = new HandlerContext();
 //    LabelHandlerState l(handler);
 //    l.handle("game222");
+
+    string code("HELLO         FROM THE OTHER C'SI      DE'    ");
+    cout << code << endl << endl;
+
+    Normalizer n;
+    cout << n.normalizedInst(code) << endl;
 
 
     return 0;

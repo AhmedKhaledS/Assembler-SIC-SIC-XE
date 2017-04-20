@@ -7,9 +7,7 @@
 
 using namespace std;
 
-Normalizer::Normalizer()
-:instruction()
-{
+Normalizer::Normalizer(){
 }
 
 string Normalizer::normalizedInst(string instruction){
