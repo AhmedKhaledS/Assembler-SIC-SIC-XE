@@ -52,9 +52,10 @@ int main(void)
 //    LabelHandlerState l(handler);
 //    l.handle("game222");
 
-    string code = "HELLO         FROM THE OTHER X'qwww'   ";
+    string code = "HELLO         FROM THE other X'qw  ww'   ";
     Normalizer n;
-    n.splittedInst(code);
+    string output = n.normalizedInst(code);
+    cout << output << endl;
 
 
     return 0;

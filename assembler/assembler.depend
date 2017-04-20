@@ -807,7 +807,7 @@
 	<vector>
 	<string>
 
-1492697825 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
+1492698681 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
 	<vector>
 	<string>
 
@@ -826,9 +826,12 @@
 	"HandlerContext.h"
 	"iostream"
 
-1492694409 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
+1492698304 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
 	"InstructionHandlerState.h"
 	"iostream"
+	"../ObjectCodeGenerator/Constants.h"
+	"../tables/InstructionTypeTable.h"
+	"../LocationCounter.h"
 
 1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
 	"LabelHandlerState.h"
@@ -846,7 +849,7 @@
 1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
 	"StateHandler.h"
 
-1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
+1492698304 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
 	"InstructionHandler.h"
 
 1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.h
@@ -879,7 +882,7 @@
 	<iostream>
 	<vector>
 
-1492698230 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\main.cpp
+1492699058 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	"driver/AssemblerDriver.h"
 	"ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h"
@@ -930,10 +933,10 @@
 1492642434 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
 	<string>
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
+1492698304 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
 	"Constants.h"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
+1492698304 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
 	<string>
 
 1492642306 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
@@ -1004,7 +1007,7 @@
 1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\baseregister.h
 	<iostream>
 
-1492697833 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
+1492698827 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
 	"Normalizer.h"
 	"../ObjectCodeGenerator/Constants.h"
 	<iostream>
@@ -1026,7 +1029,7 @@
 	"InstructionHandler.h"
 	<string>
 
-1492642607 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
+1492698304 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
 	"DirectiveInstructionHandler.h"
 	"../ObjectCodeGenerator/Constants.h"
 	"NumberConverter.h"
