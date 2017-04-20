@@ -15,5 +15,7 @@ char Constants::CHAR_PREFIX = 'C';
 string Constants::INDEXING_PREFIX = ",X";
 string Constants::BYTE = "byte";
 string Constants::WORD = "word";
+string Constants::RESW = "resw";
+string Constants::RESB = "resb";
 string Constants::ZERO = "0";
 string Constants::ZEROS = "0000";
