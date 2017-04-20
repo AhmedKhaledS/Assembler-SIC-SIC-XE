@@ -52,11 +52,14 @@ int main(void)
 //    LabelHandlerState l(handler);
 //    l.handle("game222");
 
-    string code = "HELLO         FROM THE other X'qw  ww'   ";
-    Normalizer n;
-    string output = n.normalizedInst(code);
-    cout << output << endl;
+//    string code = "HELLO         FROM THE other X'qw  ww'   ";
+//    Normalizer n;
+//    string output = n.normalizedInst(code);
+//    cout << output << endl;
 
+      MemoryObjectCodeGenerator m("ldx","BUFFER,X");
+      string objectCode = m.parse();
+      cout << "Object Code: " << objectCode;
 
     return 0;
 }
