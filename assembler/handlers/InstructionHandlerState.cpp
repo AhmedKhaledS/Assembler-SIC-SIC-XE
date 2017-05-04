@@ -5,7 +5,7 @@
 #include "../LocationCounter.h"
 using namespace std;
 
-const int FIXED_INCREMENT = 3;
+const string FIXED_INCREMENT = "3";
 
 InstructionHandlerState::InstructionHandlerState(HandlerContext *context)
 {
@@ -14,12 +14,13 @@ InstructionHandlerState::InstructionHandlerState(HandlerContext *context)
 
 bool isDirective(string statement) {
     return (statement == Constants::WORD || statement == Constants::BYTE
-             || statement == Constants::RESW || statement == Constants::RESB);
+             || statement == Constants::RESW || statement == Constants::RESB
+             || statement == Constants::START);
 }
 
 void InstructionHandlerState::handle(string statement)
 {
-    ///check valid instruction (opCode Table)
+    ///check valid instruction (opCode Table);
     if (!InstructionTypeTable::searchOperation(statement)) {
         throwError();
     }
@@ -28,7 +29,7 @@ void InstructionHandlerState::handle(string statement)
         throwError();
     }
     ///location counter increment
-    if (!isDirective(statement)) {
+   if (!isDirective(statement)) {
         LocationCounter::increment(FIXED_INCREMENT);
     }
     /// this part for testing the operand..
@@ -41,5 +42,5 @@ void InstructionHandlerState::handle(string statement)
 
 void InstructionHandlerState::throwError()
 {
-    throw "Invlaid Instruction Syntax";
+    cout << endl << "Invlaid Instruction Syntax" << endl;
 }

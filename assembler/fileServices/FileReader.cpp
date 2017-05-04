@@ -10,7 +10,7 @@ FileReader::FileReader()
 {
 }
 
-vector<string> FileReader::readInst(string path)
+vector<string> FileReader::read(string path)
 {
     vector<string> code;
     string line;
@@ -27,4 +27,14 @@ vector<string> FileReader::readInst(string path)
 //    }
 
     return code;
+}
+
+void FileReader::write(string path, string fileName)
+{
+
+}
+
+void FileReader::throwError()
+{
+
 }

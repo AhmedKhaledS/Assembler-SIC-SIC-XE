@@ -6,7 +6,9 @@
 using namespace std;
 
 const int BASE_10 = 10;
+const int BASE_16 = 16;
 const char ZERO = '0';
+const char A  = 'A';
 
 string NumberConverter::convertBinToHex(string binNumber){
 
@@ -49,4 +51,24 @@ int NumberConverter::getNumericValue(string number) {
         obtainedNumber += (digit - ZERO);
     }
     return obtainedNumber;
+}
+
+int NumberConverter::getHexadecimalValue(string hexadecimal) {
+    int obtainedNumber = 0;
+    for (char digit : hexadecimal) {
+        obtainedNumber *= BASE_16;
+        if (isalpha(digit)) {
+            obtainedNumber += (digit - A);
+        } else {
+            obtainedNumber += (digit - ZERO);
+        }
+    }
+    return obtainedNumber;
+}
+
+string NumberConverter::stringfy(int number) {
+    stringstream ss;
+    ss << number;
+    string numberString = ss.str();
+    return numberString;
 }

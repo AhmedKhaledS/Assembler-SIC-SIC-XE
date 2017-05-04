@@ -1,17 +1,19 @@
 #ifndef FILEREADER_H
 #define FILEREADER_H
+#include "FileHandler.h"
 #include <vector>
 #include <string>
 
 
-class FileReader
+class FileReader: public FileHandler
 {
     private:
         std::string fileName;
 
     public:
         FileReader();
-        std::vector<std::string> readInst(std::string);
-
+        void write(std::string path, std::string fileName);
+        std::vector<std::string> read(std::string path);
+        void throwError();
 };
 #endif

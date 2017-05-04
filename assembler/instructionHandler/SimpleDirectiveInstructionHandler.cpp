@@ -10,7 +10,7 @@ SimpleDirectiveInstructionHandler::SimpleDirectiveInstructionHandler(string inst
 }
 
 bool SimpleDirectiveInstructionHandler::handle(){
-    if(instruction == ""){
+    if(instruction == "#"){
         return true;
     }
     cout << "ERROR: NON EMPTY" << endl;

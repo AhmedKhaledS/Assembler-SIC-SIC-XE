@@ -5,10 +5,6 @@ using namespace std;
 
 HandlerContext::HandlerContext()
 {
-    //LabelHandlerState lHandler(this);
-    //InstructionHandlerState iHandler(this);
-    //OperandHandlerState oHandler(this);
-
     labelHandler = new LabelHandlerState(this);
     instHandler = new InstructionHandlerState(this);
     operHandler = new OperandHandlerState(this);

@@ -1,20 +1,15 @@
 #include <iostream>
-#include "driver/AssemblerDriver.h"
-#include "ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h"
-#include "ObjectCodeGenerator/MemoryObjectCodeGenerator.h"
-#include "tables/InstructionTypeTable.h"
-#include "ObjectCodeGenerator/DirectiveObjectCodeGenerator.h"
-#include "MemoryInstructionHandler.h"
-#include "driver/StatementParser.h"
-#include "handlers/OperandHandlerState.h"
 #include <sstream>
-#include "tables/SymbolTable.h"
-#include "utils/Normalizer.h"
+#include <string>
+#include "utils/TablesLoader.h"
+#include "driver/AssemblerDriver.h"
+#include "tables/InstructionTypeTable.h"
 
 using namespace std;
 
 int main(void)
 {
+/*
 //    SimpleDirectiveObjectCodeGenerator s("sub");
 //    cout << "Object Code is " << s.parse() << endl;
 
@@ -57,6 +52,23 @@ int main(void)
 //    Normalizer n;
 //    cout << n.normalizedInst(code) << endl;
 
+*/
+    TablesLoader::loadTables();
+    AssemblerDriver assembler = AssemblerDriver();
+//    assembler.assemble("D:\\College\\2ndYear\\2ndTerm\\Systems Programming\\SIC Assignment\\Assembler-SIC-SIC-XE-\\assembler\\fileServices\\SIC-Example.txt");
+    FileHandler* reader;
+    FileReader rd;
+    reader = &rd;
+    //reader->
+    //reader = new FileReader();
+//    reader.readInst("D:\\College\\2ndYear\\2ndTerm\\Systems Programming\\SIC Assignment\\Assembler-SIC-SIC-XE-\\assembler\\fileServices\\SIC-Example.txt");
+
+//    string code = "JEQ	 ENDFIL";
+//    Normalizer n;
+//    vector<string> output = n.splittedInst(code);
+//    for(int i=0;i<output.size();i++){
+//        cout << output.at(i);
+//   }
 
     return 0;
 }

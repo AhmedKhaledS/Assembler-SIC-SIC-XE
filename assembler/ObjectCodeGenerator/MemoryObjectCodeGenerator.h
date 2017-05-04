@@ -11,6 +11,8 @@ class MemoryObjectCodeGenerator : public ObjectCodeGenerator
 
     private:
         string indexingAddressing(string address);
+        string parseInstruction(string instruction);
+        string parseOperand(string operand);
 };
 
 #endif // MEMORYOBJECTCODEGENERATOR_H

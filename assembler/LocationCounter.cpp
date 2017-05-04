@@ -1,16 +1,25 @@
 #include <iostream>
 #include "LocationCounter.h"
+#include "NumberConverter.h"
+#include <string>
 
 using namespace std;
 
-int LocationCounter::locationCounter = 0;
-vector<int> LocationCounter::locations;
+string LocationCounter::locationCounter = "0";
+vector<string> LocationCounter::locations;
 
-int LocationCounter::getLocationCounter() {
+string LocationCounter::getLocationCounter() {
 	return locationCounter;
 }
 
-void LocationCounter::increment(int increm) {
+void LocationCounter::increment(string increm) {
 	locations.push_back(locationCounter);
-	locationCounter += increm;
+	if (locationCounter == "1030") {
+        int debug = -1;
+	}
+	cout << locationCounter << endl;
+	int locationCounterValue = NumberConverter::convertHexToDec(locationCounter);
+	int incrementValue = (NumberConverter::convertHexToDec(increm));
+    locationCounterValue += incrementValue;
+    locationCounter = NumberConverter::convertDecToHex(locationCounterValue);
 }

@@ -11,6 +11,7 @@ public :
     static int OP_CODE_SIZE;
     static int ADDRESS_CODE_SIZE;
     static int OBJECT_CODE_SIZE;
+    static int WORD_SIZE;
     static int MAX_ADDRESS;
     static int MAX_NUMBER;
     static char HEX_PREFIX;
@@ -20,6 +21,7 @@ public :
     static string BYTE;
     static string RESB;
     static string RESW;
+    static string START;
     static string ZERO;
     static string ZEROS;
 };

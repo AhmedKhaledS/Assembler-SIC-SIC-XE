@@ -1,13 +1,14 @@
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 
 class LocationCounter {
     private :
-        static int locationCounter;
-        static vector<int> locations;
+        static string locationCounter;
+        static vector<string> locations;
 
     public :
-        static int getLocationCounter();
-        static void increment(int increm);
+        static string getLocationCounter();
+        static void increment(string increm);
 };

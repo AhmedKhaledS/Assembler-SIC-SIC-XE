@@ -4,6 +4,7 @@
 #include <fstream>
 #include <vector>
 #include <sstream>
+#include "LabelVerifier.h"
 
 using namespace std;
 
@@ -12,37 +13,51 @@ Normalizer::Normalizer(){
 }
 
 string Normalizer::normalizedInst(string instruction){
-    return instruction;
+    string normalized = "";
+    vector<string> result;
+    result = splittedInst(instruction);
+    for(int i=0;i<result.size();i++){
+        normalized += result.at(i);
+        normalized += " ";
+    }
+    return normalized;
 }
 
 vector<string> Normalizer::splittedInst(string instruction){
 
-    cout << "Instruction is: " << instruction << endl;
-
-
     for(size_t i=0; i<instruction.length(); i++){
 
-        charcter = toupper(instruction[i]);
+        charcter = tolower(instruction[i]);
 
-        if(charcter == ' ' && part != ""){
-            cout << part << "     " << part.length() << endl;
+        if( (charcter == ' ' || charcter == '\t') && part != ""){
             result.push_back(part);
             part = "";
         } else if (charcter == '\'' ){
-            i = normalizeQuotes(i,instruction);
+            i = normalizeQuotes(instruction,i);
         } else if (charcter == '.'){
-           i = normalizeComments(i,instruction);
-        } else if(charcter != ' ') {
+           i = normalizeComments(instruction,i);
+        } else if(charcter != ' ' && charcter != '\t') {
             part += charcter;
         }
     }
+
     addLastPart();
-    cout << "DONE!!!";
+
+    if(!LabelVerifier::checkReservedWord(result.at(0))){
+        result.insert(result.begin(),"#");
+    }
+
+    if (result.size() == 2) {
+        result.push_back("#");
+    }
+//    for(int i=0;i<result.size(); i++) {
+//        cout <<  result[i] << " " ;
+//    }
 
     return result;
 }
 
-int Normalizer::normalizeQuotes(int i,string instruction){
+int Normalizer::normalizeQuotes(string instruction,int i){
     part += charcter;
     i++;
     while(i < instruction.length() && instruction[i] != '\''){
@@ -57,20 +72,18 @@ int Normalizer::normalizeQuotes(int i,string instruction){
         part += instruction[i];
         i++;
     }
-    cout << part << "     " << part.length() << endl;
     result.push_back(part);
     part = "";
     return i;
 }
 
-int Normalizer::normalizeComments(int i,string instruction){
+int Normalizer::normalizeComments(string instruction,int i){
      part += charcter;
      i++;
      while(i < instruction.length()){
         part += instruction[i];
         i++;
      }
-     cout << part << "     " << part.length() << endl;
      result.push_back(part);
      part = "";
      return i;
@@ -78,7 +91,6 @@ int Normalizer::normalizeComments(int i,string instruction){
 
 void Normalizer::addLastPart(){
     if (part != ""){
-        cout << part << "     " << part.length() << endl;
          result.push_back(part);
     }
 }

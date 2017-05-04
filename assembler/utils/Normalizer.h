@@ -10,8 +10,8 @@ class Normalizer
         char charcter;
         std::string part;
         std::vector<std::string> result;
-        int normalizeQuotes(int i,std::string instruction);
-        int normalizeComments(int i,std::string instruction);
+        int normalizeQuotes(std::string instruction,int i);
+        int normalizeComments(std::string instruction,int i);
         void addLastPart();
 
 

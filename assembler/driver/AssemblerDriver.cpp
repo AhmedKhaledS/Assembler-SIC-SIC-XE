@@ -8,7 +8,7 @@ AssemblerDriver::AssemblerDriver(){}
 
 void AssemblerDriver::assemble(string path)
 {
-     unparsedStatements = fileReader->readInst(path);
+     unparsedStatements = fileReader->read(path);
      // A mark to terminate.
      for (string statement : unparsedStatements)
      {
@@ -19,10 +19,13 @@ void AssemblerDriver::assemble(string path)
      }
      return;
 }
+
 vector<string> AssemblerDriver::normalize(string assemblyCode)
 {
-    return normalizer->splittedInst(assemblyCode);
+    Normalizer n;
+    return n.splittedInst(assemblyCode);
 }
+
 void AssemblerDriver::generateListingCode()
 {
 
@@ -30,7 +33,7 @@ void AssemblerDriver::generateListingCode()
 void AssemblerDriver::generateObjectCode()
 {
     /// CodeGenerator codeGenerator = CodeGenerator(By Reference 2D Array);
-    /// codeGenerator.generateObjectCodes();
+    /// codeGenerator.generateObjectCode();
 
     // x ldx 1000 4F6C7E
     // y str 1000
