@@ -10,8 +10,8 @@ int Constants::OBJECT_CODE_SIZE = 6;
 int Constants::MAX_ADDRESS = 32768;
 int Constants::MAX_NUMBER = 9999;
 
-char Constants::HEX_PREFIX = 'X';
-char Constants::CHAR_PREFIX = 'C';
+char Constants::HEX_PREFIX = 'x';
+char Constants::CHAR_PREFIX = 'c';
 
 string Constants::INDEXING_PREFIX = ",X";
 string Constants::BYTE = "byte";
