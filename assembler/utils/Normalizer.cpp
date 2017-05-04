@@ -8,38 +8,76 @@
 using namespace std;
 
 Normalizer::Normalizer(){
+
 }
 
 string Normalizer::normalizedInst(string instruction){
-
-    string input = instruction;
-
-    // Replace white spaces with only one space
-    // Case 1 : Tabs
-    while(input.find("\t") != Constants::NOT_A_POSITION){
-        input.replace(input.find("\t"), 1, " ");
+    string normalized = "";
+    vector<string> result;
+    result = splittedInst(instruction);
+    for(int i=0;i<result.size();i++){
+        normalized += result.at(i);
+        normalized += " ";
     }
-
-    // Case 2 : Spaces
-    while(input.find("  ") != Constants::NOT_A_POSITION){
-        input.replace(input.find("  "), 2, " ");
-    }
-
-    return input;
+    return normalized;
 }
 
-    vector<string> Normalizer::splittedInst(string instruction){
+vector<string> Normalizer::splittedInst(string instruction){
 
-    string input = normalizedInst(instruction);
-    vector<string> result;
+    for(size_t i=0; i<instruction.length(); i++){
 
-    // Splitting the input into its components
-    istringstream iss(instruction);
+        charcter = toupper(instruction[i]);
 
-    // Storing the components into the vector
-    for(string k; iss >> k;){
-        result.push_back(k);
+        if(charcter == ' ' && part != ""){
+            result.push_back(part);
+            part = "";
+        } else if (charcter == '\'' ){
+            i = normalizeQuotes(instruction,i);
+        } else if (charcter == '.'){
+           i = normalizeComments(instruction,i);
+        } else if(charcter != ' ') {
+            part += charcter;
+        }
     }
+    addLastPart();
 
     return result;
+}
+
+int Normalizer::normalizeQuotes(string instruction,int i){
+    part += charcter;
+    i++;
+    while(i < instruction.length() && instruction[i] != '\''){
+        part += instruction[i];
+        i++;
+    }
+    if(i < instruction.length() && instruction[i] == '\''){
+        part += instruction[i];
+        i++;
+    }
+    while(i < instruction.length() && instruction[i] != ' '){
+        part += instruction[i];
+        i++;
+    }
+    result.push_back(part);
+    part = "";
+    return i;
+}
+
+int Normalizer::normalizeComments(string instruction,int i){
+     part += charcter;
+     i++;
+     while(i < instruction.length()){
+        part += instruction[i];
+        i++;
+     }
+     result.push_back(part);
+     part = "";
+     return i;
+}
+
+void Normalizer::addLastPart(){
+    if (part != ""){
+         result.push_back(part);
+    }
 }

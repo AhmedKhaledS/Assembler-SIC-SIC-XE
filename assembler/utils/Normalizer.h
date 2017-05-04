@@ -7,6 +7,13 @@ class Normalizer
 {
     private:
         std::string instruction;
+        char charcter;
+        std::string part;
+        std::vector<std::string> result;
+        int normalizeQuotes(std::string instruction,int i);
+        int normalizeComments(std::string instruction,int i);
+        void addLastPart();
+
 
     public:
         Normalizer();

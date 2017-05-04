@@ -19,20 +19,43 @@ MemoryObjectCodeGenerator::MemoryObjectCodeGenerator(string inst,string oper)
 
 string MemoryObjectCodeGenerator::parse(){
 
+    // TO BE REMOVE
+    OperationCodeTable::load();
+    SymbolTable::add("BUFFER","1039");
+
+    string objectCode = parseInstruction(instruction);
+
+    string addressCode = parseOperand(operand);
+
+    objectCode += addressCode;
+
+    return objectCode;
+
+ }
+
+string MemoryObjectCodeGenerator::indexingAddressing(string address){
+    unsigned int addressCode = NumberConverter::convertHexToDec(address);
+    addressCode += Constants::MAX_ADDRESS;
+    return NumberConverter::convertDecToHex(addressCode);
+}
+
+string MemoryObjectCodeGenerator::parseInstruction(string instruction){
+
     // Grabbing instruction object code in binary
-    string binObjectCode;
-    OperationCodeTable::load();                                 // TO BE REMOVED
-    binObjectCode = OperationCodeTable::getCode(instruction);   // TO BE REMOVED
+    string binInstructionCode;
+    binInstructionCode = OperationCodeTable::getCode(instruction);
 
     // Converting object code to hexadecimal
-    string objectCode = NumberConverter::convertBinToHex(binObjectCode);
+    string instructionCode = NumberConverter::convertBinToHex(binInstructionCode);
 
     // Normalizing the first part object code form
-    if(objectCode.size() != Constants::OP_CODE_SIZE){
-        objectCode = Constants::ZERO + objectCode;
+    if(instructionCode.size() != Constants::OP_CODE_SIZE){
+        instructionCode = Constants::ZERO + instructionCode;
     }
+    return instructionCode;
+}
 
-    SymbolTable::add("BUFFER","1039");                         // TO BE REMOVED
+string MemoryObjectCodeGenerator::parseOperand(string operand){
 
     // Check Mode of addressing
     bool indexing;
@@ -43,6 +66,12 @@ string MemoryObjectCodeGenerator::parse(){
         indexing = false;
     }
 
+    // Check if the operand available
+    if(!SymbolTable::searchSymbol(operand)){
+        cout << "ERROR" << endl;
+        return "";
+    }
+
     string addressCode = SymbolTable::getAddress(operand);
     while(addressCode.size() != Constants::ADDRESS_CODE_SIZE){
         addressCode = Constants::ZERO + addressCode;
@@ -51,14 +80,5 @@ string MemoryObjectCodeGenerator::parse(){
     if(indexing){
         addressCode = indexingAddressing(addressCode);
     }
-
-    objectCode += addressCode;
-    return objectCode;
-
- }
-
-string MemoryObjectCodeGenerator::indexingAddressing(string address){
-    unsigned int addressCode = NumberConverter::convertHexToDec(address);
-    addressCode += Constants::MAX_ADDRESS;
-    return NumberConverter::convertDecToHex(addressCode);
+    return addressCode;
 }
