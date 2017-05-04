@@ -21,6 +21,7 @@ public :
     static string BYTE;
     static string RESB;
     static string RESW;
+    static string START;
     static string ZERO;
     static string ZEROS;
 };

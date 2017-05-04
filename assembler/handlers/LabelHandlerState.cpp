@@ -1,9 +1,9 @@
+#include <string>
 #include "LabelHandlerState.h"
 #include "iostream"
 #include "../tables/SymbolTable.h"
 #include "../tables/InstructionTypeTable.h"
 #include "../LocationCounter.h"
-#include <string>
 #include "../utils/LabelVerifier.h"
 
 using namespace std;
@@ -21,8 +21,8 @@ void LabelHandlerState::handle(string statement)
     labelAvailable = false;
 
     //check if the label is an instruction
-    if(!LabelVerifier::checkReservedWord(statement)){
-        /// TO DO : Update the state to the Instruction State
+    if(statement == "#"){
+        this->context->setState(context->getInstructionHandler());
         return;
     }
 
@@ -45,7 +45,7 @@ void LabelHandlerState::handle(string statement)
     cout << "Label Successfully Added" << endl;
 
     /// Finally, Update the state to the Instruction State
-    //    this->context->setState(context->getInstructionHandler());
+    this->context->setState(context->getInstructionHandler());
     //    cout << "Currently: instruction-handler-state" << endl;
 }
 

@@ -33,7 +33,7 @@ bool LabelVerifier::checkNamingConvention(string label) {
 
     for(int i = 1; i<label.length(); i++){
         if(!isalpha(label[i]) && !isdigit(label[i])) {
-            cout << "Character at " << i << " is invalid" << endl;
+            cout << label << " : Character at " << i << " is invalid" << endl;
             return false;
         }
     }

@@ -124,7 +124,7 @@ bool handleReserveWord() {
         int numberOfWords
         = NumberConverter::getNumericValue(DirectiveInstructionHandler::operand);
         numberOfWords *= Constants::WORD_SIZE;
-        string increment = NumberConverter::stringfy(numberOfWords);
+        string increment = NumberConverter::convertDecToHex(numberOfWords);
         LocationCounter::increment(increment);
     }
     return checkOperand;
@@ -135,7 +135,7 @@ bool handleReserveByte() {
     if (checkOperand) {
         int numberOfWords
         = NumberConverter::getNumericValue(DirectiveInstructionHandler::operand);
-        string increment = NumberConverter::stringfy(numberOfWords);
+        string increment = NumberConverter::convertDecToHex(numberOfWords);
         LocationCounter::increment(increment);
     }
     return checkOperand;
@@ -143,6 +143,7 @@ bool handleReserveByte() {
 
 bool DirectiveInstructionHandler::handle() {
     ///check for all correct scenarios
+    cout << DirectiveInstructionHandler::operand << " ";
     if (instruction == Constants::WORD) {
         return handleWord();
     } else if (instruction == Constants::BYTE) {
@@ -151,6 +152,8 @@ bool DirectiveInstructionHandler::handle() {
         return handleReserveByte();
     } else if (instruction == Constants::RESW) {
         return handleReserveWord();
+    } else if (instruction == Constants::START) {
+        LocationCounter::increment(DirectiveInstructionHandler::operand);
     }
     return false;
 }

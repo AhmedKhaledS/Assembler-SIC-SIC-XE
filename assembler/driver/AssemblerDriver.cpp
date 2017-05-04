@@ -19,10 +19,13 @@ void AssemblerDriver::assemble(string path)
      }
      return;
 }
+
 vector<string> AssemblerDriver::normalize(string assemblyCode)
 {
-    return normalizer->splittedInst(assemblyCode);
+    Normalizer n;
+    return n.splittedInst(assemblyCode);
 }
+
 void AssemblerDriver::generateListingCode()
 {
 

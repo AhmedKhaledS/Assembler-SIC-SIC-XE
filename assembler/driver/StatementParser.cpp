@@ -13,6 +13,11 @@ void StatementParser::parse(vector<string> statement)
     handlerContext = new HandlerContext();
 
     //TODO: Here goes catching statement for exceptions.
+    // label ldx limit
+    //       ldx limit
+    //       RSUB
+    // LABEL RSUB  90U
+
     handleLabel(statement.at(0));
 
     handleInstruction(statement.at(1));

@@ -4,6 +4,7 @@
 #include <fstream>
 #include <vector>
 #include <sstream>
+#include "LabelVerifier.h"
 
 using namespace std;
 
@@ -26,20 +27,32 @@ vector<string> Normalizer::splittedInst(string instruction){
 
     for(size_t i=0; i<instruction.length(); i++){
 
-        charcter = toupper(instruction[i]);
+        charcter = tolower(instruction[i]);
 
-        if(charcter == ' ' && part != ""){
+        if( (charcter == ' ' || charcter == '\t') && part != ""){
             result.push_back(part);
             part = "";
         } else if (charcter == '\'' ){
             i = normalizeQuotes(instruction,i);
         } else if (charcter == '.'){
            i = normalizeComments(instruction,i);
-        } else if(charcter != ' ') {
+        } else if(charcter != ' ' && charcter != '\t') {
             part += charcter;
         }
     }
+
     addLastPart();
+
+    if(!LabelVerifier::checkReservedWord(result.at(0))){
+        result.insert(result.begin(),"#");
+    }
+
+    if (result.size() == 2) {
+        result.push_back("#");
+    }
+//    for(int i=0;i<result.size(); i++) {
+//        cout <<  result[i] << " " ;
+//    }
 
     return result;
 }
