@@ -30,7 +30,7 @@ void AssemblerDriver::generateListingCode()
 void AssemblerDriver::generateObjectCode()
 {
     /// CodeGenerator codeGenerator = CodeGenerator(By Reference 2D Array);
-    /// codeGenerator.generateObjectCodes();
+    /// codeGenerator.generateObjectCode();
 
     // x ldx 1000 4F6C7E
     // y str 1000

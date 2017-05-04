@@ -11,6 +11,7 @@ class NumberConverter
         static std::string convertDecToHex(unsigned int decNumber);
         static std::string convertDecToHex(std::string decNumber);
         static int getNumericValue(std::string number);
+        static std::string stringfy(int number);
 };
 
 #endif // NUMBERCONVERTER_H

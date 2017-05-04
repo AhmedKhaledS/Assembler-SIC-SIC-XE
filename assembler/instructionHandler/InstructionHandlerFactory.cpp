@@ -2,6 +2,7 @@
 #include "DirectiveInstructionHandler.h"
 #include "MemoryInstructionHandler.h"
 #include "SimpleDirectiveInstructionHandler.h"
+#include "InstructionHandlerConstants.h"
 
 using namespace std;
 
@@ -20,11 +21,11 @@ InstructionHandlerFactory* InstructionHandlerFactory::getInstance() {
 InstructionHandler* InstructionHandlerFactory::getInstructionHandler
     (string type, string instruction, string operand) {
     InstructionHandler* ptr;
-    if (type == "dir") {
+    if (type == InstructionHandlerConstants::INSTRUCTION_TYPE_DIR) {
         ptr = new DirectiveInstructionHandler(instruction, operand);
-    } else if (type == "mem_reg") {
+    } else if (type == InstructionHandlerConstants::INSTRUCTION_TYPE_MEMREG) {
         ptr = new MemoryInstructionHandler(instruction);
-    } else if (type == "oper") {
+    } else if (type == InstructionHandlerConstants::INSTRUCTION_TYPE_OPER) {
         ptr = new SimpleDirectiveInstructionHandler(instruction);
     }
     return ptr;

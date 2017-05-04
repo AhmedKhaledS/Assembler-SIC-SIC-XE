@@ -3,46 +3,13 @@
 #include "../tables/SymbolTable.h"
 #include "../tables/InstructionTypeTable.h"
 #include "../LocationCounter.h"
+#include <string>
+#include "../utils/LabelVerifier.h"
 
 using namespace std;
 
 LabelHandlerState::LabelHandlerState(HandlerContext *context): context(context){}
 
-bool LabelHandlerState::checkReservedWord(string label) {
-    /// Check if the instruction is a RESERVED WORD ...
-    bool isResreved = InstructionTypeTable::searchOperation(label);
-    if(isResreved) {
-        cout << "State will be moved to Instruction Handle State" << endl;
-        return false;
-    }
-    return true;
-}
-
-bool LabelHandlerState::checkExistence(string label) {
-    /// Check if the label previously exist in the symbol Table...
-    bool exist = SymbolTable::searchSymbol(label);
-    if(exist){
-        cout << "ERROR: Symbol already exists" << endl;
-        return false;
-    }
-    return true;
-}
-
-bool LabelHandlerState::checkNamingConvention(string label) {
-
-    if (!isalpha(label[0])) {
-        cout << "Label can't start with this" << endl;
-        return false;
-    }
-
-    for(int i = 1; i<label.length(); i++){
-        if(!isalpha(label[i]) && !isdigit(label[i])) {
-            cout << "Character at " << i << " is invalid" << endl;
-            return false;
-        }
-    }
-    return true;
-}
 
 void LabelHandlerState::handle(string statement)
 {
@@ -54,30 +21,26 @@ void LabelHandlerState::handle(string statement)
     labelAvailable = false;
 
     //check if the label is an instruction
-    if(!checkReservedWord(statement)){
+    if(!LabelVerifier::checkReservedWord(statement)){
         /// TO DO : Update the state to the Instruction State
         return;
     }
 
     // check the label format
-    if(!checkNamingConvention(statement)){
-        return;
+    if(!LabelVerifier::checkNamingConvention(statement)){
+        throwError();
     }
 
     // check for existence of the statement in Symbol Table
-    if(!checkExistence(statement)){
-        return;
+    if(!LabelVerifier::checkExistence(statement)){
+        throwError();
     }
     else {
-        SymbolTable::add(statement,"0000");
+        /// TO DO : Add label Location Counter Value
+        string currentAddres = "" + LocationCounter::getLocationCounter();
+        SymbolTable::add(statement, currentAddres);
         labelAvailable = true;
     }
-
-    //    if (statement != "") {
-    //        labelAvailable = false;
-    //    } else {
-    //        labelAvailable = true;
-    //    }
 
     cout << "Label Successfully Added" << endl;
 
@@ -88,5 +51,5 @@ void LabelHandlerState::handle(string statement)
 
 void LabelHandlerState::throwError()
 {
-
+    throw "Error While Handling Label";
 }

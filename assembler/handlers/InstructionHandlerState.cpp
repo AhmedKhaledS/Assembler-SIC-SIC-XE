@@ -5,7 +5,7 @@
 #include "../LocationCounter.h"
 using namespace std;
 
-const int FIXED_INCREMENT = 3;
+const string FIXED_INCREMENT = "3";
 
 InstructionHandlerState::InstructionHandlerState(HandlerContext *context)
 {

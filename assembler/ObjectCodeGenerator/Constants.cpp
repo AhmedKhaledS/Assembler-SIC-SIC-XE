@@ -4,6 +4,7 @@ using namespace std;
 
 int Constants::NOT_A_POSITION = -1;
 int Constants::OP_CODE_SIZE = 2;
+int Constants::WORD_SIZE = 3;
 int Constants::ADDRESS_CODE_SIZE = 4;
 int Constants::OBJECT_CODE_SIZE = 6;
 int Constants::MAX_ADDRESS = 32768;

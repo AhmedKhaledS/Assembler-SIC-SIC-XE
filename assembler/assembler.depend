@@ -471,7 +471,7 @@
 	"InstructionTypeTable.h"
 	<bits/stdc++.h>
 
-1492692331 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
+1493892121 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
 	<iostream>
 	"AssemblerDriver.h"
 
@@ -494,7 +494,7 @@
 	"InstructionHandlerState.h"
 	"OperandHandlerState.h"
 
-1492692331 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.h
+1493903409 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.h
 	"StateHandler.h"
 	"HandlerContext.h"
 
@@ -528,19 +528,21 @@
 	"HandlerContext.h"
 	"iostream"
 
-1492693021 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
+1493897804 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
 	"InstructionHandlerState.h"
 	"iostream"
 	"../ObjectCodeGenerator/Constants.h"
 	"../tables/InstructionTypeTable.h"
 	"../LocationCounter.h"
 
-1492692331 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
+1493903604 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
 	"LabelHandlerState.h"
 	"iostream"
 	"../tables/SymbolTable.h"
 	"../tables/InstructionTypeTable.h"
 	"../LocationCounter.h"
+	<string>
+	"../utils/LabelVerifier.h"
 
 1492692331 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
 	"OperandHandlerState.h"
@@ -551,25 +553,23 @@
 1492692331 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
 	"StateHandler.h"
 
-1492692331 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\locationcounter.cpp
+1493897942 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\locationcounter.cpp
 	<iostream>
 	"LocationCounter.h"
+	"NumberConverter.h"
+	<string>
 
-1492692331 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\locationcounter.h
+1493897597 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\locationcounter.h
 	<iostream>
 	<vector>
+	<string>
 
-1492692331 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\main.cpp
+1493906188 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
-	"driver/AssemblerDriver.h"
-	"ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h"
-	"ObjectCodeGenerator/MemoryObjectCodeGenerator.h"
-	"tables/InstructionTypeTable.h"
-	"ObjectCodeGenerator/DirectiveObjectCodeGenerator.h"
-	"MemoryInstructionHandler.h"
-	"driver/StatementParser.h"
-	"handlers/OperandHandlerState.h"
 	<sstream>
+	<string>
+	"TablesLoader.h"
+	"ObjectCodeGenerator/DirectiveObjectCodeGenerator.h"
 	"tables/SymbolTable.h"
 
 1492692331 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
@@ -597,27 +597,29 @@
 	<stdlib.h>
 	<string>
 
-1492692331 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
+1493900940 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
 	"NumberConverter.h"
 	<string>
 	<sstream>
 	<bitset>
 
-1492692331 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
+1493900967 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
 	<string>
 
-1492692721 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
+1493904241 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
 	"Constants.h"
 
-1492692969 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
+1493904260 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
 	<string>
 
-1492692331 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
+1493906246 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
 	"DirectiveObjectCodeGenerator.h"
 	<stdio.h>
 	<stdlib.h>
 	"../NumberConverters/NumberConverter.h"
 	"Constants.h"
+	"../tables/SymbolTable.h"
+	"../utils/LabelVerifier.h"
 
 1492692331 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
@@ -644,11 +646,12 @@
 1492692331 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.cpp
 	"ObjectCodeGenerator.h"
 
-1492692331 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
+1493895399 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
 	"ObjectCodeGeneratorFactory.h"
 	"DirectiveObjectCodeGenerator.h"
 	"MemoryObjectCodeGenerator.h"
 	"SimpleDirectiveObjectCodeGenerator.h"
+	"InstructionHandlerConstants.h"
 
 1492692331 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.h
 	<map>
@@ -683,7 +686,7 @@
 1492692331 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\baseregister.h
 	<iostream>
 
-1492692331 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
+1492695857 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
 	"Normalizer.h"
 	"../ObjectCodeGenerator/Constants.h"
 	<iostream>
@@ -1056,10 +1059,12 @@
 1492695644 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.h
 	<string>
 
-1492695534 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
+1493905569 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
 	"DirectiveInstructionHandler.h"
 	"../ObjectCodeGenerator/Constants.h"
 	"NumberConverter.h"
+	"../LocationCounter.h"
+	"../utils/LabelVerifier.h"
 
 1492692331 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.h
 	"InstructionHandler.h"
@@ -1067,11 +1072,12 @@
 1492695651 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
 	"InstructionHandler.h"
 
-1492692331 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
+1493894823 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
 	"InstructionHandlerFactory.h"
 	"DirectiveInstructionHandler.h"
 	"MemoryInstructionHandler.h"
 	"SimpleDirectiveInstructionHandler.h"
+	"InstructionHandlerConstants.h"
 
 1492692331 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
 	"InstructionHandler.h"
@@ -1089,4 +1095,25 @@
 1492692331 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\simpledirectiveinstructionhandler.cpp
 	"SimpleDirectiveInstructionHandler.h"
 	<iostream>
+
+1493895332 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerconstants.h
+	<string>
+
+1493895355 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\intructionhandlerconstants.cpp
+	"InstructionHandlerConstants.h"
+
+1493903745 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\labelverifier.h
+	<string>
+
+1493903800 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\labelverifier.cpp
+	"LabelVerifier.h"
+	"../tables/InstructionTypeTable.h"
+	"../tables/SymbolTable.h"
+
+1493905017 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\tablesloader.cpp
+	"TablesLoader.h"
+	"../tables/InstructionTypeTable.h"
+	"../tables/OperationCodeTable.h"
+
+1493904930 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\tablesloader.h
 

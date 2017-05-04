@@ -1,12 +1,18 @@
 #include "DirectiveInstructionHandler.h"
 #include "../ObjectCodeGenerator/Constants.h"
 #include "NumberConverter.h"
+#include "../LocationCounter.h"
+#include "../utils/LabelVerifier.h"
+
 using namespace std;
 
 const int INT_LOW_ASCII = 48;
 const int INT_HIGH_ASCII = 57;
 const int ALPHA_LOW_ASCII = 65;
 const int ALPHA_HIGH_ASCII = 70;
+const int MAX_ALLOWED_HEX_LENGTH = 6;
+const string FIXED_INCREMENT = "3";
+
 
 string DirectiveInstructionHandler::operand;
 
@@ -42,18 +48,35 @@ bool checkHexadecimal() {
             return false;
         }
     }
+    string increment = NumberConverter::stringfy(((op.length() - 3) / 2));
+    LocationCounter::increment(increment);
     return true;
 }
 
-bool checkDecimal() {
+bool checkDecimalInWord() {
     string op = DirectiveInstructionHandler::operand;
-    for (unsigned int i = 0; i < op.length(); i++) {
+    int initial = 0;
+    if (op[0] == '-') {
+        initial = 1;
+    }
+    for (unsigned int i = 0 + initial; i < op.length(); i++) {
         if (!checkDecimalDigit(op[i])) {
             return false;
         }
     }
     if (NumberConverter::getNumericValue(op) >= Constants::MAX_NUMBER) {
         return false;
+    }
+    LocationCounter::increment(FIXED_INCREMENT);
+    return true;
+}
+
+bool checkDecimalInReservation() {
+    string op = DirectiveInstructionHandler::operand;
+    for (unsigned int i = 0; i < op.length(); i++) {
+        if (!checkDecimalDigit(op[i])) {
+            return false;
+        }
     }
     return true;
 }
@@ -70,25 +93,64 @@ bool checkString() {
     if (op.length() - 3 > 3 || op.length() - 3 == 0) {
         return false;
     }
+    string increment = NumberConverter::stringfy(op.length() - 3);
+    LocationCounter::increment(increment);
     return true;
 }
 
+bool checkLabel() {
+
+    bool labelcheck
+    = LabelVerifier::checkReservedWord(DirectiveInstructionHandler::operand);
+    labelcheck = labelcheck
+    & LabelVerifier::checkNamingConvention(DirectiveInstructionHandler::operand);
+    return labelcheck;
+}
+
 bool handleWord() {
-    ///two cases 1) ---       2) X'---'
-    return checkDecimal() || checkHexadecimal();
+    ///two cases 1) ---
+    return checkDecimalInWord() || checkLabel();
 }
 
 bool handleByte() {
-    ///two cases 1) C'---' 2) X'--'
+    ///two cases 1) C'---' 2) X'----x2'
     return checkString() || checkHexadecimal();
+}
+
+bool handleReserveWord() {
+    /// RESW 1000
+    bool checkOperand = checkDecimalInReservation();
+    if (checkOperand) {
+        int numberOfWords
+        = NumberConverter::getNumericValue(DirectiveInstructionHandler::operand);
+        numberOfWords *= Constants::WORD_SIZE;
+        string increment = NumberConverter::stringfy(numberOfWords);
+        LocationCounter::increment(increment);
+    }
+    return checkOperand;
+}
+
+bool handleReserveByte() {
+    bool checkOperand = checkDecimalInReservation();
+    if (checkOperand) {
+        int numberOfWords
+        = NumberConverter::getNumericValue(DirectiveInstructionHandler::operand);
+        string increment = NumberConverter::stringfy(numberOfWords);
+        LocationCounter::increment(increment);
+    }
+    return checkOperand;
 }
 
 bool DirectiveInstructionHandler::handle() {
     ///check for all correct scenarios
-    if (instruction == "word") {
+    if (instruction == Constants::WORD) {
         return handleWord();
-    } else if (instruction == "byte") {
+    } else if (instruction == Constants::BYTE) {
         return handleByte();
+    } else if (instruction == Constants::RESB) {
+        return handleReserveByte();
+    } else if (instruction == Constants::RESW) {
+        return handleReserveWord();
     }
     return false;
 }

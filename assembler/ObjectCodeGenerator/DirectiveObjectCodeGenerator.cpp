@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include "../NumberConverters/NumberConverter.h"
 #include "Constants.h"
+#include "../tables/SymbolTable.h"
+#include "../utils/LabelVerifier.h"
 
 using namespace std;
 
@@ -15,18 +17,22 @@ string fillZeros(string code) {
     int requiredZeros = Constants::OBJECT_CODE_SIZE - code.length();
     string zeros = "";
     for (int i = 0; i < requiredZeros; i++) {
-        zeros += "0";
+        zeros += Constants::ZERO;
     }
     zeros.append(code);
     return zeros;
 }
 
+
 string DirectiveObjectCodeGenerator::handleWord() {
     string objectCode;
-    if (operand[0] == Constants::HEX_PREFIX) {
-        return operand.substr(2, operand.length() - 3);
+    if (isalpha(operand[0])) {
+        if (!LabelVerifier::checkExistence(operand)) {
+            ///Throw Error;
+        }
+        objectCode = SymbolTable::getAddress(operand);
     } else {
-        return NumberConverter::convertDecToHex(operand);
+        objectCode = NumberConverter::convertDecToHex(operand);
     }
     if (objectCode.length() < Constants::OBJECT_CODE_SIZE) {
         return fillZeros(objectCode);
@@ -37,7 +43,7 @@ string DirectiveObjectCodeGenerator::handleWord() {
 string DirectiveObjectCodeGenerator::handleByte() {
      string objectCode;
      if (operand[0] == Constants::HEX_PREFIX) {
-        return objectCode = operand.substr(2, operand.length() - 3);
+        objectCode = operand.substr(2, operand.length() - 3);
      } else if (operand[0] == Constants::CHAR_PREFIX) {
         for (int i = 2; i < operand.length() - 1; i++) {
             objectCode += NumberConverter::convertDecToHex(operand[i]);

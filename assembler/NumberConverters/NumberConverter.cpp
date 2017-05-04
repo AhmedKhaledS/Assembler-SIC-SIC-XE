@@ -6,6 +6,7 @@
 using namespace std;
 
 const int BASE_10 = 10;
+const int BASE_16 = 16;
 const char ZERO = '0';
 
 string NumberConverter::convertBinToHex(string binNumber){
@@ -49,4 +50,11 @@ int NumberConverter::getNumericValue(string number) {
         obtainedNumber += (digit - ZERO);
     }
     return obtainedNumber;
+}
+
+string NumberConverter::stringfy(int number) {
+    stringstream ss;
+    ss << number;
+    string numberString = ss.str();
+    return numberString;
 }
