@@ -311,7 +311,7 @@
 1492623403 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
 	"Constants.h"
 
-1492617114 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
+1492695612 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
 	<string>
 
 1492366076 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\instructiontypetable.cpp
@@ -367,7 +367,7 @@
 	<vector>
 	<sstream>
 
-1492621695 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
+1492698140 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
 	<vector>
 	<string>
 
@@ -808,7 +808,7 @@
 	<vector>
 	<string>
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
+1492697825 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
 	<vector>
 	<string>
 
@@ -827,7 +827,7 @@
 	"HandlerContext.h"
 	"iostream"
 
-1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
+1492694409 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
 	"InstructionHandlerState.h"
 	"iostream"
 
@@ -880,7 +880,7 @@
 	<iostream>
 	<vector>
 
-1492683232 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\main.cpp
+1492698230 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	"driver/AssemblerDriver.h"
 	"ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h"
@@ -889,6 +889,7 @@
 	"ObjectCodeGenerator/DirectiveObjectCodeGenerator.h"
 	"MemoryInstructionHandler.h"
 	"driver/StatementParser.h"
+	"handlers/OperandHandlerState.h"
 	<sstream>
 	"tables/SymbolTable.h"
 	"utils/Normalizer.h"
@@ -1004,7 +1005,7 @@
 1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\baseregister.h
 	<iostream>
 
-1492684543 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
+1492697833 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
 	"Normalizer.h"
 	"../ObjectCodeGenerator/Constants.h"
 	<iostream>
