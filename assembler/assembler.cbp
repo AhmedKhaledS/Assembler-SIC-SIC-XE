@@ -60,8 +60,12 @@
 		<Unit filename="driver/AssemblerDriver.h" />
 		<Unit filename="driver/StatementParser.cpp" />
 		<Unit filename="driver/StatementParser.h" />
+		<Unit filename="fileServices/FileHandler.cpp" />
+		<Unit filename="fileServices/FileHandler.h" />
 		<Unit filename="fileServices/FileReader.cpp" />
 		<Unit filename="fileServices/FileReader.h" />
+		<Unit filename="fileServices/FileWriter.cpp" />
+		<Unit filename="fileServices/FileWriter.h" />
 		<Unit filename="handlers/HandlerContext.cpp" />
 		<Unit filename="handlers/HandlerContext.h" />
 		<Unit filename="handlers/InstructionHandlerState.cpp" />
