@@ -8,7 +8,8 @@ AssemblerDriver::AssemblerDriver(){}
 
 void AssemblerDriver::assemble(string path)
 {
-     unparsedStatements = fileReader->read(path);
+    FileReader f = FileReader();
+     unparsedStatements = f.read(path);
      // A mark to terminate.
      for (string statement : unparsedStatements)
      {

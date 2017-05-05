@@ -1,5 +1,7 @@
 #include "SimpleDirectiveInstructionHandler.h"
 #include <iostream>
+#include "Logger.h"
+#include "LoggerConstants.h"
 
 using namespace std;
 
@@ -13,6 +15,6 @@ bool SimpleDirectiveInstructionHandler::handle(){
     if(instruction == "#"){
         return true;
     }
-    cout << "ERROR: NON EMPTY" << endl;
+    Logger::log("ERROR: NON EMPTY", LoggerConstants::ERROR);
     return false;
 }

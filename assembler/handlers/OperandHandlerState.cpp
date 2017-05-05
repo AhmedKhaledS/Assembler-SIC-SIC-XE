@@ -3,6 +3,9 @@
 #include "../instructionHandler/InstructionHandlerFactory.h"
 #include "iostream"
 #include "../LocationCounter.h"
+#include "NumberConverter.h"
+#include "../ObjectCodeGenerator/Constants.h"
+
 using namespace std;
 
 OperandHandlerState::OperandHandlerState(HandlerContext *context)
@@ -13,7 +16,9 @@ OperandHandlerState::OperandHandlerState(HandlerContext *context)
 void OperandHandlerState::handle(string statement)
 {
     if (statement == "#") {
-        LocationCounter::increment("3");
+        if (StateHandler::instruction != "rsub") {
+            LocationCounter::increment(NumberConverter::stringfy(Constants::WORD_SIZE));
+        }
         return;
     }
     /// loading the proper type from the instruction table with the help of the static string

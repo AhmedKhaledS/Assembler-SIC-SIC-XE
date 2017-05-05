@@ -5,6 +5,8 @@
 #include "../tables/InstructionTypeTable.h"
 #include "../LocationCounter.h"
 #include "../utils/LabelVerifier.h"
+#include "Logger.h"
+#include "LoggerConstants.h"
 
 using namespace std;
 
@@ -14,9 +16,9 @@ LabelHandlerState::LabelHandlerState(HandlerContext *context): context(context){
 void LabelHandlerState::handle(string statement)
 {
     // TO BE REMOVED
-    cout << endl;
-    cout << statement << endl;
-    InstructionTypeTable::load();
+//    cout << endl;
+//    cout << statement << endl;
+//    InstructionTypeTable::load();
 
     labelAvailable = false;
 
@@ -41,8 +43,7 @@ void LabelHandlerState::handle(string statement)
         SymbolTable::add(statement, currentAddres);
         labelAvailable = true;
     }
-
-    cout << "Label Successfully Added" << endl;
+    Logger::log("Label Successfully Added", LoggerConstants::DEBUG);
 
     /// Finally, Update the state to the Instruction State
     this->context->setState(context->getInstructionHandler());

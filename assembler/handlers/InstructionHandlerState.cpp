@@ -3,6 +3,9 @@
 #include "../ObjectCodeGenerator/Constants.h"
 #include "../tables/InstructionTypeTable.h"
 #include "../LocationCounter.h"
+#include "Logger.h"
+#include "LoggerConstants.h"
+
 using namespace std;
 
 const string FIXED_INCREMENT = "3";
@@ -30,6 +33,7 @@ void InstructionHandlerState::handle(string statement)
     }
     ///location counter increment
    if (!isDirective(statement)) {
+        Logger::log("Using Normal Increment", LoggerConstants::DEBUG);
         LocationCounter::increment(FIXED_INCREMENT);
     }
     /// this part for testing the operand..
