@@ -16,10 +16,10 @@ OperandHandlerState::OperandHandlerState(HandlerContext *context)
 void OperandHandlerState::handle(string statement)
 {
     if (statement == "#") {
-        if (StateHandler::instruction != "rsub") {
-            LocationCounter::increment(NumberConverter::stringfy(Constants::WORD_SIZE));
-        }
         return;
+    }
+    if (StateHandler::instruction == "x'05'") {
+        int debug = -1;
     }
     /// loading the proper type from the instruction table with the help of the static string
     string instructionType = InstructionTypeTable::getType(StateHandler::instruction);

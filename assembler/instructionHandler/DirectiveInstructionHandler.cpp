@@ -159,6 +159,8 @@ bool DirectiveInstructionHandler::handle() {
     } else if (instruction == Constants::START) {
         LocationCounter::setLocationCounter(DirectiveInstructionHandler::operand);
         LocationCounter::increment(Constants::ZERO);
+    } else if(instruction == Constants::END) {
+        //LocationCounter::increment(FIXED_INCREMENT);
     }
     return false;
 }

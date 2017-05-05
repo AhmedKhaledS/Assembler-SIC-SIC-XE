@@ -23,6 +23,7 @@ bool isDirective(string statement) {
 
 void InstructionHandlerState::handle(string statement)
 {
+
     ///check valid instruction (opCode Table);
     if (!InstructionTypeTable::searchOperation(statement)) {
         throwError();
