@@ -7,6 +7,7 @@ class DirectiveObjectCodeGenerator : public ObjectCodeGenerator {
     private :
         string handleWord();
         string handleByte();
+        bool requiresNoObjectCode();
 
     public :
         DirectiveObjectCodeGenerator(string oper, string inst);

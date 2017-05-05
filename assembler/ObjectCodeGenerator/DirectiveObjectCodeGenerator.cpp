@@ -55,11 +55,18 @@ string DirectiveObjectCodeGenerator::handleByte() {
      return objectCode;
 }
 
+bool DirectiveObjectCodeGenerator::requiresNoObjectCode(){
+    return (instruction == Constants::RESW || instruction == Constants::RESB
+             || instruction == Constants::START || instruction == Constants::END);
+}
+
 string DirectiveObjectCodeGenerator::parse() {
     if (instruction == Constants::WORD) {
         return handleWord();
     } else if (instruction == Constants::BYTE) {
         return handleByte();
+    } else if (requiresNoObjectCode()) {
+        return Constants::EMPTY_OBJ_CODE;
     }
     return "";
 }

@@ -23,7 +23,7 @@ class AssemblerDriver
         */
         std::vector<std::string> unparsedStatements;
         std::vector<std::string> normalizedStatement;
-        std::vector<std::string> parsedStatement;
+        std::vector<std::vector<std::string>> parsedStatement;
         FileReader* fileReader;
         //StatementNormalizer normalizer;
         StatementParser* stParser;

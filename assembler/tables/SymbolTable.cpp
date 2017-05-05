@@ -1,6 +1,9 @@
 #include <map>
 #include <string>
+#include <iostream>
+
 #include "SymbolTable.h"
+
 using namespace std;
 
 map<string,string> SymbolTable::symTable;

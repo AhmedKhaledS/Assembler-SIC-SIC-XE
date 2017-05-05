@@ -23,6 +23,7 @@ public :
     static string RESW;
     static string START;
     static string END;
+    static string EMPTY_OBJ_CODE;
     static string ZERO;
     static string ZEROS;
 };

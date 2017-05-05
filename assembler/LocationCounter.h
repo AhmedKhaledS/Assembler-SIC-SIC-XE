@@ -12,4 +12,5 @@ class LocationCounter {
         static string getLocationCounter();
         static void increment(string increm);
         static void setLocationCounter(string value);
+        static string getLocationAt(int index);
 };

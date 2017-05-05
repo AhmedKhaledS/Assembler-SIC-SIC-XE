@@ -13,13 +13,14 @@ int Constants::MAX_NUMBER = 9999;
 char Constants::HEX_PREFIX = 'x';
 char Constants::CHAR_PREFIX = 'c';
 
-string Constants::INDEXING_PREFIX = ",X";
+string Constants::INDEXING_PREFIX = ",x";
 string Constants::BYTE = "byte";
 string Constants::WORD = "word";
 string Constants::RESW = "resw";
 string Constants::RESB = "resb";
 string Constants::START = "start";
 string Constants::END = "end";
+string Constants::EMPTY_OBJ_CODE = "      ";
 
 string Constants::ZERO = "0";
 string Constants::ZEROS = "0000";

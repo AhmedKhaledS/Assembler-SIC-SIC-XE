@@ -12,7 +12,7 @@ class ObjectCodeGeneratorFactory {
 
     public :
 
-    ObjectCodeGeneratorFactory* getInstance();
+    static ObjectCodeGeneratorFactory* getInstance();
 
     ObjectCodeGenerator* getObjectCodeGenerator(string type, string instruction, string operand);
 };
