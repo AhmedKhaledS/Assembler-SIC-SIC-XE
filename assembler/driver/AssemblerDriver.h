@@ -2,6 +2,7 @@
 #define ASSEMBLERDRIVER_H
 #include "StatementParser.h"
 #include "../fileServices/FileReader.h"
+#include "../fileServices/FileWriter.h"
 #include "../utils/Normalizer.h"
 //#include "../ObjectCodeGenerator/ObjectCodeGenerator.h"
 #include <string>
@@ -25,6 +26,7 @@ class AssemblerDriver
         std::vector<std::string> normalizedStatement;
         std::vector<std::vector<std::string>> parsedStatement;
         FileReader* fileReader;
+        FileWriter* fileWriter;
         //StatementNormalizer normalizer;
         StatementParser* stParser;
         Normalizer* normalizer;

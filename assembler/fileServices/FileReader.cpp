@@ -21,11 +21,7 @@ vector<string> FileReader::read(string path)
     while(getline(file,line)){
         code.push_back(line);
     }
-
-//    for(int i=0;i<code.size();i++){
-//        cout << code.at(i) << endl;
-//    }
-
+    file.close();
     return code;
 }
 

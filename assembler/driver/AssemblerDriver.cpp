@@ -7,12 +7,14 @@ using namespace std;
 
 const int COLUMNS_SIZE = 3;
 
-AssemblerDriver::AssemblerDriver(){}
+AssemblerDriver::AssemblerDriver(){
+    fileReader = new FileReader();
+    fileWriter = new FileWriter();
+}
 
 void AssemblerDriver::assemble(string path)
 {
-    FileReader f = FileReader();
-     unparsedStatements = f.read(path);
+     unparsedStatements = fileReader->read(path);
      // A mark to terminate.
      for (string statement : unparsedStatements)
      {
@@ -33,14 +35,15 @@ vector<string> AssemblerDriver::normalize(string assemblyCode)
 
 void AssemblerDriver::generateListingCode()
 {
-
+    CodeGenerator codeGenerator = CodeGenerator(parsedStatement);
+    vector<string> listingCode = codeGenerator.generateObjectCode();
+    fileWriter->write("", "ListingFile",listingCode);
+    return;
 }
 void AssemblerDriver::generateObjectCode()
 {
-    CodeGenerator codeGenerator = CodeGenerator(parsedStatement);
-    vector<string> listingCode = codeGenerator.generateObjectCode();
     ObjectFileGenerator generator = ObjectFileGenerator(parsedStatement);
     vector<string> objFile = generator.generateObjectCode();
-
+    fileWriter->write("", "ObjectCode", objFile);
     return;
 }

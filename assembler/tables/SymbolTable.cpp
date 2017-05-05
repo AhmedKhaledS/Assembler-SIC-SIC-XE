@@ -10,7 +10,6 @@ map<string,string> SymbolTable::symTable;
 
 void SymbolTable::add(string label, string address) {
     symTable[label] = address;
-    cout << label << " " << address << endl;
 }
 
 bool SymbolTable::searchSymbol(string label) {

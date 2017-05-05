@@ -17,6 +17,7 @@ void FileWriter::write(string path, string fileName, vector<string> objectCodes)
     {
         file << line + "\n";
     }
+    file.close();
 }
 
 vector<string> FileWriter::read(string path)

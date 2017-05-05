@@ -13,10 +13,14 @@
 
 using namespace std;
 
+const string OUT_OF_RANGE = "OUT OF RANGE ADDRESS";
+const int MAX_ADDRESS_SIZE = 4;
+
 MemoryObjectCodeGenerator::MemoryObjectCodeGenerator(string inst,string oper)
 {
     instruction = inst;
     operand = oper;
+    isOutOfRange = false;
 }
 
 string MemoryObjectCodeGenerator::parse(){
@@ -27,6 +31,10 @@ string MemoryObjectCodeGenerator::parse(){
     string objectCode = parseInstruction(instruction);
 
     string addressCode = parseOperand(operand);
+
+    if(isOutOfRange){
+       return OUT_OF_RANGE;
+    }
 
     objectCode += addressCode;
 
@@ -74,6 +82,11 @@ string MemoryObjectCodeGenerator::parseOperand(string operand){
     }
 
     string addressCode = SymbolTable::getAddress(operand);
+    if(addressCode.size() > MAX_ADDRESS_SIZE){
+        isOutOfRange = true;
+        return Constants::ZEROS;
+    }
+
     //cout << "Address Code: " << addressCode << endl;
 
     while(addressCode.size() != Constants::ADDRESS_CODE_SIZE){
