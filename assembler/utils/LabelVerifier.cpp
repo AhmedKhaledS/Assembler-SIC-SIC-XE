@@ -6,6 +6,10 @@
 
 using namespace std;
 
+const string SPACE = " ";
+const string OUT_OF_RANGE = "Out of memory range of SIC machine.";
+
+
 bool LabelVerifier::checkReservedWord(string label) {
     /// Check if the instruction is a RESERVED WORD ...
     bool isResreved = InstructionTypeTable::searchOperation(label);
@@ -13,6 +17,20 @@ bool LabelVerifier::checkReservedWord(string label) {
         return false;
     }
     return true;
+}
+
+string LabelVerifier::fillSpaces(string statemenComponent, int requiredSize) {
+    if (statemenComponent == "#") {
+        statemenComponent = "";
+    }
+    if (statemenComponent.length() > requiredSize) {
+        return OUT_OF_RANGE;
+    }
+    int length = statemenComponent.length();
+    for (int i = 0; i < requiredSize - length; i++) {
+        statemenComponent += SPACE;
+    }
+    return statemenComponent;
 }
 
 bool LabelVerifier::checkExistence(string label) {

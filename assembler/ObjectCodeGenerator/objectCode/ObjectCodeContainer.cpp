@@ -18,3 +18,7 @@ string ObjectCodeContainer::getObjectCodeAt(int index) {
     }
     return objectCodes[index];
 }
+
+int ObjectCodeContainer::getObjectCodeContainerSize() {
+    return objectCodes.size();
+}

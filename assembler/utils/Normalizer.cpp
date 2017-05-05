@@ -27,7 +27,7 @@ vector<string> Normalizer::splittedInst(string instruction){
 
     for(size_t i=0; i<instruction.length(); i++){
 
-        charcter = tolower(instruction[i]);
+        charcter = toupper(instruction[i]);
 
         if( (charcter == ' ' || charcter == '\t') && part != ""){
             result.push_back(part);

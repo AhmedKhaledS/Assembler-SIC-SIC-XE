@@ -10,16 +10,16 @@ int Constants::OBJECT_CODE_SIZE = 6;
 int Constants::MAX_ADDRESS = 32768;
 int Constants::MAX_NUMBER = 9999;
 
-char Constants::HEX_PREFIX = 'x';
-char Constants::CHAR_PREFIX = 'c';
+char Constants::HEX_PREFIX = 'X';
+char Constants::CHAR_PREFIX = 'C';
 
-string Constants::INDEXING_PREFIX = ",x";
-string Constants::BYTE = "byte";
-string Constants::WORD = "word";
-string Constants::RESW = "resw";
-string Constants::RESB = "resb";
-string Constants::START = "start";
-string Constants::END = "end";
+string Constants::INDEXING_PREFIX = ",X";
+string Constants::BYTE = "BYTE";
+string Constants::WORD = "WORD";
+string Constants::RESW = "RESW";
+string Constants::RESB = "RESB";
+string Constants::START = "START";
+string Constants::END = "END";
 string Constants::EMPTY_OBJ_CODE = "      ";
 
 string Constants::ZERO = "0";

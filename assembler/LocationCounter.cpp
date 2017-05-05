@@ -26,6 +26,10 @@ void LocationCounter::setLocationCounter(string value) {
     return;
 }
 
+string LocationCounter::getFinalLocation() {
+    return locations.back();
+}
+
 string LocationCounter::getLocationAt(int index) {
     return locations[index];
 }

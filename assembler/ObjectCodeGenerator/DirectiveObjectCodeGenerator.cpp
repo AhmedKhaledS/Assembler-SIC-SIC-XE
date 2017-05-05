@@ -49,9 +49,9 @@ string DirectiveObjectCodeGenerator::handleByte() {
             objectCode += NumberConverter::convertDecToHex(operand[i]);
         }
      }
-     if (objectCode.length() < Constants::OBJECT_CODE_SIZE) {
-        return fillZeros(objectCode);
-    }
+//     if (objectCode.length() < Constants::OBJECT_CODE_SIZE) {
+//        return fillZeros(objectCode);
+//    }
      return objectCode;
 }
 

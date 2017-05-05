@@ -23,7 +23,6 @@ string MemoryObjectCodeGenerator::parse(){
 
     // TO BE REMOVE
     OperationCodeTable::load();
-    SymbolTable::add("BUFFER","1039");
 
     string objectCode = parseInstruction(instruction);
 
@@ -75,6 +74,8 @@ string MemoryObjectCodeGenerator::parseOperand(string operand){
     }
 
     string addressCode = SymbolTable::getAddress(operand);
+    //cout << "Address Code: " << addressCode << endl;
+
     while(addressCode.size() != Constants::ADDRESS_CODE_SIZE){
         addressCode = Constants::ZERO + addressCode;
     }

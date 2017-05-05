@@ -39,7 +39,7 @@ void LabelHandlerState::handle(string statement)
     }
     else {
         /// TO DO : Add label Location Counter Value
-        string currentAddres = "" + LocationCounter::getLocationCounter();
+        string currentAddres = LocationCounter::getLocationCounter();
         SymbolTable::add(statement, currentAddres);
         labelAvailable = true;
     }

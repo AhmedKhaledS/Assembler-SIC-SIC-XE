@@ -7,7 +7,7 @@ class CodeGenerator
 {
     public:
         CodeGenerator(std::vector<std::vector<std::string>> src);
-        void generateObjectCode();
+        std::vector<std::string> generateObjectCode();
 
     private:
         std::vector<std::vector<std::string>> sourceCode;

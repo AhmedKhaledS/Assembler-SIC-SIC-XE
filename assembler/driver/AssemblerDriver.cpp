@@ -1,6 +1,8 @@
 #include <iostream>
 #include "AssemblerDriver.h"
 #include "CodeGenerator.h"
+#include "ObjectFileGenerator.h"
+
 using namespace std;
 
 const int COLUMNS_SIZE = 3;
@@ -36,9 +38,14 @@ void AssemblerDriver::generateListingCode()
 void AssemblerDriver::generateObjectCode()
 {
     CodeGenerator codeGenerator = CodeGenerator(parsedStatement);
-    codeGenerator.generateObjectCode();
-
-    // x ldx 1000 4F6C7E
-    // y str 1000
-
+    vector<string> listingCode = codeGenerator.generateObjectCode();
+    for (string obj : listingCode) {
+        cout << obj << endl;
+    }
+    ObjectFileGenerator generator = ObjectFileGenerator(parsedStatement);
+    vector<string> objFile = generator.generateObjectCode();
+    for (string obj : objFile) {
+        cout << obj << endl;
+    }
+    return;
 }
