@@ -1,7 +1,7 @@
 #include "SimpleDirectiveInstructionHandler.h"
 #include <iostream>
-#include "Logger.h"
-#include "LoggerConstants.h"
+#include "../logger/Logger.h"
+#include "../logger/LoggerConstants.h"
 
 using namespace std;
 

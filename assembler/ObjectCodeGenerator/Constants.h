@@ -26,6 +26,7 @@ public :
     static string EMPTY_OBJ_CODE;
     static string ZERO;
     static string ZEROS;
+    static string TXT_EXTENSION;
 };
 
 #endif // CONSTANTS_INCLUDED

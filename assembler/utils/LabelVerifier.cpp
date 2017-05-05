@@ -1,7 +1,7 @@
 #include "LabelVerifier.h"
 #include "../tables/InstructionTypeTable.h"
 #include "../tables/SymbolTable.h"
-#include "Logger.h"
+#include "../logger/Logger.h"
 #include "NumberConverter.h"
 
 using namespace std;

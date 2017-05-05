@@ -39,13 +39,8 @@ void AssemblerDriver::generateObjectCode()
 {
     CodeGenerator codeGenerator = CodeGenerator(parsedStatement);
     vector<string> listingCode = codeGenerator.generateObjectCode();
-    for (string obj : listingCode) {
-        cout << obj << endl;
-    }
     ObjectFileGenerator generator = ObjectFileGenerator(parsedStatement);
     vector<string> objFile = generator.generateObjectCode();
-    for (string obj : objFile) {
-        cout << obj << endl;
-    }
+
     return;
 }

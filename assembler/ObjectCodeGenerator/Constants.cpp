@@ -24,3 +24,5 @@ string Constants::EMPTY_OBJ_CODE = "      ";
 
 string Constants::ZERO = "0";
 string Constants::ZEROS = "0000";
+
+string Constants::TXT_EXTENSION = ".txt";
