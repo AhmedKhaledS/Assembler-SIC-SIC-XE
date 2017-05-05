@@ -3,8 +3,8 @@
 #include "../tables/SymbolTable.h"
 #include "Constants.h"
 #include "../NumberConverters/NumberConverter.h"
-#include "Logger.h"
-#include "LoggerConstants.h"
+#include "../logger/Logger.h"
+#include "../logger/LoggerConstants.h"
 
 #include <iostream>
 #include <sstream>

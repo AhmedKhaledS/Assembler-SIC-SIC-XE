@@ -25,6 +25,7 @@ public :
     static string END;
     static string ZERO;
     static string ZEROS;
+    static string TXT_EXTENSION;
 };
 
 #endif // CONSTANTS_INCLUDED

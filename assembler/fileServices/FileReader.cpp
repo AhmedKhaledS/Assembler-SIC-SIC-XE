@@ -29,7 +29,7 @@ vector<string> FileReader::read(string path)
     return code;
 }
 
-void FileReader::write(string path, string fileName)
+void FileReader::write(string path, string fileName, vector<string> objectCodes)
 {
 
 }

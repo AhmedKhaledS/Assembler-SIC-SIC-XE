@@ -12,7 +12,8 @@ class FileReader: public FileHandler
 
     public:
         FileReader();
-        void write(std::string path, std::string fileName);
+        void write(std::string path, std::string fileName,
+                    std::vector<std::string> objectCodes);
         std::vector<std::string> read(std::string path);
         void throwError();
 };

@@ -2,8 +2,8 @@
 #include "../tables/InstructionTypeTable.h"
 #include <iostream>
 #include <../utils/LabelVerifier.h>
-#include "Logger.h"
-#include "LoggerConstants.h"
+#include "../logger/Logger.h"
+#include "../logger/LoggerConstants.h"
 
 using namespace std;
 

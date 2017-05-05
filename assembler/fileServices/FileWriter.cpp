@@ -1,16 +1,25 @@
 #include "FileWriter.h"
+#include "../ObjectCodeGenerator/Constants.h"
+#include <fstream>
+
+
+using namespace std;
 
 FileWriter::FileWriter()
 {
     //ctor
 }
 
-void FileWriter::write(std::string path, std::string fileName)
+void FileWriter::write(string path, string fileName, vector<string> objectCodes)
 {
-
+    ofstream file(path + fileName + Constants::TXT_EXTENSION);
+    for (string line : objectCodes)
+    {
+        file << line + "\n";
+    }
 }
 
-std::vector<std::string> FileWriter::read(std::string path)
+vector<string> FileWriter::read(string path)
 {
 
 }
