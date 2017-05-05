@@ -68,7 +68,7 @@ int Normalizer::normalizeQuotes(string instruction,int i){
         part += instruction[i];
         i++;
     }
-    while(i < instruction.length() && instruction[i] != ' '){
+    while(i < instruction.length() && (instruction[i] != ' ' && instruction[i] != '\t')){
         part += instruction[i];
         i++;
     }

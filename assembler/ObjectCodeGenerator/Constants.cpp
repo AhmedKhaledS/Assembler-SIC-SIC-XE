@@ -19,6 +19,7 @@ string Constants::WORD = "word";
 string Constants::RESW = "resw";
 string Constants::RESB = "resb";
 string Constants::START = "start";
+string Constants::END = "end";
 
 string Constants::ZERO = "0";
 string Constants::ZEROS = "0000";

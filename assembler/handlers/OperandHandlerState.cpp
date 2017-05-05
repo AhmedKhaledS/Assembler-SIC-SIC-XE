@@ -3,6 +3,9 @@
 #include "../instructionHandler/InstructionHandlerFactory.h"
 #include "iostream"
 #include "../LocationCounter.h"
+#include "NumberConverter.h"
+#include "../ObjectCodeGenerator/Constants.h"
+
 using namespace std;
 
 OperandHandlerState::OperandHandlerState(HandlerContext *context)
@@ -13,8 +16,10 @@ OperandHandlerState::OperandHandlerState(HandlerContext *context)
 void OperandHandlerState::handle(string statement)
 {
     if (statement == "#") {
-        LocationCounter::increment("3");
         return;
+    }
+    if (StateHandler::instruction == "x'05'") {
+        int debug = -1;
     }
     /// loading the proper type from the instruction table with the help of the static string
     string instructionType = InstructionTypeTable::getType(StateHandler::instruction);

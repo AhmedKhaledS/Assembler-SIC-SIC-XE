@@ -3,6 +3,8 @@
 #include "../tables/SymbolTable.h"
 #include "Constants.h"
 #include "../NumberConverters/NumberConverter.h"
+#include "Logger.h"
+#include "LoggerConstants.h"
 
 #include <iostream>
 #include <sstream>
@@ -68,7 +70,7 @@ string MemoryObjectCodeGenerator::parseOperand(string operand){
 
     // Check if the operand available
     if(!SymbolTable::searchSymbol(operand)){
-        cout << "ERROR" << endl;
+        Logger::log("Operand label does not exist", LoggerConstants::ERROR);
         return "";
     }
 

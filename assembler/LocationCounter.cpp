@@ -14,9 +14,15 @@ string LocationCounter::getLocationCounter() {
 
 void LocationCounter::increment(string increm) {
 	locations.push_back(locationCounter);
-	cout << locationCounter << endl;
+	cout << locationCounter << " " << locations.size() << endl;
 	int locationCounterValue = NumberConverter::convertHexToDec(locationCounter);
 	int incrementValue = (NumberConverter::convertHexToDec(increm));
     locationCounterValue += incrementValue;
     locationCounter = NumberConverter::convertDecToHex(locationCounterValue);
+    return;
+}
+
+void LocationCounter::setLocationCounter(string value) {
+    locationCounter = value;
+    return;
 }

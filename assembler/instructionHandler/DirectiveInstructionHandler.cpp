@@ -104,6 +104,7 @@ bool checkLabel() {
     = LabelVerifier::checkReservedWord(DirectiveInstructionHandler::operand);
     labelcheck = labelcheck
     & LabelVerifier::checkNamingConvention(DirectiveInstructionHandler::operand);
+    ///TODO : SET PROPER INCREMENT
     return labelcheck;
 }
 
@@ -119,12 +120,14 @@ bool handleByte() {
 
 bool handleReserveWord() {
     /// RESW 1000
+    //cout << "2. " + DirectiveInstructionHandler::operand << endl;
     bool checkOperand = checkDecimalInReservation();
     if (checkOperand) {
         int numberOfWords
         = NumberConverter::getNumericValue(DirectiveInstructionHandler::operand);
         numberOfWords *= Constants::WORD_SIZE;
         string increment = NumberConverter::convertDecToHex(numberOfWords);
+        //cout << "3. Set increment by :" + increment << endl;
         LocationCounter::increment(increment);
     }
     return checkOperand;
@@ -143,7 +146,7 @@ bool handleReserveByte() {
 
 bool DirectiveInstructionHandler::handle() {
     ///check for all correct scenarios
-    cout << DirectiveInstructionHandler::operand << " ";
+    //cout << DirectiveInstructionHandler::operand << " ";
     if (instruction == Constants::WORD) {
         return handleWord();
     } else if (instruction == Constants::BYTE) {
@@ -151,9 +154,13 @@ bool DirectiveInstructionHandler::handle() {
     } else if (instruction == Constants::RESB) {
         return handleReserveByte();
     } else if (instruction == Constants::RESW) {
+       // cout << "1. Incrementing RESW" << endl;
         return handleReserveWord();
     } else if (instruction == Constants::START) {
-        LocationCounter::increment(DirectiveInstructionHandler::operand);
+        LocationCounter::setLocationCounter(DirectiveInstructionHandler::operand);
+        LocationCounter::increment(Constants::ZERO);
+    } else if(instruction == Constants::END) {
+        //LocationCounter::increment(FIXED_INCREMENT);
     }
     return false;
 }

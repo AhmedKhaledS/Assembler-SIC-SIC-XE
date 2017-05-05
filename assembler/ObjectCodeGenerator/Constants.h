@@ -22,6 +22,7 @@ public :
     static string RESB;
     static string RESW;
     static string START;
+    static string END;
     static string ZERO;
     static string ZEROS;
 };
