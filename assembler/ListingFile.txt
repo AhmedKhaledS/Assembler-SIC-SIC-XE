@@ -1,21 +1,45 @@
-0000  PROG12   START   0000                     
-0     P        JSUB    COMPUTE           480006 
-3     FIN2     J       FIN2              3C0003 
-6     COMPUTE  LDX     ZERO              040027 
-9     LOOP     TD      INPUT             E00030 
-C              JEQ     LOOP              300009 
-F              RD      INPUT             D80030 
-12             COMP    FOUR              28002A 
-15             JEQ     FIN               300021 
-18             STCH    BUFFER,X          548031 
-1B             TIX     HUND              2C002D 
-1E             JLT     LOOP              380009 
-21    FIN      STX     LENGTH            100095 
-24             RSUB                      4C0000 
-27    ZERO     WORD    0                 000000 
-2A    FOUR     WORD    4                 000004 
-2D    HUND     WORD    100               000064 
-30    INPUT    BYTE    X'F3'             F3 
-31    BUFFER   RESB    100                      
-95    LENGTH   RESW    1                        
-98             END     P                        
+1000  COPY     START   1000                     
+1000  FIRST    STL     RETADR            141033 
+1003  CLOOP    JSUB    RDREC             484039 
+1006           LDA     LENGTH            001036 
+1009           COMP    ZERO              281030 
+100C           JEQ     ENDFIL            301015 
+100F           JSUB    WRREC             484061 
+1012           J       CLOOP             3C1003 
+1015  ENDFIL   LDA     EOF               00102A 
+1018           STA     BUFFER            0C1039 
+101B           LDA     THREE             00102D 
+101E           STA     LENGTH            0C1036 
+1021           JSUB    WRREC             484061 
+1024           LDL     RETADR            081033 
+1027           RSUB                      4C0000 
+102A  EOF      BYTE    C'EOF'            454F46 
+102D  THREE    WORD    3                 000003 
+1030  ZERO     WORD    0                 000000 
+1033  RETADR   RESW    1                        
+1036  LENGTH   RESW    1                        
+1039  BUFFER   RESW    4096                     
+4039  RDREC    LDX     ZERO              041030 
+403C           LDA     ZERO              001030 
+403F  RLOOP    TD      INPUT             E0405D 
+4042           JEQ     RLOOP             30403F 
+4045           RD      INPUT             D8405D 
+4048           COMP    ZERO              281030 
+404B           JEQ     EXIT              304057 
+404E           STCH    BUFFER,X          549039 
+4051           TIX     MAXLEN            2C405E 
+4054           JLT     RLOOP             38403F 
+4057  EXIT     STX     LENGTH            101036 
+405A           RSUB                      4C0000 
+405D  INPUT    BYTE    X'F1'             F1 
+405E  MAXLEN   WORD    4096              001000 
+4061  WRREC    LDX     ZERO              041030 
+4064  WLOOP    TD      OUTPUT            E04079 
+4067           JEQ     WLOOP             304064 
+406A           LDCH    BUFFER,X          509039 
+406D           WD      OUTPUT            DC4079 
+4070           TIX     LENGTH            2C1036 
+4073           JLT     WLOOP             384064 
+4076           RSUB                      4C0000 
+4079  OUTPUT   BYTE    X'05'             05 
+407A           END     FIRST                    

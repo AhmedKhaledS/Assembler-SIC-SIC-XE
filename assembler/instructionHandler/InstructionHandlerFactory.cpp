@@ -3,6 +3,7 @@
 #include "MemoryInstructionHandler.h"
 #include "SimpleDirectiveInstructionHandler.h"
 #include "InstructionHandlerConstants.h"
+#include "NonExistingInstructionHandler.h"
 
 using namespace std;
 
@@ -27,6 +28,8 @@ InstructionHandler* InstructionHandlerFactory::getInstructionHandler
         ptr = new MemoryInstructionHandler(instruction);
     } else if (type == InstructionHandlerConstants::INSTRUCTION_TYPE_OPER) {
         ptr = new SimpleDirectiveInstructionHandler(instruction);
+    } else {
+        ptr = new NonExistingInstructionHandler();
     }
     return ptr;
 }

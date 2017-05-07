@@ -7,6 +7,7 @@
 #include "../utils/LabelVerifier.h"
 #include "../logger/Logger.h"
 #include "../logger/LoggerConstants.h"
+#include "../utils/SyntaxVerifier.h"
 
 using namespace std;
 
@@ -30,12 +31,18 @@ void LabelHandlerState::handle(string statement)
 
     // check the label format
     if(!LabelVerifier::checkNamingConvention(statement)){
-        throwError();
+        throwError("Label is not following naming convention");
+        SyntaxVerifier::setListingSyntaxValidity(false);
+        this->context->setState(context->getInstructionHandler());
+        return;
     }
 
     // check for existence of the statement in Symbol Table
     if(!LabelVerifier::checkExistence(statement)){
-        throwError();
+        throwError("Double label definition");
+        SyntaxVerifier::setListingSyntaxValidity(false);
+        this->context->setState(context->getInstructionHandler());
+        return;
     }
     else {
         /// TO DO : Add label Location Counter Value
@@ -50,7 +57,7 @@ void LabelHandlerState::handle(string statement)
     //    cout << "Currently: instruction-handler-state" << endl;
 }
 
-void LabelHandlerState::throwError()
+void LabelHandlerState::throwError(string message)
 {
-    throw "Error While Handling Label";
+    Logger::log(message,LoggerConstants::ERROR);
 }

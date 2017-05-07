@@ -3,6 +3,7 @@
 #include "NumberConverter.h"
 #include "../LocationCounter.h"
 #include "../utils/LabelVerifier.h"
+#include "../utils/SyntaxVerifier.h"
 
 using namespace std;
 
@@ -159,7 +160,9 @@ bool DirectiveInstructionHandler::handle() {
     } else if (instruction == Constants::START) {
         LocationCounter::setLocationCounter(DirectiveInstructionHandler::operand);
         LocationCounter::increment(Constants::ZERO);
+        SyntaxVerifier::setStartIncrement();
     } else if(instruction == Constants::END) {
+        SyntaxVerifier::setEndIncrement();
         //LocationCounter::increment(FIXED_INCREMENT);
     }
     return false;

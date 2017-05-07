@@ -10,7 +10,6 @@ class MemoryObjectCodeGenerator : public ObjectCodeGenerator
         string parse();
 
     private:
-        bool isOutOfRange;
         string indexingAddressing(string address);
         string parseInstruction(string instruction);
         string parseOperand(string operand);

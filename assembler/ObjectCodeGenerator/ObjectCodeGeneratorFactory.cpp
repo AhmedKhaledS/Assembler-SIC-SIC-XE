@@ -3,6 +3,7 @@
 #include "MemoryObjectCodeGenerator.h"
 #include "SimpleDirectiveObjectCodeGenerator.h"
 #include "InstructionHandlerConstants.h"
+#include "NonExistingObjectCodeGenerator.h"
 
 using namespace std;
 
@@ -30,6 +31,8 @@ ObjectCodeGenerator* ObjectCodeGeneratorFactory::getObjectCodeGenerator
     } else if(type == InstructionHandlerConstants::INSTRUCTION_TYPE_OPER) {
         ptr = new SimpleDirectiveObjectCodeGenerator(instruction);
         return ptr;
+    } else {
+        ptr = new NonExistingObjectCodeGenerator();
     }
     return ptr;
 }

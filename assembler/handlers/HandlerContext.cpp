@@ -20,7 +20,7 @@ void HandlerContext::handle(string statement)
     // Delegates this action to state handler.
     currentState->handle(statement);
 }
-void HandlerContext::throwError()
+void HandlerContext::throwError(string message)
 {
 
 }

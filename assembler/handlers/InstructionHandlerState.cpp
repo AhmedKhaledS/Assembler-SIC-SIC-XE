@@ -26,11 +26,11 @@ void InstructionHandlerState::handle(string statement)
 
     ///check valid instruction (opCode Table);
     if (!InstructionTypeTable::searchOperation(statement)) {
-        throwError();
+        throwError("Invalid Instruction");
     }
     ///check for label state
     if(!InstructionTypeTable::getLabelState(statement) && labelAvailable) {
-        throwError();
+        throwError("Instruction should not have label");
     }
     ///location counter increment
    if (!isDirective(statement)) {
@@ -44,7 +44,7 @@ void InstructionHandlerState::handle(string statement)
     this->context->setState(context->getOperandHandler());
 }
 
-void InstructionHandlerState::throwError()
+void InstructionHandlerState::throwError(string message)
 {
-    cout << endl << "Invalid Instruction Syntax" << endl;
+    Logger::log(message,LoggerConstants::ERROR);
 }

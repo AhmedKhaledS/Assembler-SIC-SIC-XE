@@ -26,6 +26,7 @@ CodeGenerator::CodeGenerator(vector<vector<string>> src)
 
 
 string createListingStatement(vector<string> statement, string objectCode, int index) {
+
     string listingStatement = "";
     listingStatement.append(
             LabelVerifier::fillSpaces(LocationCounter::getLocationAt(index), LOC_FIXED_LENGTH));
@@ -52,6 +53,9 @@ vector<string> CodeGenerator::generateObjectCode() {
     vector<string> listingCode;
     int i = 0;
     for (vector<string> statement : sourceCode) {
+        if(statement.size() == 0){
+            continue;
+        }
         string instructionType = InstructionTypeTable::getType(statement[1]);
         ObjectCodeGenerator* generator = ObjectCodeGeneratorFactory::
         getInstance()->getObjectCodeGenerator(instructionType, statement[1], statement[2]);
@@ -62,6 +66,3 @@ vector<string> CodeGenerator::generateObjectCode() {
     }
     return listingCode;
 }
-
-
-

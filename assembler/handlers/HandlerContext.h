@@ -16,7 +16,7 @@ class HandlerContext
         HandlerContext();
         void setState(StateHandler *newState);
         void handle(std::string statement);
-        void throwError();
+        void throwError(std::string message);
         StateHandler *getLabelHandler();
         StateHandler *getInstructionHandler();
         StateHandler *getOperandHandler();

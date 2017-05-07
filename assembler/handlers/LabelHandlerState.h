@@ -11,7 +11,7 @@ class LabelHandlerState: public StateHandler
         /** Default constructor */
         LabelHandlerState(HandlerContext *context);
         void handle(std::string statement);
-        void throwError();
+        void throwError(std::string message);
     private:
         HandlerContext *context;
 };

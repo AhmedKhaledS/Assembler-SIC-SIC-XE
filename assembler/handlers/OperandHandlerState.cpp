@@ -18,9 +18,6 @@ void OperandHandlerState::handle(string statement)
     if (statement == "#") {
         return;
     }
-    if (StateHandler::instruction == "x'05'") {
-        int debug = -1;
-    }
     /// loading the proper type from the instruction table with the help of the static string
     string instructionType = InstructionTypeTable::getType(StateHandler::instruction);
     InstructionHandler* handler = InstructionHandlerFactory::
@@ -35,7 +32,7 @@ void OperandHandlerState::handle(string statement)
     //cout << "Currently: null-state." << endl;
 }
 
-void OperandHandlerState::throwError()
+void OperandHandlerState::throwError(string message)
 {
 
 }

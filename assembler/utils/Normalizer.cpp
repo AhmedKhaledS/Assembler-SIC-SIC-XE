@@ -43,16 +43,13 @@ vector<string> Normalizer::splittedInst(string instruction){
 
     addLastPart();
 
-    if(!LabelVerifier::checkReservedWord(result.at(0))){
+    if(result.size() > 0 && !LabelVerifier::checkReservedWord(result.at(0))){
         result.insert(result.begin(),"#");
     }
 
     if (result.size() == 2) {
         result.push_back("#");
     }
-//    for(int i=0;i<result.size(); i++) {
-//        cout <<  result[i] << " " ;
-//    }
 
     return result;
 }
@@ -84,7 +81,6 @@ int Normalizer::normalizeComments(string instruction,int i){
         part += instruction[i];
         i++;
      }
-     result.push_back(part);
      part = "";
      return i;
 }

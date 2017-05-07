@@ -14,13 +14,13 @@
 using namespace std;
 
 const string OUT_OF_RANGE = "OUT OF RANGE ADDRESS";
+const string LABEL_MISSING = "LABEL DOES NOT EXIST";
 const int MAX_ADDRESS_SIZE = 4;
 
 MemoryObjectCodeGenerator::MemoryObjectCodeGenerator(string inst,string oper)
 {
     instruction = inst;
     operand = oper;
-    isOutOfRange = false;
 }
 
 string MemoryObjectCodeGenerator::parse(){
@@ -32,8 +32,12 @@ string MemoryObjectCodeGenerator::parse(){
 
     string addressCode = parseOperand(operand);
 
-    if(isOutOfRange){
-       return OUT_OF_RANGE;
+    if(addressCode == LABEL_MISSING){
+       return LABEL_MISSING;
+    }
+
+    if(addressCode == OUT_OF_RANGE){
+        return OUT_OF_RANGE;
     }
 
     objectCode += addressCode;
@@ -78,13 +82,13 @@ string MemoryObjectCodeGenerator::parseOperand(string operand){
     // Check if the operand available
     if(!SymbolTable::searchSymbol(operand)){
         Logger::log("Operand label does not exist", LoggerConstants::ERROR);
-        return "";
+        return LABEL_MISSING;
     }
 
     string addressCode = SymbolTable::getAddress(operand);
     if(addressCode.size() > MAX_ADDRESS_SIZE){
-        isOutOfRange = true;
-        return Constants::ZEROS;
+        Logger::log("Address is out of range", LoggerConstants::ERROR);
+        return OUT_OF_RANGE;
     }
 
     //cout << "Address Code: " << addressCode << endl;

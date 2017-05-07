@@ -8,7 +8,7 @@ class StateHandler
         /** Default constructor */
         StateHandler();
         virtual void handle(std::string statement) = 0;
-        virtual void throwError() = 0;
+        virtual void throwError(std::string message) = 0;
     protected:
         static bool labelAvailable;
         static std::string instruction;

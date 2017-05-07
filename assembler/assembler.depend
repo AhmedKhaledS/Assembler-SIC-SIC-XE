@@ -816,152 +816,175 @@
 1493924245 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
 	<string>
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
+1494192001 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
 	<iostream>
 	"AssemblerDriver.h"
+	"../ObjectCodeGenerator/CodeGenerator.h"
+	"../objectFileGenerator/ObjectFileGenerator.h"
+	"../utils/SyntaxVerifier.h"
+	"../logger/Logger.h"
+	"../utils/TablesLoader.h"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.h
 	"StatementParser.h"
 	"../fileServices/FileReader.h"
+	"../fileServices/FileWriter.h"
 	"../utils/Normalizer.h"
 	<string>
 	<vector>
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\driver\statementparser.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\driver\statementparser.h
 	"../handlers/HandlerContext.h"
 	"../handlers/InstructionHandlerState.h"
 	"../handlers/OperandHandlerState.h"
 	"vector"
 	"string"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.h
+1494190168 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.h
 	"LabelHandlerState.h"
 	"InstructionHandlerState.h"
 	"OperandHandlerState.h"
 
-1492680430 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.h
+1494190136 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.h
 	"StateHandler.h"
 	"HandlerContext.h"
 
-1492636560 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\statehandler.h
+1494190119 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\statehandler.h
 	"string"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.h
+1494190141 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.h
 	"StateHandler.h"
 	"HandlerContext.h"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.h
+1494190145 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.h
 	"StateHandler.h"
 	"HandlerContext.h"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\fileservices\filereader.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\fileservices\filereader.h
+	"FileHandler.h"
 	<vector>
 	<string>
 
-1492698681 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
 	<vector>
 	<string>
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\driver\statementparser.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\driver\statementparser.cpp
 	"StatementParser.h"
 	"../handlers/HandlerContext.h"
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\fileservices\filereader.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\fileservices\filereader.cpp
 	"FileReader.h"
 	<iostream>
 	<fstream>
 	<vector>
 	<sstream>
 
-1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.cpp
+1494190982 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.cpp
 	"HandlerContext.h"
 	"iostream"
 
-1492698304 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
+1494192300 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
 	"InstructionHandlerState.h"
 	"iostream"
 	"../ObjectCodeGenerator/Constants.h"
 	"../tables/InstructionTypeTable.h"
 	"../LocationCounter.h"
+	"../logger/Logger.h"
+	"../logger/LoggerConstants.h"
 
-1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
+1494191179 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
+	<string>
 	"LabelHandlerState.h"
 	"iostream"
 	"../tables/SymbolTable.h"
 	"../tables/InstructionTypeTable.h"
 	"../LocationCounter.h"
+	"../utils/LabelVerifier.h"
+	"../logger/Logger.h"
+	"../logger/LoggerConstants.h"
+	"../utils/SyntaxVerifier.h"
 
-1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
+1494191332 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
 	"OperandHandlerState.h"
 	"../tables/InstructionTypeTable.h"
 	"../instructionHandler/InstructionHandlerFactory.h"
 	"iostream"
+	"../LocationCounter.h"
+	"NumberConverter.h"
+	"../ObjectCodeGenerator/Constants.h"
 
-1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
 	"StateHandler.h"
 
-1492698304 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
 	"InstructionHandler.h"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.h
 	<string>
 
-1492641526 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
+1494188828 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
 	"InstructionHandlerFactory.h"
 	"DirectiveInstructionHandler.h"
 	"MemoryInstructionHandler.h"
 	"SimpleDirectiveInstructionHandler.h"
+	"InstructionHandlerConstants.h"
+	"NonExistingInstructionHandler.h"
 
-1492693228 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.h
 	<InstructionHandler.h>
 	<string>
 
-1492693228 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
 	"MemoryInstructionHandler.h"
 	"../tables/InstructionTypeTable.h"
 	<iostream>
+	<../utils/LabelVerifier.h>
+	"../logger/Logger.h"
+	"../logger/LoggerConstants.h"
 
-1492678304 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
 	"InstructionHandler.h"
 	<string>
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\locationcounter.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\locationcounter.cpp
 	<iostream>
 	"LocationCounter.h"
+	"NumberConverter.h"
+	<string>
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\locationcounter.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\locationcounter.h
 	<iostream>
 	<vector>
+	<string>
 
-1492700554 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\main.cpp
+1494192449 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
-	"driver/AssemblerDriver.h"
-	"ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h"
-	"ObjectCodeGenerator/MemoryObjectCodeGenerator.h"
-	"tables/InstructionTypeTable.h"
-	"ObjectCodeGenerator/DirectiveObjectCodeGenerator.h"
-	"MemoryInstructionHandler.h"
-	"driver/StatementParser.h"
-	"handlers/OperandHandlerState.h"
 	<sstream>
-	"tables/SymbolTable.h"
-	"utils/Normalizer.h"
+	<string>
+	<algorithm>
+	<windows.h>
+	"utils/TablesLoader.h"
+	"driver/AssemblerDriver.h"
+	"tables/InstructionTypeTable.h"
+	"../logger/Logger.h"
+	"fileServices/FileWriter.h"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.h
 	<iostream>
 
-1492699633 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
+1494185671 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
-1492638858 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.h
 	<map>
 	<iostream>
 	<stdio.h>
 
-1492641160 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
 1492624991 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.cpp
@@ -975,61 +998,67 @@
 	<stdlib.h>
 	<string>
 
-1492642480 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
 	"NumberConverter.h"
 	<string>
 	<sstream>
 	<bitset>
 
-1492642434 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
 	<string>
 
-1492698304 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
 	"Constants.h"
 
-1492698304 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
 	<string>
 
-1492642306 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
 	"DirectiveObjectCodeGenerator.h"
 	<stdio.h>
 	<stdlib.h>
 	"../NumberConverters/NumberConverter.h"
 	"Constants.h"
+	"../tables/SymbolTable.h"
+	"../utils/LabelVerifier.h"
 
-1492700645 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
+1494185910 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
 	"MemoryObjectCodeGenerator.h"
 	"../tables/OperationCodeTable.h"
 	"../tables/SymbolTable.h"
 	"Constants.h"
 	"../NumberConverters/NumberConverter.h"
+	"../logger/Logger.h"
+	"../logger/LoggerConstants.h"
 	<iostream>
 	<sstream>
 	<string>
 	<bitset>
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\operationcodetable.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\operationcodetable.h
 	<map>
 	<iostream>
 	<stdio.h>
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\symboltable.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\symboltable.h
 	<map>
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.cpp
 	"ObjectCodeGenerator.h"
 
-1492641206 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
+1494189160 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
 	"ObjectCodeGeneratorFactory.h"
 	"DirectiveObjectCodeGenerator.h"
 	"MemoryObjectCodeGenerator.h"
 	"SimpleDirectiveObjectCodeGenerator.h"
+	"InstructionHandlerConstants.h"
+	"NonExistingObjectCodeGenerator.h"
 
-1492640920 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.h
 	<map>
 	"ObjectCodeGenerator.h"
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.cpp
 	"SimpleDirectiveObjectCodeGenerator.h"
 	"../tables/OperationCodeTable.h"
 	"Constants.h"
@@ -1039,53 +1068,60 @@
 	<string>
 	<bitset>
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\operationcodetable.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\operationcodetable.cpp
 	<map>
 	<stdio.h>
 	"OperationCodeTable.h"
 	<fstream>
 	<sstream>
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\symboltable.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\symboltable.cpp
 	<map>
 	<string>
+	<iostream>
 	"SymbolTable.h"
 
-1492623902 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\baseregister.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\baseregister.cpp
 	<iostream>
 	"BaseRegister.h"
 
-1492623902 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\baseregister.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\baseregister.h
 	<iostream>
 
-1492699072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
+1494189299 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
 	"Normalizer.h"
 	"../ObjectCodeGenerator/Constants.h"
 	<iostream>
 	<fstream>
 	<vector>
 	<sstream>
+	"LabelVerifier.h"
 
-1492639553 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.cpp
 	<map>
 	<stdio.h>
 	"InstructionTypeTable.h"
 	<bits/stdc++.h>
 
-1492618683 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\simpledirectiveinstructionhandler.cpp
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\simpledirectiveinstructionhandler.cpp
 	"SimpleDirectiveInstructionHandler.h"
 	<iostream>
+	"../logger/Logger.h"
+	"../logger/LoggerConstants.h"
 
-1492618545 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\simpledirectiveinstructionhandler.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\simpledirectiveinstructionhandler.h
 	"InstructionHandler.h"
 	<string>
 
-1492698304 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
+1494186619 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
 	"DirectiveInstructionHandler.h"
 	"../ObjectCodeGenerator/Constants.h"
 	"NumberConverter.h"
+	"../LocationCounter.h"
+	"../utils/LabelVerifier.h"
+	"../utils/SyntaxVerifier.h"
 
-1492624896 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.h
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.h
 	"InstructionHandler.h"
 
 1493989132 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
@@ -1344,4 +1380,121 @@
 	"../tables/SymbolTable.h"
 	<string>
 	<vector>
+
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\fileservices\filehandler.h
+	<vector>
+	<string>
+
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\fileservices\filewriter.h
+	"FileHandler.h"
+	<string>
+	<vector>
+
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\codegenerator.h
+	<string>
+	<vector>
+
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectfilegenerator\objectfilegenerator.h
+	<string>
+	<vector>
+
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\fileservices\filehandler.cpp
+	"FileHandler.h"
+
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\fileservices\filewriter.cpp
+	"FileWriter.h"
+	"../ObjectCodeGenerator/Constants.h"
+	<fstream>
+
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\logger\logger.h
+	<string>
+
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\logger\loggerconstants.h
+	<string>
+
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\labelverifier.h
+	<string>
+
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerconstants.h
+	<string>
+
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\intructionhandlerconstants.cpp
+	"InstructionHandlerConstants.h"
+
+1494192128 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\logger\logger.cpp
+	"Logger.h"
+	<string>
+	<iostream>
+	"LoggerConstants.h"
+
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\logger\loggerconstants.cpp
+	"LoggerConstants.h"
+
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\tablesloader.h
+
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\labelverifier.cpp
+	"LabelVerifier.h"
+	"../tables/InstructionTypeTable.h"
+	"../tables/SymbolTable.h"
+	"../logger/Logger.h"
+	"NumberConverter.h"
+
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\tablesloader.cpp
+	"TablesLoader.h"
+	"../tables/InstructionTypeTable.h"
+	"../tables/OperationCodeTable.h"
+
+1494189611 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\codegenerator.cpp
+	"CodeGenerator.h"
+	"../tables/InstructionTypeTable.h"
+	"ObjectCodeGenerator.h"
+	"objectCode/ObjectCodeContainer.h"
+	"ObjectCodeGeneratorFactory.h"
+	"../LocationCounter.h"
+	"../utils/LabelVerifier.h"
+	<string>
+	<vector>
+	<iostream>
+
+1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcode\objectcodecontainer.h
+	<vector>
+	<string>
+
+1494189442 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectfilegenerator\objectfilegenerator.cpp
+	"ObjectFileGenerator.h"
+	"../LocationCounter.h"
+	"../ObjectCodeGenerator/objectCode/ObjectCodeContainer.h"
+	"../utils/LabelVerifier.h"
+	"NumberConverter.h"
+	"../tables/SymbolTable.h"
+	<string>
+	<vector>
+
+1494178072 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcode\objectcodecontainer.cpp
+	"ObjectCodeContainer.h"
+	<iostream>
+	<vector>
+	<string>
+
+1494186554 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\terminalsverifier.h
+
+1494184746 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\terminalsverifier.cpp
+	"TerminalsVerifier.h"
+
+1494190793 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\syntaxverifier.h
+
+1494190961 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\syntaxverifier.cpp
+	"SyntaxVerifier.h"
+
+1494188743 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\nonexistinginstructionhandler.h
+	<InstructionHandler.h>
+
+1494188808 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\nonexistinginstructionhandler.cpp
+	"NonExistingInstructionHandler.h"
+
+1494189133 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\nonexistingobjectcodegenerator.cpp
+	"NonExistingObjectCodeGenerator.h"
+
+1494189058 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\objectcodegenerator\nonexistingobjectcodegenerator.h
+	<ObjectCodeGenerator.h>
 
