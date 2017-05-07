@@ -1,6 +1,6 @@
 #include "ObjectFileGenerator.h"
 #include "../LocationCounter.h"
-#include "ObjectCodeContainer.h"
+#include "../ObjectCodeGenerator/objectCode/ObjectCodeContainer.h"
 #include "../utils/LabelVerifier.h"
 #include "NumberConverter.h"
 #include "../tables/SymbolTable.h"

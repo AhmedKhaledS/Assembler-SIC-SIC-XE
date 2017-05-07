@@ -1,0 +1,21 @@
+0000  PROG12   START   0000                     
+0     P        JSUB    COMPUTE           480006 
+3     FIN2     J       FIN2              3C0003 
+6     COMPUTE  LDX     ZERO              040027 
+9     LOOP     TD      INPUT             E00030 
+C              JEQ     LOOP              300009 
+F              RD      INPUT             D80030 
+12             COMP    FOUR              28002A 
+15             JEQ     FIN               300021 
+18             STCH    BUFFER,X          548031 
+1B             TIX     HUND              2C002D 
+1E             JLT     LOOP              380009 
+21    FIN      STX     LENGTH            100095 
+24             RSUB                      4C0000 
+27    ZERO     WORD    0                 000000 
+2A    FOUR     WORD    4                 000004 
+2D    HUND     WORD    100               000064 
+30    INPUT    BYTE    X'F3'             F3 
+31    BUFFER   RESB    100                      
+95    LENGTH   RESW    1                        
+98             END     P                        

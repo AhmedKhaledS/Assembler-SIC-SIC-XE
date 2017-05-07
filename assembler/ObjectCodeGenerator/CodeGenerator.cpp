@@ -1,7 +1,7 @@
 #include "CodeGenerator.h"
 #include "../tables/InstructionTypeTable.h"
 #include "ObjectCodeGenerator.h"
-#include "ObjectCodeContainer.h"
+#include "objectCode/ObjectCodeContainer.h"
 #include "ObjectCodeGeneratorFactory.h"
 #include "../LocationCounter.h"
 #include "../utils/LabelVerifier.h"

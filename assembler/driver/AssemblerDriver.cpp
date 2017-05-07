@@ -1,7 +1,7 @@
 #include <iostream>
 #include "AssemblerDriver.h"
-#include "CodeGenerator.h"
-#include "ObjectFileGenerator.h"
+#include "../ObjectCodeGenerator/CodeGenerator.h"
+#include "../objectFileGenerator/ObjectFileGenerator.h"
 
 using namespace std;
 

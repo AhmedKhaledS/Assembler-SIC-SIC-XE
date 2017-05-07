@@ -42,10 +42,9 @@ void InstructionHandlerState::handle(string statement)
 
     /// If there are no errors .. upgrade the state.
     this->context->setState(context->getOperandHandler());
-    //cout << "Currently: operand-handler-state" << endl;
 }
 
 void InstructionHandlerState::throwError()
 {
-    cout << endl << "Invlaid Instruction Syntax" << endl;
+    cout << endl << "Invalid Instruction Syntax" << endl;
 }

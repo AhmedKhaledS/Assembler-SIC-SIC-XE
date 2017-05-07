@@ -15,10 +15,6 @@
 					<Add option="-g" />
 					<Add directory="NumberConverters" />
 					<Add directory="instructionHandler" />
-					<Add directory="logger" />
-					<Add directory="ObjectCodeGenerator" />
-					<Add directory="ObjectCodeGenerator/objectCode" />
-					<Add directory="objectFileGenerator" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -30,10 +26,6 @@
 					<Add option="-O2" />
 					<Add directory="NumberConverters" />
 					<Add directory="instructionHandler" />
-					<Add directory="logger" />
-					<Add directory="ObjectCodeGenerator" />
-					<Add directory="ObjectCodeGenerator/objectCode" />
-					<Add directory="objectFileGenerator" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -48,8 +40,6 @@
 		<Unit filename="LocationCounter.h" />
 		<Unit filename="NumberConverters/NumberConverter.cpp" />
 		<Unit filename="NumberConverters/NumberConverter.h" />
-		<Unit filename="ObjectCodeGenerator/CodeGenerator.cpp" />
-		<Unit filename="ObjectCodeGenerator/CodeGenerator.h" />
 		<Unit filename="ObjectCodeGenerator/Constants.cpp" />
 		<Unit filename="ObjectCodeGenerator/Constants.h" />
 		<Unit filename="ObjectCodeGenerator/DirectiveObjectCodeGenerator.cpp" />
@@ -62,8 +52,6 @@
 		<Unit filename="ObjectCodeGenerator/ObjectCodeGeneratorFactory.h" />
 		<Unit filename="ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.cpp" />
 		<Unit filename="ObjectCodeGenerator/SimpleDirectiveObjectCodeGenerator.h" />
-		<Unit filename="ObjectCodeGenerator/objectCode/ObjectCodeContainer.cpp" />
-		<Unit filename="ObjectCodeGenerator/objectCode/ObjectCodeContainer.h" />
 		<Unit filename="README.md" />
 		<Unit filename="assembler.cbp" />
 		<Unit filename="assembler.depend" />
@@ -105,8 +93,6 @@
 		<Unit filename="logger/LoggerConstants.cpp" />
 		<Unit filename="logger/LoggerConstants.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="objectFileGenerator/ObjectFileGenerator.cpp" />
-		<Unit filename="objectFileGenerator/ObjectFileGenerator.h" />
 		<Unit filename="tables/InstructionTypeTable.cpp" />
 		<Unit filename="tables/InstructionTypeTable.h" />
 		<Unit filename="tables/OperationCodeTable.cpp" />
