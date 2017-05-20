@@ -14,9 +14,6 @@ class LiteralsPool
         static std::string getLiteral(int index);
         static void addLiteralPoolSize(int poolSize);
         static int getPoolSize(int index);
-
-    protected:
-
     private:
 };
 
