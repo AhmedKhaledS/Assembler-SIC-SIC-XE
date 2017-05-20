@@ -7,21 +7,20 @@ class LiteralData
 {
     public:
         /** Default constructor */
-        LiteralData(std::string _name, std::string _value,
+        LiteralData();
+        LiteralData(std::string _name,
                     std::string _address, int _length);
         void setName(std::string _name);
-        void setValue(std::string _value);
         void setAddress(std::string _address);
         void setLength(int _length);
-        std::string getName();
-        std::string getValue();
-        std::string getAddress();
-        int getLength();
+        std::string getName() const;
+        std::string getAddress() const;
+        int getLength() const;
 
     protected:
 
     private:
-        std::string name, value, address;
+        std::string name, address;
         int length;
 };
 

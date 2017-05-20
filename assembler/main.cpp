@@ -9,6 +9,7 @@
 #include "../logger/Logger.h"
 #include "fileServices/FileWriter.h"
 #include "LiteralData.h"
+#include "LiteralTable.h"
 
 
 using namespace std;
@@ -16,12 +17,13 @@ using namespace std;
 int main()
 {
 
-    AssemblerDriver assembler = AssemblerDriver();
-    cout << "Please Enter the .asm file path" << endl;
-    string path;
-      getline(cin,path);
-    assembler.assemble(path);
-//    LiteralData lt("ahmed", "empty", "XXXXX", 5);
-//    cout << lt.getName() << endl;
+//    AssemblerDriver assembler = AssemblerDriver();
+//    cout << "Please Enter the .asm file path" << endl;
+//    string path;
+//    getline(cin,path);
+//    assembler.assemble(path);
+    LiteralData lt("ahmed", "XXXXX", 5);
+    LiteralTable::addLiteral("key", lt);
+    cout << LiteralTable::getAddress("key") << endl;
     return 0;
 }

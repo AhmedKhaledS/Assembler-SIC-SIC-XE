@@ -405,7 +405,7 @@
 	<string>
 	<vector>
 
-1494192817 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
+1495294601 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	<sstream>
 	<string>
@@ -416,6 +416,8 @@
 	"tables/InstructionTypeTable.h"
 	"../logger/Logger.h"
 	"fileServices/FileWriter.h"
+	"LiteralData.h"
+	"LiteralTable.h"
 
 1492377171 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
@@ -1583,17 +1585,20 @@
 1495287228 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\expressionevaluator.h
 	<string>
 
-1495287471 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
+1495295344 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
 	"LiteralTable.h"
 
-1495287471 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.h
+1495295346 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.h
+	"LiteralData.h"
+	"string"
+	<map>
 
 1495287228 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\expressionevaluator.cpp
 	"ExpressionEvaluator.h"
 
-1495290065 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\literaldata.cpp
+1495294475 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\literaldata.cpp
 	"LiteralData.h"
 
-1495289907 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\literaldata.h
+1495294478 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\literaldata.h
 	<string>
 
