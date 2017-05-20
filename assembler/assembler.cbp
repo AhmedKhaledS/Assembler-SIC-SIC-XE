@@ -16,6 +16,7 @@
 					<Add directory="NumberConverters" />
 					<Add directory="instructionHandler" />
 					<Add directory="utils" />
+					<Add directory="instructionHandler/expressions.handler" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -28,6 +29,7 @@
 					<Add directory="NumberConverters" />
 					<Add directory="instructionHandler" />
 					<Add directory="utils" />
+					<Add directory="instructionHandler/expressions.handler" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />

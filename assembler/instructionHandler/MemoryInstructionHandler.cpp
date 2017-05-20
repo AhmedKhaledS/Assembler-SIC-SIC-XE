@@ -76,7 +76,7 @@ bool checkHexaDecimalLiteral(string literal){
 }
 
 bool MemoryInstructionHandler::handleLiteral(){
-    string literal = instruction.substr(1,instruction.length());
+    string literal = instruction.substr(1,instruction.length() - 1);
     return  checkStringLiteral(literal) || checkHexaDecimalLiteral(literal);
 }
 

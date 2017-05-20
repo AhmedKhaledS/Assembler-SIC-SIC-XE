@@ -33,3 +33,4 @@ RESW dir label
 RESB  dir label
 EQU dir_exp label
 ORG dir_exp nolabel
+LTORG dir nolabel

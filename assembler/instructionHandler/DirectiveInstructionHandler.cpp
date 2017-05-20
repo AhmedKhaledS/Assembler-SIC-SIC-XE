@@ -162,6 +162,10 @@ bool DirectiveInstructionHandler::handle() {
         SyntaxVerifier::setStartIncrement();
     } else if(instruction == Constants::END) {
         SyntaxVerifier::setEndIncrement();
+        /// Get Vector
+        vector<string> literals;
+        LiteralsPool::addLiterals(literals);
+        LiteralsPool::addLiteralPoolSize(literals.size());
     }
     return false;
 }
