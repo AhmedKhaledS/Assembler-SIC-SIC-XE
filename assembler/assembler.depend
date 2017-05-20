@@ -223,54 +223,54 @@
 1492385618 d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
 	<string>
 
-1493924245 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.cpp
 	"StatementParser.h"
 	"../handlers/HandlerContext.h"
 
-1492617620 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\statementparser.h
 	"../handlers/HandlerContext.h"
 	"../handlers/InstructionHandlerState.h"
 	"../handlers/OperandHandlerState.h"
 	"vector"
 	"string"
 
-1494192817 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.h
 	"LabelHandlerState.h"
 	"InstructionHandlerState.h"
 	"OperandHandlerState.h"
 
-1494192817 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.h
 	"StateHandler.h"
 	"HandlerContext.h"
 
-1494192817 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.h
 	"string"
 
-1494192817 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.h
 	"StateHandler.h"
 	"HandlerContext.h"
 
-1494192817 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.h
 	"StateHandler.h"
 	"HandlerContext.h"
 
-1494166594 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.cpp
 	"FileReader.h"
 	<iostream>
 	<fstream>
 	<vector>
 	<sstream>
 
-1493991412 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filereader.h
 	"FileHandler.h"
 	<vector>
 	<string>
 
-1494192817 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\handlercontext.cpp
 	"HandlerContext.h"
 	"iostream"
 
-1494192817 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.cpp
 	"InstructionHandlerState.h"
 	"iostream"
 	"../ObjectCodeGenerator/Constants.h"
@@ -279,7 +279,7 @@
 	"../logger/Logger.h"
 	"../logger/LoggerConstants.h"
 
-1495287228 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
 	<string>
 	"LabelHandlerState.h"
 	"iostream"
@@ -292,7 +292,7 @@
 	"../utils/SyntaxVerifier.h"
 	"../ObjectCodeGenerator/Constants.h"
 
-1494192817 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
 	"OperandHandlerState.h"
 	"../tables/InstructionTypeTable.h"
 	"../instructionHandler/InstructionHandlerFactory.h"
@@ -301,16 +301,16 @@
 	"NumberConverter.h"
 	"../ObjectCodeGenerator/Constants.h"
 
-1492689247 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
 	"StateHandler.h"
 
-1495287228 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\locationcounter.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\locationcounter.cpp
 	<iostream>
 	"LocationCounter.h"
 	"NumberConverter.h"
 	<string>
 
-1494006157 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\locationcounter.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\locationcounter.h
 	<iostream>
 	<vector>
 	<string>
@@ -326,10 +326,10 @@
 	<stdlib.h>
 	<string>
 
-1495287228 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.cpp
 	"Constants.h"
 
-1495287228 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\constants.h
 	<string>
 
 1492366076 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\instructiontypetable.cpp
@@ -343,13 +343,13 @@
 	<iostream>
 	<stdio.h>
 
-1492357414 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.cpp
 	"ObjectCodeGenerator.h"
 
-1492366076 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegenerator.h
 	<iostream>
 
-1494192817 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.cpp
 	"ObjectCodeGeneratorFactory.h"
 	"DirectiveObjectCodeGenerator.h"
 	"MemoryObjectCodeGenerator.h"
@@ -357,30 +357,30 @@
 	"InstructionHandlerConstants.h"
 	"NonExistingObjectCodeGenerator.h"
 
-1494006157 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcodegeneratorfactory.h
 	<map>
 	"ObjectCodeGenerator.h"
 
-1494006157 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
-1494166594 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\symboltable.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\symboltable.cpp
 	<map>
 	<string>
 	<iostream>
 	"SymbolTable.h"
 
-1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\symboltable.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\symboltable.h
 	<map>
 
-1492280313 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\baseregister.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\baseregister.cpp
 	<iostream>
 	"BaseRegister.h"
 
-1492280313 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\baseregister.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\baseregister.h
 	<iostream>
 
-1494192817 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\normalizer.cpp
 	"Normalizer.h"
 	"../ObjectCodeGenerator/Constants.h"
 	<iostream>
@@ -389,7 +389,7 @@
 	<sstream>
 	"LabelVerifier.h"
 
-1493924245 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\normalizer.h
 	<vector>
 	<string>
 
@@ -397,7 +397,7 @@
 	<iostream>
 	"AssemblerDriver.h"
 
-1494166594 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.h
 	"StatementParser.h"
 	"../fileServices/FileReader.h"
 	"../fileServices/FileWriter.h"
@@ -405,7 +405,7 @@
 	<string>
 	<vector>
 
-1495294601 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
+1495297054 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	<sstream>
 	<string>
@@ -417,15 +417,17 @@
 	"../logger/Logger.h"
 	"fileServices/FileWriter.h"
 	"LiteralData.h"
-	"LiteralTable.h"
+	"tables/LiteralTable.h"
+	"instructionHandler/expressions.handler/ExpressionEvaluator.h"
+	"ExpressionDirectiveInstructionHandler.h"
 
-1492377171 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
-1494192817 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
-1494006157 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\directiveobjectcodegenerator.cpp
 	"DirectiveObjectCodeGenerator.h"
 	<stdio.h>
 	<stdlib.h>
@@ -434,7 +436,7 @@
 	"../tables/SymbolTable.h"
 	"../utils/LabelVerifier.h"
 
-1492439331 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.cpp
 	"SimpleDirectiveObjectCodeGenerator.h"
 	"../tables/OperationCodeTable.h"
 	"Constants.h"
@@ -444,30 +446,30 @@
 	<string>
 	<bitset>
 
-1492377171 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\operationcodetable.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\operationcodetable.h
 	<map>
 	<iostream>
 	<stdio.h>
 
-1492377750 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\operationcodetable.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\operationcodetable.cpp
 	<map>
 	<stdio.h>
 	"OperationCodeTable.h"
 	<fstream>
 	<sstream>
 
-1492687492 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.cpp
 	<map>
 	<stdio.h>
 	"InstructionTypeTable.h"
 	<bits/stdc++.h>
 
-1492687492 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\instructiontypetable.h
 	<map>
 	<iostream>
 	<stdio.h>
 
-1494192817 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\memoryobjectcodegenerator.cpp
 	"MemoryObjectCodeGenerator.h"
 	"../tables/OperationCodeTable.h"
 	"../tables/SymbolTable.h"
@@ -480,7 +482,7 @@
 	<string>
 	<bitset>
 
-1495287228 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
 	<iostream>
 	"AssemblerDriver.h"
 	"../ObjectCodeGenerator/CodeGenerator.h"
@@ -795,25 +797,26 @@
 	"InstructionTypeTable.h"
 	<bits/stdc++.h>
 
-1492695612 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
 	"InstructionHandler.h"
 
-1492453691 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.h
 	<string>
 
-1494192817 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
 	"InstructionHandlerFactory.h"
 	"DirectiveInstructionHandler.h"
 	"MemoryInstructionHandler.h"
 	"SimpleDirectiveInstructionHandler.h"
 	"InstructionHandlerConstants.h"
 	"NonExistingInstructionHandler.h"
+	"ExpressionDirectiveInstructionHandler.h"
 
-1492691008 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.h
 	<InstructionHandler.h>
 	<string>
 
-1493990659 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
 	"MemoryInstructionHandler.h"
 	"../tables/InstructionTypeTable.h"
 	<iostream>
@@ -821,17 +824,18 @@
 	"../logger/Logger.h"
 	"../logger/LoggerConstants.h"
 
-1492687492 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
 	"InstructionHandler.h"
 	<string>
 
-1495287228 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
 	"NumberConverter.h"
+	"../LocationCounter.h"
 	<string>
 	<sstream>
 	<bitset>
 
-1495287228 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.h
 	<string>
 
 1494192001 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\driver\assemblerdriver.cpp
@@ -1142,7 +1146,7 @@
 1494178072 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.h
 	"InstructionHandler.h"
 
-1495287228 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
 	"DirectiveInstructionHandler.h"
 	"../ObjectCodeGenerator/Constants.h"
 	"NumberConverter.h"
@@ -1150,14 +1154,14 @@
 	"../utils/LabelVerifier.h"
 	"../utils/SyntaxVerifier.h"
 
-1492687492 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.h
 	"InstructionHandler.h"
 
-1492687492 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\simpledirectiveinstructionhandler.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\simpledirectiveinstructionhandler.h
 	"InstructionHandler.h"
 	<string>
 
-1493990671 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\simpledirectiveinstructionhandler.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\simpledirectiveinstructionhandler.cpp
 	"SimpleDirectiveInstructionHandler.h"
 	<iostream>
 	"../logger/Logger.h"
@@ -1238,42 +1242,42 @@
 
 1495268239 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\tablesloader.h
 
-1493991358 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filehandler.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filehandler.h
 	<vector>
 	<string>
 
-1493924561 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filehandler.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filehandler.cpp
 	"FileHandler.h"
 
-1494006158 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\labelverifier.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\labelverifier.h
 	<string>
 
-1493924245 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerconstants.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerconstants.h
 	<string>
 
-1493924245 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\tablesloader.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\tablesloader.h
 
-1493924245 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\intructionhandlerconstants.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\intructionhandlerconstants.cpp
 	"InstructionHandlerConstants.h"
 
-1494006158 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\labelverifier.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\labelverifier.cpp
 	"LabelVerifier.h"
 	"../tables/InstructionTypeTable.h"
 	"../tables/SymbolTable.h"
 	"../logger/Logger.h"
 	"NumberConverter.h"
 
-1493924245 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\tablesloader.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\tablesloader.cpp
 	"TablesLoader.h"
 	"../tables/InstructionTypeTable.h"
 	"../tables/OperationCodeTable.h"
 
-1494166594 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filewriter.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filewriter.cpp
 	"FileWriter.h"
 	"../ObjectCodeGenerator/Constants.h"
 	<fstream>
 
-1493991348 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filewriter.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\fileservices\filewriter.h
 	"FileHandler.h"
 	<string>
 	<vector>
@@ -1350,30 +1354,30 @@
 	<string>
 	<vector>
 
-1493989132 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\logger\logger.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\logger\logger.h
 	<string>
 
-1493989132 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\logger\loggerconstants.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\logger\loggerconstants.h
 	<string>
 
-1494192817 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\logger\logger.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\logger\logger.cpp
 	"Logger.h"
 	<string>
 	<iostream>
 	"LoggerConstants.h"
 
-1493989132 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\logger\loggerconstants.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\logger\loggerconstants.cpp
 	"LoggerConstants.h"
 
-1494006157 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\codegenerator.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\codegenerator.h
 	<string>
 	<vector>
 
-1494006158 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectfilegenerator\objectfilegenerator.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectfilegenerator\objectfilegenerator.h
 	<string>
 	<vector>
 
-1495287228 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\codegenerator.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\codegenerator.cpp
 	"CodeGenerator.h"
 	"../tables/InstructionTypeTable.h"
 	"ObjectCodeGenerator.h"
@@ -1385,17 +1389,17 @@
 	<vector>
 	<iostream>
 
-1494006157 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcode\objectcodecontainer.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcode\objectcodecontainer.h
 	<vector>
 	<string>
 
-1494006157 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcode\objectcodecontainer.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\objectcode\objectcodecontainer.cpp
 	"ObjectCodeContainer.h"
 	<iostream>
 	<vector>
 	<string>
 
-1494167215 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectfilegenerator\objectfilegenerator.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectfilegenerator\objectfilegenerator.cpp
 	"ObjectFileGenerator.h"
 	"../LocationCounter.h"
 	"../ObjectCodeGenerator/objectCode/ObjectCodeContainer.h"
@@ -1575,33 +1579,34 @@
 1495294603 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\expressions.handler\expressionutils.cpp
 	"ExpressionUtils.h"
 
-1494192817 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\nonexistinginstructionhandler.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\nonexistinginstructionhandler.h
 	<InstructionHandler.h>
 
-1494192817 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\nonexistinginstructionhandler.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\nonexistinginstructionhandler.cpp
 	"NonExistingInstructionHandler.h"
 
-1494192817 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\nonexistingobjectcodegenerator.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\nonexistingobjectcodegenerator.cpp
 	"NonExistingObjectCodeGenerator.h"
 
-1495287228 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\nonexistingobjectcodegenerator.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\objectcodegenerator\nonexistingobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
 
-1494192817 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\syntaxverifier.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\syntaxverifier.cpp
 	"SyntaxVerifier.h"
 
-1494192817 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\syntaxverifier.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\syntaxverifier.h
 
-1495287228 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\expressiondirectiveinstructionhandler.cpp
+1495297017 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\expressiondirectiveinstructionhandler.cpp
 	"ExpressionDirectiveInstructionHandler.h"
 	"../ObjectCodeGenerator/Constants.h"
 	<cstring>
 	"../tables/SymbolTable.h"
-	"ExpressionEvaluator.h"
+	"expressions.handler/ExpressionEvaluator.h"
 	"NumberConverter.h"
 	"../LocationCounter.h"
+	"expressions.handler/ExpressionUtils.h"
 
-1495287228 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\expressiondirectiveinstructionhandler.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\expressiondirectiveinstructionhandler.h
 	"InstructionHandler.h"
 
 1495287228 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\expressionevaluator.h
@@ -1610,7 +1615,7 @@
 1495295344 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
 	"LiteralTable.h"
 
-1495295346 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.h
 	"LiteralData.h"
 	"string"
 	<map>
@@ -1621,6 +1626,21 @@
 1495294475 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\literaldata.cpp
 	"LiteralData.h"
 
-1495294478 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\literaldata.h
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\literaldata.h
 	<string>
+
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\expressions.handler\expressionevaluator.h
+	<string>
+
+1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\expressions.handler\expressionutils.h
+
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\expressions.handler\expressionevaluator.cpp
+	"ExpressionEvaluator.h"
+	"NumberConverter.h"
+	"ExpressionUtils.h"
+	<cstring>
+	<vector>
+
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\expressions.handler\expressionutils.cpp
+	"ExpressionUtils.h"
 
