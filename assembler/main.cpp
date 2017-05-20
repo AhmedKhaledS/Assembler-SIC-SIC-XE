@@ -9,8 +9,7 @@
 #include "../logger/Logger.h"
 #include "fileServices/FileWriter.h"
 #include "LiteralData.h"
-#include "LiteralTable.h"
-
+#include "tables/LiteralTable.h"
 #include "ExpressionEvaluator.h"
 #include "ExpressionDirectiveInstructionHandler.h"
 using namespace std;
