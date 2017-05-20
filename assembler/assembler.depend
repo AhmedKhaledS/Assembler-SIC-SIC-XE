@@ -615,7 +615,7 @@
 	<vector>
 	<string>
 
-1495298564 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\main.cpp
+1495303407 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	<sstream>
 	<string>
@@ -1187,7 +1187,7 @@
 1495268239 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.h
 	<string>
 
-1495272254 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
+1495304219 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
 	"DirectiveInstructionHandler.h"
 	"../ObjectCodeGenerator/Constants.h"
 	"NumberConverter.h"
@@ -1218,7 +1218,7 @@
 	"InstructionHandler.h"
 	<string>
 
-1495298564 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
+1495303407 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
 	"MemoryInstructionHandler.h"
 	"../tables/InstructionTypeTable.h"
 	<iostream>
@@ -1228,6 +1228,7 @@
 	"../logger/LoggerConstants.h"
 	"../ObjectCodeGenerator/Constants.h"
 	"NumberConverter.h"
+	"../tables/LiteralTable.h"
 
 1495268239 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\simpledirectiveinstructionhandler.cpp
 	"SimpleDirectiveInstructionHandler.h"
@@ -1716,10 +1717,10 @@
 1495297995 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\literaldata.cpp
 	"LiteralData.h"
 
-1495296370 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
+1495303407 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
 	"LiteralTable.h"
 
-1495296370 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\tables\literaltable.h
+1495303407 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\tables\literaltable.h
 	"LiteralData.h"
 	"string"
 	<map>
@@ -1732,4 +1733,9 @@
 
 1495298564 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\directiveverifier.h
 	<string>
+
+1495298564 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\directiveverifier.cpp
+	"DirectiveVerifier.h"
+	"../ObjectCodeGenerator/Constants.h"
+	"NumberConverter.h"
 
