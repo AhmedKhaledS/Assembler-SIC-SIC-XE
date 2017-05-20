@@ -72,3 +72,12 @@ string NumberConverter::stringfy(int number) {
     string numberString = ss.str();
     return numberString;
 }
+
+bool NumberConverter::isNumber(string str) {
+    for (unsigned int i = 0; i < str.length(); i++) {
+        if (!isdigit(str[i])) {
+            return false;
+        }
+    }
+    return true;
+}

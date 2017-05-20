@@ -13,6 +13,7 @@ class NumberConverter
         static int getNumericValue(std::string number);
         static int getHexadecimalValue(std::string hexadecimal);
         static std::string stringfy(int number);
+        static bool isNumber(std::string str);
 };
 
 #endif // NUMBERCONVERTER_H

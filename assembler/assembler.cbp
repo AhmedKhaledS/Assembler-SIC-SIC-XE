@@ -15,6 +15,7 @@
 					<Add option="-g" />
 					<Add directory="NumberConverters" />
 					<Add directory="instructionHandler" />
+					<Add directory="utils" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -26,6 +27,7 @@
 					<Add option="-O2" />
 					<Add directory="NumberConverters" />
 					<Add directory="instructionHandler" />
+					<Add directory="utils" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -48,6 +50,8 @@
 		<Unit filename="ObjectCodeGenerator/DirectiveObjectCodeGenerator.h" />
 		<Unit filename="ObjectCodeGenerator/MemoryObjectCodeGenerator.cpp" />
 		<Unit filename="ObjectCodeGenerator/MemoryObjectCodeGenerator.h" />
+		<Unit filename="ObjectCodeGenerator/NonExistingObjectCodeGenerator.cpp" />
+		<Unit filename="ObjectCodeGenerator/NonExistingObjectCodeGenerator.h" />
 		<Unit filename="ObjectCodeGenerator/ObjectCodeGenerator.cpp" />
 		<Unit filename="ObjectCodeGenerator/ObjectCodeGenerator.h" />
 		<Unit filename="ObjectCodeGenerator/ObjectCodeGeneratorFactory.cpp" />
@@ -82,6 +86,8 @@
 		<Unit filename="handlers/StateHandler.h" />
 		<Unit filename="instructionHandler/DirectiveInstructionHandler.cpp" />
 		<Unit filename="instructionHandler/DirectiveInstructionHandler.h" />
+		<Unit filename="instructionHandler/ExpressionDirectiveInstructionHandler.cpp" />
+		<Unit filename="instructionHandler/ExpressionDirectiveInstructionHandler.h" />
 		<Unit filename="instructionHandler/InstructionHandler.cpp" />
 		<Unit filename="instructionHandler/InstructionHandler.h" />
 		<Unit filename="instructionHandler/InstructionHandlerConstants.h" />
@@ -90,6 +96,8 @@
 		<Unit filename="instructionHandler/IntructionHandlerConstants.cpp" />
 		<Unit filename="instructionHandler/MemoryInstructionHandler.cpp" />
 		<Unit filename="instructionHandler/MemoryInstructionHandler.h" />
+		<Unit filename="instructionHandler/NonExistingInstructionHandler.cpp" />
+		<Unit filename="instructionHandler/NonExistingInstructionHandler.h" />
 		<Unit filename="instructionHandler/SimpleDirectiveInstructionHandler.cpp" />
 		<Unit filename="instructionHandler/SimpleDirectiveInstructionHandler.h" />
 		<Unit filename="logger/Logger.cpp" />
@@ -108,10 +116,14 @@
 		<Unit filename="tables/instructionTypes.txt" />
 		<Unit filename="utils/BaseRegister.cpp" />
 		<Unit filename="utils/BaseRegister.h" />
+		<Unit filename="utils/ExpressionEvaluator.cpp" />
+		<Unit filename="utils/ExpressionEvaluator.h" />
 		<Unit filename="utils/LabelVerifier.cpp" />
 		<Unit filename="utils/LabelVerifier.h" />
 		<Unit filename="utils/Normalizer.cpp" />
 		<Unit filename="utils/Normalizer.h" />
+		<Unit filename="utils/SyntaxVerifier.cpp" />
+		<Unit filename="utils/SyntaxVerifier.h" />
 		<Unit filename="utils/TablesLoader.cpp" />
 		<Unit filename="utils/TablesLoader.h" />
 		<Extensions>

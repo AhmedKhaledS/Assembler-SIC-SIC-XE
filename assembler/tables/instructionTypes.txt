@@ -31,3 +31,5 @@ END dir nolabel
 START dir label
 RESW dir label
 RESB  dir label
+EQU dir_exp label
+ORG di_exp nolabel

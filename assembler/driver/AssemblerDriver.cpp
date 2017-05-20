@@ -52,7 +52,7 @@ void AssemblerDriver::assemble(string path)
     if(SyntaxVerifier::isValidListingSyntax()){
         generateListingCode();
         if(checkTerminals()){
-        generateObjectCode();
+            generateObjectCode();
         }
     }
 

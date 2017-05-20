@@ -147,7 +147,6 @@ bool handleReserveByte() {
 
 bool DirectiveInstructionHandler::handle() {
     ///check for all correct scenarios
-    //cout << DirectiveInstructionHandler::operand << " ";
     if (instruction == Constants::WORD) {
         return handleWord();
     } else if (instruction == Constants::BYTE) {
@@ -163,7 +162,6 @@ bool DirectiveInstructionHandler::handle() {
         SyntaxVerifier::setStartIncrement();
     } else if(instruction == Constants::END) {
         SyntaxVerifier::setEndIncrement();
-        //LocationCounter::increment(FIXED_INCREMENT);
     }
     return false;
 }

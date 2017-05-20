@@ -31,5 +31,9 @@ string LocationCounter::getFinalLocation() {
 }
 
 string LocationCounter::getLocationAt(int index) {
+    if (index >= locations.size()) {
+        cout << index << endl;
+        return "XXXXX";
+    }
     return locations[index];
 }

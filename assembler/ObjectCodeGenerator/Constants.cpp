@@ -20,6 +20,9 @@ string Constants::RESW = "RESW";
 string Constants::RESB = "RESB";
 string Constants::START = "START";
 string Constants::END = "END";
+string Constants::EQU = "EQU";
+string Constants::ORG = "ORG";
+
 string Constants::EMPTY_OBJ_CODE = "      ";
 
 string Constants::ZERO = "0";

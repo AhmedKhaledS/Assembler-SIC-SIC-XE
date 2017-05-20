@@ -1,7 +1,7 @@
 #ifndef NONEXISTINGOBJECTCODEGENERATOR_H
 #define NONEXISTINGOBJECTCODEGENERATOR_H
 
-#include <ObjectCodeGenerator.h>
+#include "ObjectCodeGenerator.h"
 
 
 class NonExistingObjectCodeGenerator : public ObjectCodeGenerator

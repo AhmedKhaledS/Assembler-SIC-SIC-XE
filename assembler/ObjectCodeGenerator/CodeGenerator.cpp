@@ -52,8 +52,10 @@ string createListingStatement(vector<string> statement, string objectCode, int i
 vector<string> CodeGenerator::generateObjectCode() {
     vector<string> listingCode;
     int i = 0;
+    int numberOfComments = 0;
     for (vector<string> statement : sourceCode) {
         if(statement.size() == 0){
+            numberOfComments++;
             continue;
         }
         string instructionType = InstructionTypeTable::getType(statement[1]);
@@ -61,7 +63,7 @@ vector<string> CodeGenerator::generateObjectCode() {
         getInstance()->getObjectCodeGenerator(instructionType, statement[1], statement[2]);
         string objectCode = generator->parse();
         ObjectCodeContainer::addObjectCode(objectCode);
-        listingCode.push_back(createListingStatement(statement, objectCode, i));
+        listingCode.push_back(createListingStatement(statement, objectCode, i - numberOfComments));
         i++;
     }
     return listingCode;

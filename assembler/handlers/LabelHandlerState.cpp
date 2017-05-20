@@ -8,11 +8,15 @@
 #include "../logger/Logger.h"
 #include "../logger/LoggerConstants.h"
 #include "../utils/SyntaxVerifier.h"
+#include "../ObjectCodeGenerator/Constants.h"
 
 using namespace std;
 
 LabelHandlerState::LabelHandlerState(HandlerContext *context): context(context){}
 
+bool isExpressionDirective(string instruction) {
+    return instruction == Constants::EQU;
+}
 
 void LabelHandlerState::handle(string statement)
 {
@@ -40,11 +44,9 @@ void LabelHandlerState::handle(string statement)
     // check for existence of the statement in Symbol Table
     if(!LabelVerifier::checkExistence(statement)){
         throwError("Double label definition");
-        SyntaxVerifier::setListingSyntaxValidity(false);
         this->context->setState(context->getInstructionHandler());
         return;
-    }
-    else {
+    } else if (!isExpressionDirective(instruction)) {
         /// TO DO : Add label Location Counter Value
         string currentAddres = LocationCounter::getLocationCounter();
         SymbolTable::add(statement, currentAddres);
