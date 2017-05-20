@@ -2,8 +2,11 @@
 #include "../tables/InstructionTypeTable.h"
 #include <iostream>
 #include <../utils/LabelVerifier.h>
+#include <DirectiveVerifier.h>
 #include "../logger/Logger.h"
 #include "../logger/LoggerConstants.h"
+#include "../ObjectCodeGenerator/Constants.h"
+#include "NumberConverter.h"
 
 using namespace std;
 
@@ -42,11 +45,36 @@ bool MemoryInstructionHandler::handleStatement() {
      && LabelVerifier::checkNamingConvention(instruction);
 }
 
+bool checkStringLiteral(string literal){
+    bool check = DirectiveVerifier::checkString(literal);
+    if(!check){
+        return false;
+    }
+    cout << "STRING IS CORRECT" << endl;
+    cout << DirectiveVerifier::handleByte(literal) << endl;
+    return true;
+}
+
+bool checkHexaDecimalLiteral(string literal){
+    bool check = DirectiveVerifier::checkHexadecimal(literal);
+    if(!check){
+        return false;
+    }
+    cout << "HEXADECIMAL IS CORRECT" << endl;
+    cout << DirectiveVerifier::handleByte(literal) << endl;
+    return true;
+}
+
+bool MemoryInstructionHandler::handleLiteral(){
+    string literal = instruction.substr(1,instruction.length());
+    return  checkStringLiteral(literal) || checkHexaDecimalLiteral(literal);
+}
+
 bool MemoryInstructionHandler::handle() {
-
-    // TO BE REMOVE : FOR TESTING ONLY
-    //cout << instruction << endl;
     InstructionTypeTable::load();
-
-    return handleStatement();
+    if(instruction.at(0) == '='){
+        return handleLiteral();
+    }else{
+        return handleStatement();
+    }
 }

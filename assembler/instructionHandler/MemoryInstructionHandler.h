@@ -16,6 +16,7 @@ class MemoryInstructionHandler : public InstructionHandler
         bool checkReservedWord();
         bool checkNamingConventions();
         bool handleStatement();
+        bool handleLiteral();
 
 };
 

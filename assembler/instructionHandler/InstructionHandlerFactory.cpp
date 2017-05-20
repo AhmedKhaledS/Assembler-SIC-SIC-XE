@@ -25,7 +25,7 @@ InstructionHandler* InstructionHandlerFactory::getInstructionHandler
     if (type == InstructionHandlerConstants::INSTRUCTION_TYPE_DIR) {
         ptr = new DirectiveInstructionHandler(instruction, operand);
     } else if (type == InstructionHandlerConstants::INSTRUCTION_TYPE_MEMREG) {
-        ptr = new MemoryInstructionHandler(instruction);
+        ptr = new MemoryInstructionHandler(operand);
     } else if (type == InstructionHandlerConstants::INSTRUCTION_TYPE_OPER) {
         ptr = new SimpleDirectiveInstructionHandler(instruction);
     } else {

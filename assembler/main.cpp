@@ -18,7 +18,8 @@ int main()
     AssemblerDriver assembler = AssemblerDriver();
     cout << "Please Enter the .asm file path" << endl;
     string path;
-    getline(cin,path);
+    //getline(cin,path);
+    path = "D:\\Collage\\Assembler Project GIT\\Assembler-SIC-SIC-XE-\\assembler\\TestCases\\literals.asm";
     assembler.assemble(path);
     return 0;
 }
