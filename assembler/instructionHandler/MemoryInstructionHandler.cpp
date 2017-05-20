@@ -7,6 +7,7 @@
 #include "../logger/LoggerConstants.h"
 #include "../ObjectCodeGenerator/Constants.h"
 #include "NumberConverter.h"
+#include "../tables/LiteralTable.h"
 
 using namespace std;
 
@@ -50,8 +51,13 @@ bool checkStringLiteral(string literal){
     if(!check){
         return false;
     }
+
     cout << "STRING IS CORRECT" << endl;
-    cout << DirectiveVerifier::handleByte(literal) << endl;
+    string key = DirectiveVerifier::handleByte(literal);
+    cout << key << endl;
+
+    LiteralData lt(literal, "", key.length());
+    LiteralTable::addLiteral(key,lt);
     return true;
 }
 
@@ -61,7 +67,11 @@ bool checkHexaDecimalLiteral(string literal){
         return false;
     }
     cout << "HEXADECIMAL IS CORRECT" << endl;
-    cout << DirectiveVerifier::handleByte(literal) << endl;
+    string key = DirectiveVerifier::handleByte(literal);
+    cout << key << endl;
+
+    LiteralData lt(literal, "", key.length());
+    LiteralTable::addLiteral(key,lt);
     return true;
 }
 

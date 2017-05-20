@@ -17,14 +17,10 @@ using namespace std;
 int main()
 {
 
-
-//    AssemblerDriver assembler = AssemblerDriver();
-//    cout << "Please Enter the .asm file path" << endl;
-//    string path;
-//    getline(cin,path);
-//    assembler.assemble(path);
-    LiteralData lt("ahmed", "XXXXX", 5);
-    LiteralTable::addLiteral("key", lt);
-    cout << LiteralTable::getAddress("key") << endl;
+    AssemblerDriver assembler = AssemblerDriver();
+    cout << "Please Enter the .asm file path" << endl;
+    string path;
+    getline(cin,path);
+    assembler.assemble(path);
     return 0;
 }

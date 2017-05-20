@@ -961,7 +961,7 @@
 	<InstructionHandler.h>
 	<string>
 
-1495294951 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
+1495302262 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
 	"MemoryInstructionHandler.h"
 	"../tables/InstructionTypeTable.h"
 	<iostream>
@@ -971,6 +971,7 @@
 	"../logger/LoggerConstants.h"
 	"../ObjectCodeGenerator/Constants.h"
 	"NumberConverter.h"
+	"../tables/LiteralTable.h"
 
 1495291331 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
 	"InstructionHandler.h"
@@ -987,7 +988,7 @@
 	<vector>
 	<string>
 
-1495298182 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\main.cpp
+1495302230 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	<sstream>
 	<string>
@@ -1694,7 +1695,7 @@
 1495297995 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\literaldata.h
 	<string>
 
-1495297995 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\literaltable.h
+1495299494 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\literaltable.h
 	"LiteralData.h"
 	"string"
 	<map>
@@ -1709,7 +1710,7 @@
 1495297995 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\expressions.handler\expressionutils.cpp
 	"ExpressionUtils.h"
 
-1495297995 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
+1495299536 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
 	"LiteralTable.h"
 
 1495297995 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\literaldata.cpp
