@@ -8,7 +8,7 @@ class LiteralTable
 {
     public:
         static void addLiteral(std::string key, const LiteralData &data);
-        static LiteralData getData(std::string key);
+        static LiteralData* getData(std::string key);
         static std::string getName(std::string key);
         static std::string getAddress(std::string key);
         static int getLength(std::string key);
