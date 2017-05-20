@@ -3,6 +3,7 @@
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<File name="handlers\StateHandler.h" open="0" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="396" topLine="0" />
@@ -13,12 +14,16 @@
 			<Cursor1 position="82" topLine="0" />
 =======
 	<File name="utils\Normalizer.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+	<File name="driver\AssemblerDriver.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> 352280498a72cda1a6302048a56e69d6c6f8c3ac
 		<Cursor>
-			<Cursor1 position="1303" topLine="0" />
+			<Cursor1 position="0" topLine="12" />
 		</Cursor>
 	</File>
-	<File name="instructionHandler\ExpressionDirectiveInstructionHandler.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="instructionHandler\MemoryInstructionHandler.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="1688" topLine="0" />
 >>>>>>> 5179df85d09f3115fadaae9ed6a4e57b38abb4d4
 		</Cursor>
@@ -79,19 +84,32 @@
 			<Cursor1 position="480" topLine="5" />
 =======
 			<Cursor1 position="1005" topLine="17" />
+=======
+			<Cursor1 position="1595" topLine="22" />
 		</Cursor>
 	</File>
-	<File name="utils\Normalizer.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="tables\LiteralTable.cpp" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+			<Cursor1 position="497" topLine="0" />
+>>>>>>> 352280498a72cda1a6302048a56e69d6c6f8c3ac
+		</Cursor>
+	</File>
+	<File name="instructionHandler\ExpressionDirectiveInstructionHandler.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="63" topLine="3" />
 >>>>>>> 5179df85d09f3115fadaae9ed6a4e57b38abb4d4
+=======
+			<Cursor1 position="302" topLine="0" />
+>>>>>>> 352280498a72cda1a6302048a56e69d6c6f8c3ac
 		</Cursor>
 	</File>
-	<File name="instructionHandler\ExpressionDirectiveInstructionHandler.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="tables\LiteralTable.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="428" topLine="0" />
+			<Cursor1 position="164" topLine="0" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 <<<<<<< HEAD
 	<File name="logger\Logger.cpp" open="0" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
@@ -128,10 +146,14 @@
 		</Cursor>
 	</File>
 	<File name="fileServices\FileHandler.cpp" open="0" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+	<File name="utils\LiteralData.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> 352280498a72cda1a6302048a56e69d6c6f8c3ac
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="ObjectCodeGenerator\ObjectCodeGeneratorFactory.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="113" topLine="0" />
@@ -330,10 +352,14 @@
 		</Cursor>
 	</File>
 	<File name="handlers\HandlerContext.h" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+	<File name="driver\StatementParser.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> 352280498a72cda1a6302048a56e69d6c6f8c3ac
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="tables\OperationCodeTable.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="234" topLine="0" />
@@ -568,6 +594,11 @@
 		<Cursor>
 			<Cursor1 position="256" topLine="0" />
 >>>>>>> 5179df85d09f3115fadaae9ed6a4e57b38abb4d4
+=======
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="710" topLine="0" />
+>>>>>>> 352280498a72cda1a6302048a56e69d6c6f8c3ac
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

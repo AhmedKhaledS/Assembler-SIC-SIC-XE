@@ -405,7 +405,7 @@
 	<string>
 	<vector>
 
-1495297054 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
+1495298140 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	<sstream>
 	<string>
@@ -805,7 +805,7 @@
 1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.h
 	<string>
 
-1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
+1495298140 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
 	"InstructionHandlerFactory.h"
 	"DirectiveInstructionHandler.h"
 	"MemoryInstructionHandler.h"
@@ -818,15 +818,18 @@
 	<InstructionHandler.h>
 	<string>
 
-1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
+1495298140 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
 	"MemoryInstructionHandler.h"
 	"../tables/InstructionTypeTable.h"
 	<iostream>
 	<../utils/LabelVerifier.h>
+	<DirectiveVerifier.h>
 	"../logger/Logger.h"
 	"../logger/LoggerConstants.h"
+	"../ObjectCodeGenerator/Constants.h"
+	"NumberConverter.h"
 
-1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
+1495298140 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
 	"InstructionHandler.h"
 	<string>
 
@@ -1629,10 +1632,10 @@
 1495287228 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\expressionevaluator.h
 	<string>
 
-1495295344 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
 	"LiteralTable.h"
 
-1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.h
+1495301620 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.h
 	"LiteralData.h"
 	"string"
 	<map>
@@ -1640,7 +1643,7 @@
 1495287228 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\expressionevaluator.cpp
 	"ExpressionEvaluator.h"
 
-1495294475 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\literaldata.cpp
+1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\literaldata.cpp
 	"LiteralData.h"
 
 1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\literaldata.h
@@ -1717,6 +1720,7 @@
 1495297995 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\literaldata.cpp
 	"LiteralData.h"
 
+<<<<<<< HEAD
 1495303407 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
 	"LiteralTable.h"
 
@@ -1735,6 +1739,12 @@
 	<string>
 
 1495298564 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\directiveverifier.cpp
+=======
+1495298140 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\directiveverifier.h
+	<string>
+
+1495298140 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\directiveverifier.cpp
+>>>>>>> 352280498a72cda1a6302048a56e69d6c6f8c3ac
 	"DirectiveVerifier.h"
 	"../ObjectCodeGenerator/Constants.h"
 	"NumberConverter.h"
