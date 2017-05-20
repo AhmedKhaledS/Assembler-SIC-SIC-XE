@@ -2,10 +2,10 @@
 #include "../ObjectCodeGenerator/Constants.h"
 #include <cstring>
 #include "../tables/SymbolTable.h"
-#include "ExpressionEvaluator.h"
+#include "expressions.handler/ExpressionEvaluator.h"
 #include "NumberConverter.h"
 #include "../LocationCounter.h"
-#include "ExpressionUtils.h"
+#include "expressions.handler/ExpressionUtils.h"
 
 using namespace std;
 

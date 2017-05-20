@@ -1,13 +1,5 @@
 1000  PRBN06   START   1000                     
-1000           LDX     ZERO              OUT OF RANGE ADDRESS 
-1003           LDCH    BLANK             50100F 
-1006  LOOP     STCH    STR,X             54900F 
-1009           TIX     K20               OUT OF RANGE ADDRESS 
-100C           JLT     LOOP              381006 
-100F  STR      BYTE    C'0123456789'     30313233343536373839 
-1010  STR2     BYTE    Out of memory range of SIC machine.30313233343536373839363636353635363536353635 
-16FD2 BLANK    BYTE    C' '              20 
-16FD5 BUFFER   RESB    90050                    
-16FD8 K20      WORD    20                000014 
-XXXXX ZERO     WORD    0                 000000 
-XXXXX          END     PRBN06                   
+1000           LDX     ZERO              041006 
+1003           LDX     =C'EOF'           LABEL DOES NOT EXIST 
+1006  ZERO     WORD    0                 000000 
+1009           END     PRBN06                   
