@@ -6,11 +6,12 @@ map<string, LiteralData> LiteralTable::literalTable;
 
 void LiteralTable::addLiteral(std::string key, const LiteralData &data)
 {
+
     literalTable[key] = data;
 }
-LiteralData LiteralTable::getData(std::string key)
+LiteralData* LiteralTable::getData(std::string key)
 {
-    return literalTable[key];
+    return &literalTable[key];
 }
 string LiteralTable::getName(std::string key)
 {

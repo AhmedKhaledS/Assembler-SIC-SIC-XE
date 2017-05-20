@@ -100,6 +100,10 @@
 		<Unit filename="instructionHandler/NonExistingInstructionHandler.h" />
 		<Unit filename="instructionHandler/SimpleDirectiveInstructionHandler.cpp" />
 		<Unit filename="instructionHandler/SimpleDirectiveInstructionHandler.h" />
+		<Unit filename="instructionHandler/expressions.handler/ExpressionEvaluator.cpp" />
+		<Unit filename="instructionHandler/expressions.handler/ExpressionEvaluator.h" />
+		<Unit filename="instructionHandler/expressions.handler/ExpressionUtils.cpp" />
+		<Unit filename="instructionHandler/expressions.handler/ExpressionUtils.h" />
 		<Unit filename="logger/Logger.cpp" />
 		<Unit filename="logger/Logger.h" />
 		<Unit filename="logger/LoggerConstants.cpp" />
@@ -109,6 +113,8 @@
 		<Unit filename="objectFileGenerator/ObjectFileGenerator.h" />
 		<Unit filename="tables/InstructionTypeTable.cpp" />
 		<Unit filename="tables/InstructionTypeTable.h" />
+		<Unit filename="tables/LiteralTable.cpp" />
+		<Unit filename="tables/LiteralTable.h" />
 		<Unit filename="tables/OperationCodeTable.cpp" />
 		<Unit filename="tables/OperationCodeTable.h" />
 		<Unit filename="tables/SymbolTable.cpp" />
@@ -116,10 +122,12 @@
 		<Unit filename="tables/instructionTypes.txt" />
 		<Unit filename="utils/BaseRegister.cpp" />
 		<Unit filename="utils/BaseRegister.h" />
-		<Unit filename="utils/ExpressionEvaluator.cpp" />
-		<Unit filename="utils/ExpressionEvaluator.h" />
+		<Unit filename="utils/DirectiveVerifier.cpp" />
+		<Unit filename="utils/DirectiveVerifier.h" />
 		<Unit filename="utils/LabelVerifier.cpp" />
 		<Unit filename="utils/LabelVerifier.h" />
+		<Unit filename="utils/LiteralData.cpp" />
+		<Unit filename="utils/LiteralData.h" />
 		<Unit filename="utils/Normalizer.cpp" />
 		<Unit filename="utils/Normalizer.h" />
 		<Unit filename="utils/SyntaxVerifier.cpp" />
