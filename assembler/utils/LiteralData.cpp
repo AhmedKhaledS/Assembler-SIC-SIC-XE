@@ -2,10 +2,6 @@
 
 using namespace std;
 
-string name;
-string address;
-int length;
-
 LiteralData::LiteralData()
 {
 
