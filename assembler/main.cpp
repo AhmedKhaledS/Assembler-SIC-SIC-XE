@@ -12,15 +12,22 @@
 #include "tables/LiteralTable.h"
 #include "instructionHandler/expressions.handler/ExpressionEvaluator.h"
 #include "ExpressionDirectiveInstructionHandler.h"
+#include <string>
 using namespace std;
 
 int main()
 {
 
-    AssemblerDriver assembler = AssemblerDriver();
-    cout << "Please Enter the .asm file path" << endl;
-    string path;
-    getline(cin,path);
-    assembler.assemble(path);
+//    AssemblerDriver assembler = AssemblerDriver();
+//    cout << "Please Enter the .asm file path" << endl;
+//    string path;
+//    getline(cin,path);
+//    assembler.assemble(path);
+    LiteralData lt("ahmed", "XXXXX", 5);
+    LiteralTable::addLiteral("key", lt);
+    LiteralTable::addLiteral("key", LiteralData("naggar", "axsxa", 2));
+    vector<string> z;
+    z = LiteralTable::getLiteralPool();
+    cout << z[0] << z[1] << endl;
     return 0;
 }

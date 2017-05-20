@@ -1,4 +1,5 @@
 #include "InstructionHandler.h"
+#include "../tables/LiteralsPool.h"
 
 using namespace std;
 

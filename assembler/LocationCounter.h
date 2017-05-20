@@ -1,6 +1,10 @@
+#ifndef LOCATIONCOUNTER_H
+#define LOCATIONCOUNTER_H
 #include <iostream>
 #include <vector>
 #include <string>
+#include "NumberConverter.h"
+
 using namespace std;
 
 class LocationCounter {
@@ -15,3 +19,5 @@ class LocationCounter {
         static string getLocationAt(int index);
         static string getFinalLocation();
 };
+
+#endif // LOCATIONCOUNTER_H

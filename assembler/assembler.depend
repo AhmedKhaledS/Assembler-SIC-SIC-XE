@@ -212,7 +212,7 @@
 	<string>
 	<vector>
 
-1492439316 D
+1495297995 D
 
 1492439971 source:d:\collage\assembler project\assembler-sic-sic-xe-\assembler\numberconverters\numberconverter.cpp
 	"NumberConverter.h"
@@ -304,16 +304,17 @@
 1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
 	"StateHandler.h"
 
-1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\locationcounter.cpp
+1495305903 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\locationcounter.cpp
 	<iostream>
 	"LocationCounter.h"
 	"NumberConverter.h"
 	<string>
 
-1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\locationcounter.h
+1495306678 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\locationcounter.h
 	<iostream>
 	<vector>
 	<string>
+	"NumberConverter.h"
 
 1492380600 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\numberconverters\hexadecimalconverter.cpp
 	"HexadecimalConverter.h"
@@ -818,7 +819,7 @@
 	<InstructionHandler.h>
 	<string>
 
-1495303264 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
+1495305357 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
 	"MemoryInstructionHandler.h"
 	"../tables/InstructionTypeTable.h"
 	<iostream>
@@ -1163,7 +1164,7 @@
 1495290136 d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.h
 	"InstructionHandler.h"
 
-1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
+1495305357 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.cpp
 	"DirectiveInstructionHandler.h"
 	"../ObjectCodeGenerator/Constants.h"
 	"NumberConverter.h"
@@ -1171,8 +1172,9 @@
 	"../utils/LabelVerifier.h"
 	"../utils/SyntaxVerifier.h"
 
-1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.h
+1495305481 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\directiveinstructionhandler.h
 	"InstructionHandler.h"
+	"../tables/LiteralsPool.h"
 
 1495296919 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\simpledirectiveinstructionhandler.h
 	"InstructionHandler.h"
@@ -1633,10 +1635,10 @@
 1495287228 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\expressionevaluator.h
 	<string>
 
-1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
+1495307577 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
 	"LiteralTable.h"
 
-1495305237 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.h
+1495307006 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.h
 	"LiteralData.h"
 	<string>
 	<map>
@@ -1722,7 +1724,6 @@
 1495297995 source:d:\collage\assembler project git\assembler-sic-sic-xe-\assembler\utils\literaldata.cpp
 	"LiteralData.h"
 
-<<<<<<< HEAD
 1495303407 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
 	"LiteralTable.h"
 
@@ -1741,13 +1742,23 @@
 	<string>
 
 1495298564 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\directiveverifier.cpp
-=======
+
 1495298140 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\directiveverifier.h
 	<string>
 
 1495298140 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\directiveverifier.cpp
->>>>>>> 352280498a72cda1a6302048a56e69d6c6f8c3ac
+
+1495298140 280498a72cda1a6302048a56e69d6c6f8c3ac
 	"DirectiveVerifier.h"
 	"../ObjectCodeGenerator/Constants.h"
 	"NumberConverter.h"
+
+1495305630 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literalspool.h
+	<vector>
+	<string>
+	"../utils/DirectiveVerifier.h"
+	"../LocationCounter.h"
+
+1495305357 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literalspool.cpp
+	"LiteralsPool.h"
 

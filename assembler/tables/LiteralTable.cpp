@@ -3,12 +3,12 @@
 using namespace std;
 
 map<string, LiteralData> LiteralTable::literalTable;
-vector<string> pool;
+vector<string> LiteralTable::pool;
 
-void LiteralTable::addLiteral(std::string key, const LiteralData &data)
+void LiteralTable::addLiteral(string key, const LiteralData &data)
 {
     literalTable[key] = data;
-    pool.push_back(key);
+    pool.push_back(data.getName());
 }
 LiteralData* LiteralTable::getData(std::string key)
 {

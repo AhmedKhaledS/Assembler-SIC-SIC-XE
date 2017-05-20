@@ -2,6 +2,8 @@
 #define LITERAL
 #include <vector>
 #include <string>
+#include "../utils/DirectiveVerifier.h"
+#include "../LocationCounter.h"
 
 class LiteralsPool
 {

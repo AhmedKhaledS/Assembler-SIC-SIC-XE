@@ -15,14 +15,12 @@ class LiteralTable
         static int getLength(std::string key);
         static std::vector<std::string> getLiteralPool();
     private:
-        /** Default constructor */
-        LiteralTable();
         /**
         * The key is the hexadecimal representation for the literal.
         * The value containing the three required fields (address, length, name).
         */
         static std::map<std::string, LiteralData> literalTable;
-        std::vector<std::string> pool;
+        static std::vector<std::string> pool;
 };
 
 #endif // LITERALTABLE_H
