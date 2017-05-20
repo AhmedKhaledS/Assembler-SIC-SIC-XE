@@ -9,3 +9,4 @@ StateHandler::StateHandler()
 
 bool StateHandler::labelAvailable = false;
 string StateHandler::instruction;
+string StateHandler::label;

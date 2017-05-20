@@ -21,7 +21,7 @@ void OperandHandlerState::handle(string statement)
     /// loading the proper type from the instruction table with the help of the static string
     string instructionType = InstructionTypeTable::getType(StateHandler::instruction);
     InstructionHandler* handler = InstructionHandlerFactory::
-        getInstance()->getInstructionHandler(instructionType, StateHandler::instruction, statement);
+        getInstance()->getInstructionHandler(instructionType, StateHandler::label,StateHandler::instruction, statement);
     bool isHandled = handler->handle();
     if (!isHandled)
     {

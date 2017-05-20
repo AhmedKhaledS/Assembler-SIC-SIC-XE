@@ -2,25 +2,30 @@
 #include "../ObjectCodeGenerator/Constants.h"
 #include <cstring>
 #include "../tables/SymbolTable.h"
-#include "ExpressionEvaluator.h"
+#include "expressions.handler/ExpressionEvaluator.h"
 #include "NumberConverter.h"
 #include "../LocationCounter.h"
+#include "expressions.handler/ExpressionUtils.h"
 
 using namespace std;
 
-const char operatorKeys[] = "+-";
-
-ExpressionDirectiveInstructionHandler::ExpressionDirectiveInstructionHandler(string instruc, string oper)
+ExpressionDirectiveInstructionHandler::ExpressionDirectiveInstructionHandler(string lbl, string instruc, string oper)
 {
+    label = lbl;
     instruction = instruc;
     operand = oper;
 }
 
-bool validateSyntax() {
+
+
+bool validateSyntax(string expression) {
     /// check valid forms
         // LABEL +/- LABEL
         // NUM +/- LABEL
         // NUM +/- NUM
+    for (int i = 0; i < expression.length(); i++) {
+
+    }
     return false;
 }
 /**
@@ -44,16 +49,35 @@ pair<bool, int> tryParsingOperand(string operand) {
 }
 
 bool ExpressionDirectiveInstructionHandler::handleExpression() {
-    int operatorIndex = strcspn(operand.c_str(),operatorKeys);
-    string firstOperand = operand.substr(0, operatorIndex);
-    string secondOperand = operand.substr(operatorIndex + 1, operand.length() - operatorIndex);
-    pair<bool, int> firstOperandParsingResult = tryParsingOperand(firstOperand);
-    pair<bool, int> secondOperandParsingResult = tryParsingOperand(secondOperand);
-    if (!firstOperandParsingResult.first) {return false;}
-    if (!secondOperandParsingResult.first) {return false;}
-    string parsedExpression = NumberConverter::stringfy(firstOperandParsingResult.second)
-     + operand[operatorIndex] + NumberConverter::stringfy(secondOperandParsingResult.second);
+    vector<string> operandsList;
+    vector<char> operatorsList;
+    string curOperand = "";
+    for (int i = 0; i < operand.length(); i++) {
+        if (!ExpressionUtils::isOperator(operand[i])) {
+            curOperand.push_back(operand[i]);
+        }
+        else {
+            operandsList.push_back(curOperand);
+            curOperand = "";
+            operatorsList.push_back(operand[i]);
+        }
+    }
+    if (curOperand.length() != 0) {
+        operandsList.push_back(curOperand);
+    }
+    if (operandsList.size() - 1 != operatorsList.size()) {
+        return false;
+    }
+
+    string parsedExpression = "";
+    for (int i = 0; i < operandsList.size(); i++) {
+        pair<bool, int> operandParseResult = tryParsingOperand(operandsList[i]);
+        if (!operandParseResult.first) {return false;}
+        parsedExpression += NumberConverter::stringfy(operandParseResult.second);
+        if (i != operandsList.size() - 1) {parsedExpression.push_back(operatorsList[i]);}
+    }
     int operandValue = ExpressionEvaluator::evaluate(parsedExpression);
+    cout << operandValue;
     LocationCounter::setLocationCounter(NumberConverter::convertDecToHex(NumberConverter::stringfy(operandValue)));
     return true;
 }
@@ -63,7 +87,7 @@ bool ExpressionDirectiveInstructionHandler::handle() {
     if (instruction == Constants::ORG) {
         return handleExpression();
     } else if (instruction == Constants::EQU) {
-
+        return handleExpression();
     }
     return false;
 }

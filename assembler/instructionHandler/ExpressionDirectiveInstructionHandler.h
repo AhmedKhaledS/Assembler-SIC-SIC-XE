@@ -5,13 +5,14 @@
 
 class ExpressionDirectiveInstructionHandler : public InstructionHandler {
     public:
-        ExpressionDirectiveInstructionHandler(std::string instruc, std::string oper);
+        ExpressionDirectiveInstructionHandler(std::string lbl, std::string instruc, std::string oper);
         bool handle();
     protected:
 
     private:
         bool handleExpression();
         std::string operand;
+        std::string label;
 };
 
 #endif // EXPRESSIONDIRECTIVEINSTRUCTIONHANDLER_H
