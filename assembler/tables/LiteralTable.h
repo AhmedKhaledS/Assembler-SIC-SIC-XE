@@ -1,8 +1,9 @@
 #ifndef LITERALTABLE_H
 #define LITERALTABLE_H
 #include "LiteralData.h"
-#include "string"
+#include <string>
 #include <map>
+#include <vector>
 
 class LiteralTable
 {
@@ -12,6 +13,7 @@ class LiteralTable
         static std::string getName(std::string key);
         static std::string getAddress(std::string key);
         static int getLength(std::string key);
+        static std::vector<std::string> getLiteralPool();
     private:
         /** Default constructor */
         LiteralTable();
@@ -20,6 +22,7 @@ class LiteralTable
         * The value containing the three required fields (address, length, name).
         */
         static std::map<std::string, LiteralData> literalTable;
+        std::vector<std::string> pool;
 };
 
 #endif // LITERALTABLE_H

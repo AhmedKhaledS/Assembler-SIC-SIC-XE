@@ -405,7 +405,7 @@
 	<string>
 	<vector>
 
-1495298140 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
+1495303264 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	<sstream>
 	<string>
@@ -816,7 +816,7 @@
 	<InstructionHandler.h>
 	<string>
 
-1495298140 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
+1495303264 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.cpp
 	"MemoryInstructionHandler.h"
 	"../tables/InstructionTypeTable.h"
 	<iostream>
@@ -826,6 +826,7 @@
 	"../logger/LoggerConstants.h"
 	"../ObjectCodeGenerator/Constants.h"
 	"NumberConverter.h"
+	"../tables/LiteralTable.h"
 
 1495298140 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
 	"InstructionHandler.h"
@@ -1629,10 +1630,11 @@
 1495296919 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.cpp
 	"LiteralTable.h"
 
-1495301620 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.h
+1495305237 c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\tables\literaltable.h
 	"LiteralData.h"
-	"string"
+	<string>
 	<map>
+	<vector>
 
 1495287228 source:c:\users\ahmed khaled\git\assembler-sic-sic-xe-\assembler\utils\expressionevaluator.cpp
 	"ExpressionEvaluator.h"
