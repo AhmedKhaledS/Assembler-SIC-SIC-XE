@@ -124,6 +124,7 @@
 		<Unit filename="utils/BaseRegister.h" />
 		<Unit filename="utils/DirectiveVerifier.cpp" />
 		<Unit filename="utils/DirectiveVerifier.h" />
+		<Unit filename="utils/ExpressionEvaluator.h" />
 		<Unit filename="utils/LabelVerifier.cpp" />
 		<Unit filename="utils/LabelVerifier.h" />
 		<Unit filename="utils/LiteralData.cpp" />
