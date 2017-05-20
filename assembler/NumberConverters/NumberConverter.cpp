@@ -1,4 +1,5 @@
 #include "NumberConverter.h"
+#include "../LocationCounter.h"
 #include <string>
 #include <sstream>
 #include <bitset>
@@ -45,6 +46,7 @@ string NumberConverter::convertDecToHex(string decNumber){
 }
 
 int NumberConverter::getNumericValue(string number) {
+    if (number == "*") return NumberConverter::convertHexToDec(LocationCounter::getLocationCounter());
     int obtainedNumber = 0;
     for (char digit : number) {
         obtainedNumber *= BASE_10;

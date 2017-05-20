@@ -529,7 +529,7 @@
 	"StateHandler.h"
 	"HandlerContext.h"
 
-1495268239 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\statehandler.h
+1495295562 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\statehandler.h
 	"string"
 
 1495268239 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\instructionhandlerstate.h
@@ -569,7 +569,7 @@
 	"../logger/Logger.h"
 	"../logger/LoggerConstants.h"
 
-1495284949 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
+1495295542 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\labelhandlerstate.cpp
 	<string>
 	"LabelHandlerState.h"
 	"iostream"
@@ -582,7 +582,7 @@
 	"../utils/SyntaxVerifier.h"
 	"../ObjectCodeGenerator/Constants.h"
 
-1495268239 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
+1495295797 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\operandhandlerstate.cpp
 	"OperandHandlerState.h"
 	"../tables/InstructionTypeTable.h"
 	"../instructionHandler/InstructionHandlerFactory.h"
@@ -591,7 +591,7 @@
 	"NumberConverter.h"
 	"../ObjectCodeGenerator/Constants.h"
 
-1495268239 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
+1495295478 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\handlers\statehandler.cpp
 	"StateHandler.h"
 
 1495287060 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\locationcounter.cpp
@@ -605,7 +605,7 @@
 	<vector>
 	<string>
 
-1495268282 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\main.cpp
+1495294950 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\main.cpp
 	<iostream>
 	<sstream>
 	<string>
@@ -616,6 +616,8 @@
 	"tables/InstructionTypeTable.h"
 	"../logger/Logger.h"
 	"fileServices/FileWriter.h"
+	"ExpressionEvaluator.h"
+	"ExpressionDirectiveInstructionHandler.h"
 
 1495268239 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\simpledirectiveobjectcodegenerator.h
 	"ObjectCodeGenerator.h"
@@ -1150,7 +1152,7 @@
 	"../logger/Logger.h"
 	"../logger/LoggerConstants.h"
 
-1495268239 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.h
+1495295291 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.h
 	<InstructionHandler.h>
 	<string>
 
@@ -1171,13 +1173,14 @@
 1495268239 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandler.cpp
 	"InstructionHandler.h"
 
-1495268239 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
+1495295919 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerfactory.cpp
 	"InstructionHandlerFactory.h"
 	"DirectiveInstructionHandler.h"
 	"MemoryInstructionHandler.h"
 	"SimpleDirectiveInstructionHandler.h"
 	"InstructionHandlerConstants.h"
 	"NonExistingInstructionHandler.h"
+	"ExpressionDirectiveInstructionHandler.h"
 
 1495268239 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\memoryinstructionhandler.h
 	"InstructionHandler.h"
@@ -1201,10 +1204,10 @@
 	"../logger/Logger.h"
 	"../logger/LoggerConstants.h"
 
-1495268239 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerconstants.h
+1495295154 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\instructionhandlerconstants.h
 	<string>
 
-1495268239 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\intructionhandlerconstants.cpp
+1495295124 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\intructionhandlerconstants.cpp
 	"InstructionHandlerConstants.h"
 
 1495268239 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\labelverifier.h
@@ -1524,7 +1527,7 @@
 1495268239 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\objectcodegenerator\nonexistingobjectcodegenerator.cpp
 	"NonExistingObjectCodeGenerator.h"
 
-1495284756 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\expressiondirectiveinstructionhandler.cpp
+1495294996 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\expressiondirectiveinstructionhandler.cpp
 	"ExpressionDirectiveInstructionHandler.h"
 	"../ObjectCodeGenerator/Constants.h"
 	<cstring>
@@ -1532,13 +1535,31 @@
 	"ExpressionEvaluator.h"
 	"NumberConverter.h"
 	"../LocationCounter.h"
+	"ExpressionUtils.h"
 
-1495274641 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\expressiondirectiveinstructionhandler.h
+1495295059 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\expressiondirectiveinstructionhandler.h
 	"InstructionHandler.h"
 
 1495278574 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\expressionevaluator.h
 	<string>
 
-1495278037 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\expressionevaluator.cpp
+1495288940 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\utils\expressionevaluator.cpp
 	"ExpressionEvaluator.h"
+	"NumberConverter.h"
+	<cstring>
+
+1495278574 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\expressions.handler\expressionevaluator.h
+	<string>
+
+1495294750 d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\expressions.handler\expressionutils.h
+
+1495294910 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\expressions.handler\expressionevaluator.cpp
+	"ExpressionEvaluator.h"
+	"NumberConverter.h"
+	"ExpressionUtils.h"
+	<cstring>
+	<vector>
+
+1495294603 source:d:\college\2ndyear\2ndterm\systems programming\sic assignment\assembler-sic-sic-xe-\assembler\instructionhandler\expressions.handler\expressionutils.cpp
+	"ExpressionUtils.h"
 

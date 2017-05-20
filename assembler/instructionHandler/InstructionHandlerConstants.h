@@ -8,6 +8,7 @@ class InstructionHandlerConstants {
         static string INSTRUCTION_TYPE_DIR;
         static string INSTRUCTION_TYPE_MEMREG;
         static string INSTRUCTION_TYPE_OPER;
+        static string INSTRUCTION_TYPE_DIREXP;
 };
 
 

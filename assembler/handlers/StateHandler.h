@@ -12,6 +12,7 @@ class StateHandler
     protected:
         static bool labelAvailable;
         static std::string instruction;
+        static std::string label;
     private:
 };
 

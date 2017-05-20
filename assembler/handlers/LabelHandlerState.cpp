@@ -40,7 +40,7 @@ void LabelHandlerState::handle(string statement)
         this->context->setState(context->getInstructionHandler());
         return;
     }
-
+    StateHandler::label = statement;
     // check for existence of the statement in Symbol Table
     if(!LabelVerifier::checkExistence(statement)){
         throwError("Double label definition");

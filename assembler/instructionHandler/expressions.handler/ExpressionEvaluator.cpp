@@ -1,13 +1,10 @@
 #include "ExpressionEvaluator.h"
 #include "NumberConverter.h"
+#include "ExpressionUtils.h"
 #include <cstring>
 #include <vector>
 
 using namespace std;
-
-const char operatorKeys[] = "+-";
-const int OPERATERS_SIZE = 2;
-
 
 
 int ExpressionEvaluator::evaluate(string expression) {
@@ -15,7 +12,7 @@ int ExpressionEvaluator::evaluate(string expression) {
     vector<char> operatorsList;
     string curOperand = "";
     for (int i = 0; i < expression.length(); i++) {
-        if (!isOperator(expression[i])) {
+        if (!ExpressionUtils::isOperator(expression[i])) {
             curOperand.push_back(expression[i]);
         }
         else {
@@ -33,7 +30,7 @@ int ExpressionEvaluator::evaluate(string expression) {
         int curOperandValue = NumberConverter::getNumericValue(operandsList[i]);
         expressionValue += curOperandValue * factor;
         if (i != operandsList.size() - 1) {
-            switch (expression[i]) {
+            switch (operatorsList[i]) {
             case '+' :
                 factor = 1;
                 break;

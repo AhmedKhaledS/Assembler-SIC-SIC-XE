@@ -9,7 +9,8 @@
 #include "../logger/Logger.h"
 #include "fileServices/FileWriter.h"
 
-
+#include "ExpressionEvaluator.h"
+#include "ExpressionDirectiveInstructionHandler.h"
 using namespace std;
 
 int main()
